@@ -3,7 +3,11 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic);
 @import url(http://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic);
 @import url(bucket-ico-fonts.css);
-
+@font-face {
+ font-family: 'Glyphicons Halflings';
+ src: url('../fonts/glyphicons-halflings-regular.eot');
+ src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
+}
 html {
     text-rendering: optimizeLegibility !important;
     -webkit-font-smoothing: antialiased !important;
@@ -380,9 +384,9 @@ ul.top-menu > li > a {
     padding-right:8px !important;
 }
 ul.top-menu>li>a:hover,ul.top-menu>li>a:focus {
-    background:#32D2C9;
+    background:#4a69bd;
     text-decoration:none;
-    color:rgba(0,0,0,0.3) !important;
+    color:#f6f6f6 !important;
     padding-right:8px !important;
 }
 .notify-row .badge {
@@ -580,11 +584,12 @@ ul.top-menu>li>a:hover,ul.top-menu>li>a:focus {
     color:#32323a !important;
 }
 .dropdown-menu.extended.logout>li>a:hover {
-    background:#F1F2F7 !important;
+    background:#4a69bd !important;
     border-radius:5px;
+    color:#F1F2F7 !important;
 }
 .dropdown-menu.extended.logout>li>a:hover i {
-    color:#32D2C9;
+    color:#F1F2F7;
 }
 .dropdown-menu.extended.logout>li>a i {
     font-size:17px;
@@ -594,7 +599,7 @@ ul.top-menu>li>a:hover,ul.top-menu>li>a:focus {
 }
 .top-nav .username {
     font-size:13px;
-    color:#555555;
+    color:#F6F6F6;
 }
 .top-nav ul.top-menu>li>a {
     border-radius:100px;
@@ -603,7 +608,7 @@ ul.top-menu>li>a:hover,ul.top-menu>li>a:focus {
     background:none;
     margin-right:0;
     border:1px solid #F6F6F6;
-    background:#F6F6F6;
+    background:#4a69bd;
 }
 .top-nav ul.top-menu>li.language>a {
     margin-top:-2px;
@@ -625,7 +630,8 @@ ul.top-menu>li>a:hover,ul.top-menu>li>a:focus {
 }
 .top-nav ul.top-menu>li>a:hover,.top-nav ul.top-menu>li>a:focus {
     border:1px solid #f6f6f6;
-    background:#f6f6f6 !important;
+    background:#341f97 !important;
+    color: #F1F2F7 ;
     border-radius:100px;
     -webkit-border-radius:100px;
 }
@@ -709,7 +715,7 @@ ul.top-menu>li>a:hover,ul.top-menu>li>a:focus {
     display:inline-block;
     font-size:15px;
     padding:8px 8px 8px 9px;
-    color:rgba(0,0,0,.3);
+    color: #341f97;
 }
 .sidebar-toggle-box:hover {
     background:#F6F6F6;

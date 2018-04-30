@@ -14,15 +14,14 @@
                     <span>Mon réseau</span>
                 </a>
                 <ul class="sub">
-                    <li class="active"><a href="apropos_general.html">Général</a></li>
-                    <li><a href="buttons.html">Notre vision</a></li>
-                    <li><a href="typography.html">Notre équipe</a></li>
+                    <li class="active"><a href="">Liste des connexions</a></li>
+                    <li><a href="">Ajouter quelqu'un</a></li>
                 </ul>
             </li>
-            <li>
-                <a href="fontawesome.html">
-                    <i class="glyphicon glyphicon-user"></i>
-                    <span>Profil </span>
+            <li class="sub-menu">
+                <a href="javascript:;">
+                    <i class="fa fa-user"></i>
+                    <span>Profil</span>
                 </a>
                 <ul class="sub">
                     <li><a href="form_component.html">Modification info</a></li>
