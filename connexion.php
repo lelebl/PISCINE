@@ -1,8 +1,11 @@
 <?php 
 $title="Connexion";
 include("include/header.php"); 
-?>
 
+include("include/menu_haut.php"); 
+
+include("include/menu_gauche.php"); 
+?>
   <body class="login-body">
 
     <div class="container">

@@ -8,7 +8,7 @@
     <meta name="author" content="Emmanuelle Thiroloix, Léa Blanchard, Charlotte Decary">
     <link rel="favicon" href="images/favicon.png">
 
-    <title><?php echo $title ?></title>
+    <title>NetWire: <?php echo $title ?></title>
 
     <!--Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
