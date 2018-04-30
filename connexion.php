@@ -64,7 +64,7 @@ include("include/header.php");
 
     <!--Core js-->
     <script src="js/jquery.js"></script>
-    <script src="bs3/js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
   </body>
 </html>
