@@ -1,10 +1,9 @@
 <?php 
 $title="Connexion";
-include("include/header.php"); 
+include("include/header.inc.php"); 
 
-include("include/menu_haut.php"); 
-
-include("include/menu_gauche.php"); 
+include("include/menu_haut.inc.php"); 
+include("include/menu_gauche.inc.php"); 
 ?>
 
 <body class="login-body">
@@ -31,13 +30,25 @@ include("include/menu_gauche.php");
                 </label>
             </div>
             <br>
+            <br>
             <input type="text" class="form-control" placeholder="Nom" autofocus>
             <input type="text" class="form-control" placeholder="Prénom"" autofocus>
             <input type="text" class="form-control" placeholder="Email" autofocus>
+            <input type="date" class="form-control" placeholder="Date" autofocus >
+            <br>
             <input type="text" class="form-control" placeholder="Addresse" autofocus>
-            <input type="text" class="form-control" placeholder="Ville" autofocus>
-         
-            <input placeholder="Date" class="form-control" type="date" boxs>
+            <input type="text" class="form-control" placeholder="Ville" autofocus >
+            <input type="number" class="form-control" placeholder="Code postal" min="0" max="99999" autofocus >
+            <br>
+            <select name="pays" class="form-control" id="pays"placeholder="Pays">
+                <option value="France">France</option>      
+                <option value="Angleterre">Angleterre</option>  
+                <option value="Irlande">Irlande</option>
+                <option value="Espagne">Espagne</option>
+            </select>
+
+          
+       
 
 
            <label class="checkbox">
