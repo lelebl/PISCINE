@@ -1,0 +1,4 @@
+COULEURS Projet Piscine
+
+Bleu foncé: #341f97
+Bleu moyen: #4a69bd
