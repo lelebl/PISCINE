@@ -7,6 +7,7 @@
       <!--<a href="index.html" class="logo">
       <img src="images/logo.png" alt="">
     </a>-->
+
     <div class="sidebar-toggle-box">
         <div class="fa fa-bars"></div>
     </div>

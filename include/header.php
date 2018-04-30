@@ -13,7 +13,7 @@
     <!--Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap-reset.css" rel="stylesheet">
-    <link href="css/font-awesome.css" rel="stylesheet" />
+    <link href="css/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
 
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet">
