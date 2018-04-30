@@ -1,10 +1,9 @@
 <?php 
 $title="Connexion";
-include("include/header.php"); 
+include("include/header.inc.php"); 
 
-include("include/menu_haut.php"); 
-
-include("include/menu_gauche.php"); 
+include("include/menu_haut.inc.php"); 
+include("include/menu_gauche.inc.php"); 
 ?>
 
   <body class="login-body">
@@ -64,11 +63,9 @@ include("include/menu_gauche.php");
 
 
 
-    <!-- Placed js at the end of the document so the pages load faster -->
-
     <!--Core js-->
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <?php include('include/js.inc.php'); ?>
+
 
   </body>
 </html>
