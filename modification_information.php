@@ -11,6 +11,7 @@ include("include/menu_gauche.inc.php");
     <section id="main-content">
         <section class="wrapper">
         <!-- page start-->
+
         <div class="row">
                 <div class="col-md-12">
                     <!--breadcrumbs start -->
@@ -22,12 +23,210 @@ include("include/menu_gauche.inc.php");
                 </div>
             </div>
             <div class="row">
+
               <div class="col-lg-12">
                 <section class="panel">
                   <header class="panel-heading">
                     Informations personelles
 
                   </header>
+                  <div class="panel-body">
+                    <div class="col-lg-6">
+                        
+                        <table class="table">
+                            
+                            
+                            
+                            <tr>
+                                <td><a href="#">PHOTO</a></td>
+                                <td>
+
+
+
+
+
+
+
+
+                                  <span class="tools pull-right">
+                                    <a href="javascript:;" class="fa fa-pencil"></a>
+                                  </span>
+                                </td>
+                                
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="images item " >
+                                        <a href="#myModal" data-toggle="modal">
+                                   <img src="images/imgO1.png" alt="" />
+                               </a>
+                               </div>
+                                    </a>
+
+   
+
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+                                <td><a href="#">IMAGE DE FOND</a></td>
+                                <td>choix de l'image de fond
+                                  <span class="tools pull-right">
+                                    <a href="javascript:;" class="fa fa-pencil"></a>
+                                  </span>
+                                </td>
+                                
+                            </tr>
+                            <tr>
+
+                                <td><a href="#">RESUME</a></td>
+                                <td>résumé
+                                  <span class="tools pull-right">
+                                    <a href="javascript:;" class="fa fa-pencil"></a>
+                                  </span>
+                                </td>
+                                
+                            
+                                
+                            </tr>
+                            <tr>
+                                <td><a href="#">CV</a></td>
+                                <td>cv
+                                  <span class="tools pull-right">
+                                    <a href="javascript:;" class="fa fa-pencil"></a>
+                                  </span>
+                                </td>
+                                
+                            </tr>
+
+                            
+                           
+                            
+                        </table>
+
+                    </div>
+                    <div class="col-lg-6">
+                        <table class="table">
+                            
+                            
+                            
+                            <tr>
+                                <td><a href="#">NOM</a></td>
+                                <td>
+                                    nom
+                                  <span class="tools pull-right">
+                                    <a href="javascript:;" class="fa fa-pencil"></a>
+                                  </span>
+                                </td>
+                                
+                            </tr>
+                            <tr>
+                                <td><a href="#">PRENOM</a></td>
+                                <td>
+                                    prenom
+                                  <span class="tools pull-right">
+                                    <a href="javascript:;" class="fa fa-pencil"></a>
+                                  </span>
+                                </td>
+                                
+                            </tr>
+                            <tr>
+                                <td><a href="#">PSEUDO</a></td>
+                                <td>pseudo
+                                  <span class="tools pull-right">
+                                    <a href="javascript:;" class="fa fa-pencil"></a>
+                                  </span>
+                                </td>
+                                
+                            </tr>
+                             <tr>
+                                <td><a href="#">EMAIL</a></td>
+                                <td>email
+                                  <span class="tools pull-right">
+                                    <a href="javascript:;" class="fa fa-pencil"></a>
+                                  </span>
+                                </td>
+                                
+                            </tr>
+                             <tr>
+                                <td><a href="#">MOT DE PASSE</a></td>
+                                <td>mot de passe
+                                  <span class="tools pull-right">
+                                    <a href="javascript:;" class="fa fa-pencil"></a>
+                                  </span>
+                                </td>
+                                
+                            </tr>
+                             <tr>
+                                <td><a href="#">DATE DE NAISSANCE</a></td>
+                                <td>date de naissance
+                                  <span class="tools pull-right">
+                                    <a href="javascript:;" class="fa fa-pencil"></a>
+                                  </span>
+                                </td>
+                                
+                            </tr>
+                            <tr>
+                                <td><a href="#">ADRESSE</a></td>
+                                <td>adresse
+                                  <span class="tools pull-right">
+                                    <a href="javascript:;" class="fa fa-pencil"></a>
+                                  </span>
+                                </td>
+                                
+                            </tr>
+                            <tr>
+                                <td><a href="#">VILLE</a></td>
+                                <td>ville
+                                  <span class="tools pull-right">
+                                    <a href="javascript:;" class="fa fa-pencil"></a>
+                                  </span>
+                                </td>
+                                
+                            </tr>
+                            <tr>
+                                <td><a href="#">CODE POSTAL</a></td>
+                                <td>code postal
+                                  <span class="tools pull-right">
+                                    <a href="javascript:;" class="fa fa-pencil"></a>
+                                  </span>
+                                </td>
+                                
+                            </tr><tr>
+                                <td><a href="#">PAYS</a></td>
+                                <td>pays
+                                  <span class="tools pull-right">
+                                    <a href="javascript:;" class="fa fa-pencil"></a>
+                                  </span>
+                                </td>
+                                
+                            </tr>
+                            <tr>
+                                <td><a href="#">TELEPHONE</a></td>
+                                <td>telephone
+                                  <span class="tools pull-right">
+                                    <a href="javascript:;" class="fa fa-pencil"></a>
+                                  </span>
+                                </td>
+                                
+                            </tr>
+                            <tr>
+                                <td><a href="#">DATE DE NAISSANCE</a></td>
+                                <td>date de naissance
+                                  <span class="tools pull-right">
+                                    <a href="javascript:;" class="fa fa-pencil"></a>
+                                  </span>
+                                </td>
+                                
+                            </tr>
+                            <tr>
+                            
+                        </table>
+                    </div>
+                </div>
+
                  </section>
                 
 
@@ -38,8 +237,6 @@ include("include/menu_gauche.inc.php");
                         Compétences
                         <span class="tools pull-right">
                             <a href="javascript:;" class="fa fa-chevron-down"></a>
-                            <a href="javascript:;" class="fa fa-cog"></a>
-                            <a href="javascript:;" class="fa fa-times"></a>
                          </span>
                     </header>
                     <div class="panel-body">
@@ -64,7 +261,7 @@ include("include/menu_gauche.inc.php");
                                 <td>
                                   <span class="tools pull-right">
                                     <a href="javascript:;" class="fa fa-pencil"></a>
-                                    <a href="javascript:;" class="fa fa-ban"></a>
+                                    <a href="javascript:;" class="fa fa-times"></a>
                                   </span>
                                 </td>
                                 
@@ -81,7 +278,7 @@ include("include/menu_gauche.inc.php");
                                 <td>
                                   <span class="tools pull-right">
                                     <a href="javascript:;" class="fa fa-pencil"></a>
-                                    <a href="javascript:;" class="fa fa-ban"></a>
+                                    <a href="javascript:;" class="fa fa-times"></a>
                                   </span>
                                 </td>
 
@@ -98,7 +295,7 @@ include("include/menu_gauche.inc.php");
                                 <td>
                                   <span class="tools pull-right">
                                     <a href="javascript:;" class="fa fa-pencil"></a>
-                                    <a href="javascript:;" class="fa fa-ban"></a>
+                                    <a href="javascript:;" class="fa fa-times"></a>
                                   </span>
                                 </td>
                             </tr>
@@ -114,7 +311,7 @@ include("include/menu_gauche.inc.php");
                                 <td>
                                   <span class="tools pull-right">
                                     <a href="javascript:;" class="fa fa-pencil"></a>
-                                    <a href="javascript:;" class="fa fa-ban"></a>
+                                    <a href="javascript:;" class="fa fa-times"></a>
                                   </span>
                                 </td>
                             </tr>
@@ -130,7 +327,7 @@ include("include/menu_gauche.inc.php");
                                 <td>
                                   <span class="tools pull-right">
                                     <a href="javascript:;" class="fa fa-pencil"></a>
-                                    <a href="javascript:;" class="fa fa-ban"></a>
+                                    <a href="javascript:;" class="fa fa-times"></a>
                                   </span>
                                 </td>
                             </tr>
@@ -146,7 +343,7 @@ include("include/menu_gauche.inc.php");
                                 <td>
                                   <span class="tools pull-right">
                                     <a href="javascript:;" class="fa fa-pencil"></a>
-                                    <a href="javascript:;" class="fa fa-ban"></a>
+                                    <a href="javascript:;" class="fa fa-times"></a>
                                   </span>
                                 </td>
                             </tr>
@@ -162,7 +359,7 @@ include("include/menu_gauche.inc.php");
                                 <td>
                                   <span class="tools pull-right">
                                     <a href="javascript:;" class="fa fa-pencil"></a>
-                                    <a href="javascript:;" class="fa fa-ban"></a>
+                                    <a href="javascript:;" class="fa fa-times"></a>
                                   </span>
                                 </td>
                             </tr>
@@ -178,7 +375,7 @@ include("include/menu_gauche.inc.php");
                                 <td>
                                   <span class="tools pull-right">
                                     <a href="javascript:;" class="fa fa-pencil"></a>
-                                    <a href="javascript:;" class="fa fa-ban"></a>
+                                    <a href="javascript:;" class="fa fa-times"></a>
                                   </span>
                                 </td>
                             </tr>
@@ -194,7 +391,7 @@ include("include/menu_gauche.inc.php");
                                 <td>
                                   <span class="tools pull-right">
                                     <a href="javascript:;" class="fa fa-pencil"></a>
-                                    <a href="javascript:;" class="fa fa-ban"></a>
+                                    <a href="javascript:;" class="fa fa-times"></a>
                                   </span>
                                 </td>
                             </tr>
@@ -210,7 +407,7 @@ include("include/menu_gauche.inc.php");
                                 <td>
                                   <span class="tools pull-right">
                                     <a href="javascript:;" class="fa fa-pencil"></a>
-                                    <a href="javascript:;" class="fa fa-ban"></a>
+                                    <a href="javascript:;" class="fa fa-times"></a>
                                   </span>
                                 </td>
                             </tr>
@@ -226,7 +423,7 @@ include("include/menu_gauche.inc.php");
                                 <td>
                                   <span class="tools pull-right">
                                     <a href="javascript:;" class="fa fa-pencil"></a>
-                                    <a href="javascript:;" class="fa fa-ban"></a>
+                                    <a href="javascript:;" class="fa fa-times"></a>
                                   </span>
                                 </td>
                             </tr>
@@ -242,7 +439,7 @@ include("include/menu_gauche.inc.php");
                                 <td>
                                   <span class="tools pull-right">
                                     <a href="javascript:;" class="fa fa-pencil"></a>
-                                    <a href="javascript:;" class="fa fa-ban"></a>
+                                   <a href="javascript:;" class="fa fa-times"></a>
                                   </span>
                                 </td>
                             </tr>
@@ -258,7 +455,7 @@ include("include/menu_gauche.inc.php");
                                 <td>
                                   <span class="tools pull-right">
                                     <a href="javascript:;" class="fa fa-pencil"></a>
-                                    <a href="javascript:;" class="fa fa-ban"></a>
+                                    <a href="javascript:;" class="fa fa-times"></a>
                                   </span>
                                 </td>
                             </tr>
@@ -274,7 +471,7 @@ include("include/menu_gauche.inc.php");
                                 <td>
                                   <span class="tools pull-right">
                                     <a href="javascript:;" class="fa fa-pencil"></a>
-                                    <a href="javascript:;" class="fa fa-ban"></a>
+                                    <a href="javascript:;" class="fa fa-times"></a>
                                   </span>
                                 </td>
                             </tr>
@@ -290,7 +487,7 @@ include("include/menu_gauche.inc.php");
                                 <td>
                                   <span class="tools pull-right">
                                     <a href="javascript:;" class="fa fa-pencil"></a>
-                                    <a href="javascript:;" class="fa fa-ban"></a>
+                                   <a href="javascript:;" class="fa fa-times"></a>
                                   </span>
                                 </td>
                             </tr>
@@ -306,7 +503,7 @@ include("include/menu_gauche.inc.php");
                                 <td>
                                   <span class="tools pull-right">
                                     <a href="javascript:;" class="fa fa-pencil"></a>
-                                    <a href="javascript:;" class="fa fa-ban"></a>
+                                    <a href="javascript:;" class="fa fa-times"></a>
                                   </span>
                                 </td>
                             </tr>
@@ -322,7 +519,7 @@ include("include/menu_gauche.inc.php");
                                 <td>
                                   <span class="tools pull-right">
                                     <a href="javascript:;" class="fa fa-pencil"></a>
-                                    <a href="javascript:;" class="fa fa-ban"></a>
+                                    <a href="javascript:;" class="fa fa-times"></a>
                                   </span>
                                 </td>
                             </tr>
@@ -338,7 +535,7 @@ include("include/menu_gauche.inc.php");
                                 <td>
                                   <span class="tools pull-right">
                                     <a href="javascript:;" class="fa fa-pencil"></a>
-                                    <a href="javascript:;" class="fa fa-ban"></a>
+                                    <a href="javascript:;" class="fa fa-times"></a>
                                   </span>
                                 </td>
                             </tr>
@@ -354,7 +551,7 @@ include("include/menu_gauche.inc.php");
                                 <td>
                                   <span class="tools pull-right">
                                     <a href="javascript:;" class="fa fa-pencil"></a>
-                                    <a href="javascript:;" class="fa fa-ban"></a>
+                                    <a href="javascript:;" class="fa fa-times"></a>
                                   </span>
                                 </td>
                             </tr>
@@ -370,7 +567,7 @@ include("include/menu_gauche.inc.php");
                                 <td>
                                   <span class="tools pull-right">
                                     <a href="javascript:;" class="fa fa-pencil"></a>
-                                    <a href="javascript:;" class="fa fa-ban"></a>
+                                    <a href="javascript:;" class="fa fa-times"></a>
                                   </span>
                                 </td>
                             </tr>
@@ -386,7 +583,7 @@ include("include/menu_gauche.inc.php");
                                 <td>
                                   <span class="tools pull-right">
                                     <a href="javascript:;" class="fa fa-pencil"></a>
-                                    <a href="javascript:;" class="fa fa-ban"></a>
+                                    <a href="javascript:;" class="fa fa-times"></a>
                                   </span>
                                 </td>
                             </tr>
@@ -402,7 +599,7 @@ include("include/menu_gauche.inc.php");
                                 <td>
                                   <span class="tools pull-right">
                                     <a href="javascript:;" class="fa fa-pencil"></a>
-                                    <a href="javascript:;" class="fa fa-ban"></a>
+                                    <a href="javascript:;" class="fa fa-times"></a>
                                   </span>
                                 </td>
                             </tr>
@@ -418,6 +615,9 @@ include("include/menu_gauche.inc.php");
                 <section class="panel">
                     <header class="panel-heading">
                         Centres d'intérêts
+                        <span class="tools pull-right">
+                            <a href="javascript:;" class="fa fa-chevron-down"></a>
+                         </span>
                     </header>
                     <div class="panel-body">
                         <table class="table  table-hover general-table">
@@ -433,7 +633,7 @@ include("include/menu_gauche.inc.php");
                                  <td><a href="#">Sport</a></td>
                                  <td>
                                   <span class="tools pull-right">
-                                    <a href="javascript:;" class="fa fa-ban"></a>
+                                    <a href="javascript:;" class="fa fa-times"></a>
                                   </span>
                                 </td>
                           </tr>
@@ -441,7 +641,7 @@ include("include/menu_gauche.inc.php");
                                 <td><a href="#">Musique</a></td>
                                 <td>
                                   <span class="tools pull-right">
-                                    <a href="javascript:;" class="fa fa-ban"></a>
+                                    <a href="javascript:;" class="fa fa-times"></a>
                                   </span>
                                 </td>
 
@@ -450,7 +650,7 @@ include("include/menu_gauche.inc.php");
                                 <td><a href="#">Voyage</a></td>
                                 <td>
                                   <span class="tools pull-right">
-                                    <a href="javascript:;" class="fa fa-ban"></a>
+                                    <a href="javascript:;" class="fa fa-times"></a>
                                   </span>
                                 </td>
                             </tr>
@@ -458,7 +658,7 @@ include("include/menu_gauche.inc.php");
                                 <td><a href="#">Cuisine</a></td>
                                 <td>
                                   <span class="tools pull-right">
-                                    <a href="javascript:;" class="fa fa-ban"></a>
+                                    <a href="javascript:;" class="fa fa-times"></a>
                                   </span>
                                 </td>
                             </tr>
@@ -472,26 +672,100 @@ include("include/menu_gauche.inc.php");
         <!-- page end-->
         </section>
     </section>
+
+
+<div class="right-sidebar">
+<div class="search-row">
+<input type="text" placeholder="Search" class="form-control">
+</div>
+<div class="right-stat-bar">
+<ul class="right-side-accordion">
+<li class="widget-collapsible">
+    <a href="#" class="head widget-head red-bg active clearfix">
+        <span class="pull-left">work progress (5)</span>
+        <span class="pull-right widget-collapse"><i class="ico-minus"></i></span>
+    </a>
+    <ul class="widget-container">
+        <li>
+            <div class="prog-row side-mini-stat clearfix">
+                <div class="side-graph-info">
+                    <h4>Target sell</h4>
+                    <p>
+                        25%, Deadline 12 june 13
+                    </p>
+                </div>
+                <div class="side-mini-graph">
+                    <div class="target-sell">
+                    </div>
+                </div>
+            </div>
+            <div class="prog-row side-mini-stat">
+                <div class="side-graph-info">
+                    <h4>product delivery</h4>
+                    <p>
+                        55%, Deadline 12 june 13
+                    </p>
+                </div>
+                <div class="side-mini-graph">
+                    <div class="p-delivery">
+                        <div class="sparkline" data-type="bar" data-resize="true" data-height="30" data-width="90%" data-bar-color="#39b7ab" data-bar-width="5" data-data="[200,135,667,333,526,996,564,123,890,564,455]">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="prog-row side-mini-stat">
+                <div class="side-graph-info payment-info">
+                    <h4>payment collection</h4>
+                    <p>
+                        25%, Deadline 12 june 13
+                    </p>
+                </div>
+                <div class="side-mini-graph">
+                    <div class="p-collection">
+                        <span class="pc-epie-chart" data-percent="45">
+                        <span class="percent"></span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="prog-row side-mini-stat">
+                <div class="side-graph-info">
+                    <h4>delivery pending</h4>
+                    <p>
+                        44%, Deadline 12 june 13
+                    </p>
+                </div>
+                <div class="side-mini-graph">
+                    <div class="d-pending">
+                    </div>
+                </div>
+            </div>
+            <div class="prog-row side-mini-stat">
+                <div class="col-md-12">
+                    <h4>total progress</h4>
+                    <p>
+                        50%, Deadline 12 june 13
+                    </p>
+                    <div class="progress progress-xs mtop10">
+                        <div style="width: 50%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="20" role="progressbar" class="progress-bar progress-bar-info">
+                            <span class="sr-only">50% Complete</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+</li>
+
+
+</ul>
+</div>
+</div>
+<!--right sidebar end-->
+
+</section>
     <!--Core js-->
     <?php include('include/js.inc.php'); ?>
-    <script src="js/jquery.js"></script>
-<script src="js/jquery-1.10.2.min.js"></script>
-<script src="sjs/bootstrap.min.js"></script>
-<script class="include" type="text/javascript" src="js/jquery.dcjqaccordion.2.7.js"></script>
-<script src="js/jquery.scrollTo.min.js"></script>
-<script src="js/jQuery-slimScroll-1.3.0/jquery.slimscroll.js"></script>
-<script src="js/jquery.nicescroll.js"></script>
-<script type="text/javascript" src="js/gritter/js/jquery.gritter.js"></script>
-<!--Easy Pie Chart-->
-<script src="js/easypiechart/jquery.easypiechart.js"></script>
-<!--Sparkline Chart-->
-<script src="js/sparkline/jquery.sparkline.js"></script>
-<!--jQuery Flot Chart-->
-<script src="js/flot-chart/jquery.flot.js"></script>
-<script src="js/flot-chart/jquery.flot.tooltip.min.js"></script>
-<script src="js/flot-chart/jquery.flot.resize.js"></script>
-<script src="js/flot-chart/jquery.flot.pie.resize.js"></script>
-
 <!--common script init for all pages-->
 <script src="js/scripts.js"></script>
 
