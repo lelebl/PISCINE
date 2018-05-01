@@ -40,7 +40,10 @@ include("include/menu_gauche.inc.php");
                      	<a href="#"><i class="fa fa-meh-o"></i></a>
                      	</div>
                      	<br> <textarea class="wysihtml5 form-control" rows="9"></textarea><br>
-                     	<center><button class="btn btn-primary"> POSTULER ! </button></center>
+                     	 <div class="bouton">
+                     	<center><a href="tableau_de_bord.php">POSTER</a></center><br>
+                     	</div>
+
                      </div>
                  </div>
 				</div>
@@ -48,17 +51,20 @@ include("include/menu_gauche.inc.php");
 				<div class="col-lg-3"> 
 					<div class="panel panel-default">
                    
-					<div class="panel-heading">Intitulé de l'offre 
-					 <span class="tools pull-right">
+					<div class="panel-heading">
+						<span class="tools pull-right">
                                 <a href="javascript:;" class="fa fa-bookmark" ></a>
                                 <a class="fa fa-times" href="javascript:;"></a>
-                     </span>
+                     </span> Offre susceptible <br>de vous interesser
+					 
                      </div>
 
                      <div class="panel-body">
                      	
-                     	<p> Descripion de l'offre <br><br><br><br><br><br></p>
-                     	<center><button class="btn btn-primary"> POSTULER ! </button></center>
+                     	    <div class="bouton">
+                     	<p> Descripion de l'offre <br><br><br><br><br></p>
+                     	<center><a href="jepostule.php">POSTULER</a></center><br>
+                     	</div>
 
 
                      </div>
@@ -80,7 +86,7 @@ include("include/menu_gauche.inc.php");
                      	
 
                      	<div class="mini-stat clearfix">
-                            <span class="mini-stat-icon green"><i class="fa fa-suitcase"></i></span>
+                            <span class="mini-stat-icon green"><i class="fa fa-female"></i></span>
                             <div class="mini-stat-info">
                                 NOM Prénom de la personne 1 <br>
                                 <p> Job </p><br>
@@ -91,7 +97,7 @@ include("include/menu_gauche.inc.php");
 
 
                      	<div class="mini-stat clearfix">
-                            <span class="mini-stat-icon green"><i class="fa fa-suitcase"></i></span>
+                            <span class="mini-stat-icon green"><i class="fa fa-female"></i></span>
                             <div class="mini-stat-info">
                                 NOM Prénom de la personne 1 <br>
                                 <p> Job </p><br>
@@ -102,7 +108,7 @@ include("include/menu_gauche.inc.php");
 
 
                      	<div class="mini-stat clearfix">
-                            <span class="mini-stat-icon green"><i class="fa fa-suitcase"></i></span>
+                            <span class="mini-stat-icon green"><i class="fa fa-female"></i></span>
                             <div class="mini-stat-info">
                                 NOM Prénom de la personne 1 <br>
                                 <p> Job </p><br>

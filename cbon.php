@@ -23,10 +23,11 @@ include("include/menu_gauche.inc.php");
       	</center>
 
       	<div class="panel-body"> 	
+          <div class="bouton">
 	<center>
 		<a href="tableau_de_bord.php">RETOUR A L'ACCUEIL</a><br><br><br><br><br><br>
 
-	</center></div>
+	</center></div></div>
     </section>
 </div>
 </div>

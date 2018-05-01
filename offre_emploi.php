@@ -50,10 +50,11 @@ include("include/menu_gauche.inc.php");
             <input type="text" class="form-control" placeholder="Prénom" autofocus><br><br>
             <input type="text" class="form-control" placeholder="Email" autofocus><br><br>
             <br>
-          
+          <div class="bouton">
        
           <center><a href="cbon.php">METTRE EN LIGNE</a> </center> 
           <br><br>
+          </div>
       </form>
 
             </div>

@@ -5774,12 +5774,15 @@ right: -1px;
     background-color: #4a69bd;
     border-radius: 5px; 
     padding: 10px; 
+    color: #ffffff;
+    size: 20px; 
 }
 
 .bouton a:hover {
 
     background-color: #d9edf7;
     border-radius: 5px; 
+    color: #4a69bd;
 }
 
 .boutontab a {
@@ -5787,6 +5790,7 @@ right: -1px;
     background-color: #d9edf7;
     border-radius: 5px; 
     padding: 10px; 
+    color: #ffffff;
 }
 
 
@@ -5795,5 +5799,6 @@ right: -1px;
     background-color: #ffffff;
     border-radius: 5px; 
     padding: 10px; 
+    color: #d9edf7;
 }
 
