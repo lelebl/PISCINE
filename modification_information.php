@@ -30,6 +30,90 @@ include("include/menu_gauche.inc.php");
 
                   </header>
                   <div class="panel-body">
+                     <div class="col-lg-6">
+                        <table class="table">
+                            
+                            
+                            
+                            <tr>
+                                <td><a href="#">NOM</a></td>
+                                <td>
+                                    nom
+                                </td>
+                                
+                            </tr>
+                            <tr>
+                                <td><a href="#">PRENOM</a></td>
+                                <td>
+                                    prenom
+                                </td>
+                                
+                            </tr>
+                            <tr>
+                                <td><a href="#">PSEUDO</a></td>
+                                <td>pseudo
+                                </td>
+                                
+                            </tr>
+                             <tr>
+                                <td><a href="#">EMAIL</a></td>
+                                <td>email
+                                </td>
+                                
+                            </tr>
+                             <tr>
+                                <td><a href="#">MOT DE PASSE</a></td>
+                                <td>mot de passe
+                                </td>
+                                
+                            </tr>
+                             <tr>
+                                <td><a href="#">DATE DE NAISSANCE</a></td>
+                                <td>date de naissance
+                                </td>
+                                
+                            </tr>
+                            <tr>
+                                <td><a href="#">ADRESSE</a></td>
+                                <td>adresse
+                                </td>
+                                
+                            </tr>
+                            <tr>
+                                <td><a href="#">VILLE</a></td>
+                                <td>ville
+                                </td>
+                                
+                            </tr>
+                            <tr>
+                                <td><a href="#">CODE POSTAL</a></td>
+                                <td>code postal
+                                </td>
+                                
+                            </tr><tr>
+                                <td><a href="#">PAYS</a></td>
+                                <td>pays
+                                  <span class="tools pull-right">
+                                </td>
+                                
+                            </tr>
+                            <tr>
+                                <td><a href="#">TELEPHONE</a></td>
+                                <td>telephone
+                                </td>
+                                
+                            </tr>
+                            <tr>
+                                <td><a href="#">DATE DE NAISSANCE</a></td>
+                                <td>date de naissance
+                                </td>
+                                
+                            </tr>
+                            <tr>
+                            
+                        </table>
+                        
+                    </div>
                     <div class="col-lg-6">
                         
                         <table class="table">
@@ -39,10 +123,6 @@ include("include/menu_gauche.inc.php");
                             <tr>
                                 <td><a href="#">PHOTO</a></td>
                                 <td>
-
-                                  <span class="tools pull-right">
-                                    <a href="javascript:;" class="fa fa-pencil"></a>
-                                  </span>
                                 </td>
                                 
                             </tr>
@@ -65,9 +145,6 @@ include("include/menu_gauche.inc.php");
                             <tr>
                                 <td><a href="#">IMAGE DE FOND</a></td>
                                 <td>choix de l'image de fond
-                                  <span class="tools pull-right">
-                                    <a href="javascript:;" class="fa fa-pencil"></a>
-                                  </span>
                                 </td>
                                 
                             </tr>
@@ -75,9 +152,6 @@ include("include/menu_gauche.inc.php");
 
                                 <td><a href="#">RESUME</a></td>
                                 <td>résumé
-                                  <span class="tools pull-right">
-                                    <a href="javascript:;" class="fa fa-pencil"></a>
-                                  </span>
                                 </td>
                                 
                             
@@ -86,9 +160,6 @@ include("include/menu_gauche.inc.php");
                             <tr>
                                 <td><a href="#">CV</a></td>
                                 <td>cv
-                                  <span class="tools pull-right">
-                                    <a href="javascript:;" class="fa fa-pencil"></a>
-                                  </span>
                                 </td>
                                 
                             </tr>
@@ -99,124 +170,11 @@ include("include/menu_gauche.inc.php");
                         </table>
 
                     </div>
-                    <div class="col-lg-6">
-                        <table class="table">
-                            
-                            
-                            
-                            <tr>
-                                <td><a href="#">NOM</a></td>
-                                <td>
-                                    nom
-                                  <span class="tools pull-right">
-                                    <a href="javascript:;" class="fa fa-pencil"></a>
-                                  </span>
-                                </td>
-                                
-                            </tr>
-                            <tr>
-                                <td><a href="#">PRENOM</a></td>
-                                <td>
-                                    prenom
-                                  <span class="tools pull-right">
-                                    <a href="javascript:;" class="fa fa-pencil"></a>
-                                  </span>
-                                </td>
-                                
-                            </tr>
-                            <tr>
-                                <td><a href="#">PSEUDO</a></td>
-                                <td>pseudo
-                                  <span class="tools pull-right">
-                                    <a href="javascript:;" class="fa fa-pencil"></a>
-                                  </span>
-                                </td>
-                                
-                            </tr>
-                             <tr>
-                                <td><a href="#">EMAIL</a></td>
-                                <td>email
-                                  <span class="tools pull-right">
-                                    <a href="javascript:;" class="fa fa-pencil"></a>
-                                  </span>
-                                </td>
-                                
-                            </tr>
-                             <tr>
-                                <td><a href="#">MOT DE PASSE</a></td>
-                                <td>mot de passe
-                                  <span class="tools pull-right">
-                                    <a href="javascript:;" class="fa fa-pencil"></a>
-                                  </span>
-                                </td>
-                                
-                            </tr>
-                             <tr>
-                                <td><a href="#">DATE DE NAISSANCE</a></td>
-                                <td>date de naissance
-                                  <span class="tools pull-right">
-                                    <a href="javascript:;" class="fa fa-pencil"></a>
-                                  </span>
-                                </td>
-                                
-                            </tr>
-                            <tr>
-                                <td><a href="#">ADRESSE</a></td>
-                                <td>adresse
-                                  <span class="tools pull-right">
-                                    <a href="javascript:;" class="fa fa-pencil"></a>
-                                  </span>
-                                </td>
-                                
-                            </tr>
-                            <tr>
-                                <td><a href="#">VILLE</a></td>
-                                <td>ville
-                                  <span class="tools pull-right">
-                                    <a href="javascript:;" class="fa fa-pencil"></a>
-                                  </span>
-                                </td>
-                                
-                            </tr>
-                            <tr>
-                                <td><a href="#">CODE POSTAL</a></td>
-                                <td>code postal
-                                  <span class="tools pull-right">
-                                    <a href="javascript:;" class="fa fa-pencil"></a>
-                                  </span>
-                                </td>
-                                
-                            </tr><tr>
-                                <td><a href="#">PAYS</a></td>
-                                <td>pays
-                                  <span class="tools pull-right">
-                                    <a href="javascript:;" class="fa fa-pencil"></a>
-                                  </span>
-                                </td>
-                                
-                            </tr>
-                            <tr>
-                                <td><a href="#">TELEPHONE</a></td>
-                                <td>telephone
-                                  <span class="tools pull-right">
-                                    <a href="javascript:;" class="fa fa-pencil"></a>
-                                  </span>
-                                </td>
-                                
-                            </tr>
-                            <tr>
-                                <td><a href="#">DATE DE NAISSANCE</a></td>
-                                <td>date de naissance
-                                  <span class="tools pull-right">
-                                    <a href="javascript:;" class="fa fa-pencil"></a>
-                                  </span>
-                                </td>
-                                
-                            </tr>
-                            <tr>
-                            
-                        </table>
-                    </div>
+                    <div class="bouton">
+                         <center> <a href="page_modif_infos.php"> Modifier </a></center>
+                        
+                        </div>
+                   
                 </div>
 
                  </section>
