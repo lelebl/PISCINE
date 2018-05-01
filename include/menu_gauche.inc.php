@@ -31,7 +31,7 @@
             </li>
             <li class="sub-menu">
                 <a href="javascript:;">
-                    <i class="fa fa-certificate"></i>
+                    <i class="fa fa-suitcase"></i>
                     <span>Emplois</span>
                 </a>
                 <ul class="sub">
@@ -40,7 +40,7 @@
                 </ul>
             </li>
             <li class="sub-menu">
-                <a href="javascript:;">
+                <a href="messagerie.php">
                     <i class="fa fa-envelope"></i>
                     <span>Messagerie</span>
                 </a>

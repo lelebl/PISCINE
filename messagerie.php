@@ -7,8 +7,6 @@ include("include/menu_gauche.inc.php");
 <body>
 
  <section id="container" >
-
-<?php include('includes/menus.inc.php'); ?>
     <!--main content start-->
     <section id="main-content" >
     <section class="wrapper">
@@ -175,7 +173,7 @@ include("include/menu_gauche.inc.php");
     <!--main content end-->
 </section>
 
-<?php include('includes/js.inc.php'); ?>
+<?php include('include/js.inc.php'); ?>
 
 </body>
 </html>
