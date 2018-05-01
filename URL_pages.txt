@@ -1,0 +1,14 @@
+URL PAGES:
+
+tableau_de_bord.php
+liste_connexion.php
+ajouter_qq.php
+modification_information.php
+formation.php
+experience.php
+postuler.php
+offre_emploi.php
+messagerie.php
+nouveau_message.php
+connexion.php
+inscription.php
