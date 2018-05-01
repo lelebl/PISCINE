@@ -1,9 +1,6 @@
 <?php 
 $title="Connexion";
 include("include/header.inc.php"); 
-
-include("include/menu_haut.inc.php"); 
-include("include/menu_gauche.inc.php"); 
 ?>
 
 <body class="login-body">
@@ -32,7 +29,7 @@ include("include/menu_gauche.inc.php");
             <br>
             <br>
             <input type="text" class="form-control" placeholder="Nom" autofocus>
-            <input type="text" class="form-control" placeholder="Prénom"" autofocus>
+            <input type="text" class="form-control" placeholder="Prénom" autofocus>
             <input type="text" class="form-control" placeholder="Email" autofocus>
             <input type="date" class="form-control" placeholder="Date" autofocus >
             <br>

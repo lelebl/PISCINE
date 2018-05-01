@@ -2,8 +2,6 @@
 $title="Connexion";
 include("include/header.inc.php"); 
 
-include("include/menu_haut.inc.php"); 
-include("include/menu_gauche.inc.php"); 
 ?>
 
   <body class="login-body">
