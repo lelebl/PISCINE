@@ -11,7 +11,16 @@ include("include/menu_gauche.inc.php");
 <section id="main-content">
         <section class="wrapper">
         <!-- page start-->
-        </div>
+        	<div class="row">
+                <div class="col-md-12">
+                    <!--breadcrumbs start -->
+                    <ul class="breadcrumb">
+                        <li><a href="tableau_de_bord.php"><i class="fa fa-home"></i>Tableau de bord</a></li>
+                        <li class="active">Liste de mes connexions</li>
+                    </ul>
+                    <!--breadcrumbs end -->
+                </div>
+            </div>
             <div class="row">
             	<div class="col-lg-12">
                     <section class="panel">
@@ -35,12 +44,12 @@ include("include/menu_gauche.inc.php");
                                     <td>@mdo</td>
                                 </tr>
                                 <tr>
-                                    <td>Jacob</td>
+                                    <th><a href="profil_info.php" >Smoothie</a></th>
                                     <td>Thornton</td>
                                     <td>@fat</td>
                                 </tr>
                                 <tr>
-                                    <td>Larry</td>
+                                    <th><a href="profil_info.php" >Larry</a></th>
                                     <td>the Bird</td>
                                     <td>@twitter</td>
                                 </tr>
