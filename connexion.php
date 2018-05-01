@@ -26,7 +26,7 @@ include("include/header.inc.php");
 
             <div class="registration">
                 Pas encore de compte?
-                <a class="" href="enregistrement.php">
+                <a class="" href="inscription.php">
                     Créer mon compte
                 </a>
             </div>
