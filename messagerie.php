@@ -24,12 +24,12 @@ include("include/menu_gauche.inc.php");
                 <div class="col-lg-4">
                         <section class="panel">
                                 <div class="panel-body">
-                                    <a href="mail_compose.html"  class="btn btn-compose">
+                                    <a href="nouveau_message.php"  class="btn btn-compose">
                                         Nouveau message
                                     </a>
                                     <ul class="nav nav-pills nav-stacked mail-nav">
-                                        <li class="active"><a href="mail.html"> <img src="images/charlotte_decary.jpg" style="width: 15%" alt="male"> Charlotte Decray  <span class="label label-danger pull-right inbox-notification">1</span></a></li>
-                                        <li><a href="#"> <img src="images/emmanuelle.jpg" style="width: 15%" alt="male">  Emmanuelle Thiroloix</a></li>
+                                        <li class="active"><a href="mail.html"> <img src="images/charlotte_decary.jpg" style="width: 15%" > Charlotte Decray  <span class="label label-danger pull-right inbox-notification">1</span></a></li>
+                                        <li><a href="#"> <img src="images/emmanuelle.jpg" style="width: 15%" >  Emmanuelle Thiroloix</a></li>
                                 </div>
                         </section>
                 </div>
@@ -47,7 +47,7 @@ include("include/menu_gauche.inc.php");
                                     <ul class="conversation-list">
                                         <li class="clearfix odd">
                                             <div class="chat-avatar">
-                                                <img src="images/charlotte_decary.jpg" style="width: 120%" alt="male">
+                                                <img src="images/charlotte_decary.jpg" style="width: 120%" >
                                                 <i>10:56</i>
                                             </div>
                                             <div class="conversation-text">
@@ -61,7 +61,7 @@ include("include/menu_gauche.inc.php");
                                         </li>
                                         <li class="clearfix">
                                             <div class="chat-avatar">
-                                                <img src="images/antoine_lame.jpg" style="width: 120%" alt="male">
+                                                <img src="images/antoine_lame.jpg" style="width: 120%" >
                                                 <i>12:00</i>
                                             </div>
                                             <div class="conversation-text">
@@ -75,7 +75,7 @@ include("include/menu_gauche.inc.php");
                                         </li>
                                         <li class="clearfix odd">
                                             <div class="chat-avatar">
-                                                <img src="images/charlotte_decary.jpg" style="width: 120%" alt="female">
+                                                <img src="images/charlotte_decary.jpg" style="width: 120%" >
                                                 <i>15:47</i>
                                             </div>
                                             <div class="conversation-text">
@@ -112,7 +112,7 @@ include("include/menu_gauche.inc.php");
                                     <ul class="conversation-list">
                                         <li class="clearfix">
                                             <div class="chat-avatar">
-                                                <img src="images/antoine_lame.jpg" style="width: 120%" alt="male">
+                                                <img src="images/antoine_lame.jpg" style="width: 120%" >
                                                 <i>10:00</i>
                                             </div>
                                             <div class="conversation-text">
@@ -126,7 +126,7 @@ include("include/menu_gauche.inc.php");
                                         </li>
                                         <li class="clearfix odd">
                                             <div class="chat-avatar">
-                                                <img src="images/emmanuelle.jpg" style="width: 120%" alt="female">
+                                                <img src="images/emmanuelle.jpg" style="width: 120%" >
                                                 <i>12:05</i>
                                             </div>
                                             <div class="conversation-text">
@@ -140,7 +140,7 @@ include("include/menu_gauche.inc.php");
                                         </li>
                                         <li class="clearfix">
                                             <div class="chat-avatar">
-                                                <img src="images/antoine_lame.jpg" style="width: 120%" alt="male">
+                                                <img src="images/antoine_lame.jpg" style="width: 120%" >
                                                 <i>13:40</i>
                                             </div>
                                             <div class="conversation-text">
