@@ -7,7 +7,6 @@ include("include/menu_gauche.inc.php");
 ?>
 
   <body>
-    <i class="fa fa-chevron-down" data-fa-mask="fa fa-circle "></i>
     <section id="main-content">
         <section class="wrapper">
         <!-- page start-->
