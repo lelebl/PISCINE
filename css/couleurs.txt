@@ -5,6 +5,3 @@ Bleu moyen: #4a69bd
 Bleu clair: #d9edf7
 Gris clair: #f6f6f6
 Gris foncé: #32323a
-
-a changer -> 
-	     vert foncé: 2cb9b3

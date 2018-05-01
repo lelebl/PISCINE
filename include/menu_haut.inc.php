@@ -29,7 +29,7 @@
                     <p class="red">Vous avez 4 nouveaux messages</p>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="messagerie.php">
                         <span class="photo"><img alt="avatar" src="images/charlotte_decary.jpg"></span>
                                 <span class="subject">
                                 <span class="from">Charlotte Decary</span>
@@ -42,7 +42,7 @@
                 </li>
                 
                 <li>
-                    <a href="#">
+                    <a href="messagerie.php">
                         <span class="photo"><img alt="avatar" src="images/mika.jpg"></span>
                                 <span class="subject">
                                 <span class="from">Mika</span>
@@ -52,9 +52,6 @@
                                     Holà, on en est où dans le PSTE?
                                 </span>
                     </a>
-                </li>
-                <li>
-                    <a href="#">Voir tous les message</a>
                 </li>
             </ul>
         </li>
@@ -109,7 +106,7 @@
             <ul class="dropdown-menu extended logout">
                 <li><a href="#"><i class=" fa fa-suitcase"></i>Profile</a></li>
                 <li><a href="#"><i class="fa fa-cog"></i> Réglage</a></li>
-                <li><a href="login.html"><i class="fa fa-key"></i> Déconnecter</a></li>
+                <li><a href="connexion.php"><i class="fa fa-key"></i> Déconnecter</a></li>
             </ul>
         </li>
         <!-- user login dropdown end -->

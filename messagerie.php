@@ -5,8 +5,6 @@ include("include/menu_haut.inc.php");
 include("include/menu_gauche.inc.php");
 ?>
 <body>
-
- <section id="container" >
     <!--main content start-->
     <section id="main-content" >
     <section class="wrapper">
@@ -20,6 +18,7 @@ include("include/menu_gauche.inc.php");
                     <!--breadcrumbs end -->
                 </div>
             </div>
+
             <div class="row">
                 <div class="col-lg-4">
                         <section class="panel">
@@ -28,8 +27,8 @@ include("include/menu_gauche.inc.php");
                                         Nouveau message
                                     </a>
                                     <ul class="nav nav-pills nav-stacked mail-nav">
-                                        <li class="active"><a href="mail.html"> <img src="images/charlotte_decary.jpg" style="width: 15%" > Charlotte Decray  <span class="label label-danger pull-right inbox-notification">1</span></a></li>
-                                        <li><a href="#"> <img src="images/emmanuelle.jpg" style="width: 15%" >  Emmanuelle Thiroloix</a></li>
+                                        <li class="active"><a href="messagerie.php"> <img src="images/charlotte_decary.jpg" style="width: 15%" > Charlotte Decray  <span class="label label-danger pull-right inbox-notification">1</span></a></li>
+                                        <li><a href="messagerie.php"> <img src="images/emmanuelle.jpg" style="width: 15%" >  Emmanuelle Thiroloix</a></li>
                                 </div>
                         </section>
                 </div>
@@ -38,7 +37,7 @@ include("include/menu_gauche.inc.php");
                             <header class="panel-heading">
                                 Charlotte Decary
                             <span class="tools pull-right">
-                                <a class="fa fa-chevron-down" href="javascript:;"></a>
+                                <a href="javascript:;" class="fa fa-chevron-down" ></a>
                                 <a class="fa fa-times" href="javascript:;"></a>
                             </span>
                             </header>
@@ -170,8 +169,7 @@ include("include/menu_gauche.inc.php");
             </div>
         </section>
     </section>
-    <!--main content end-->
-</section>
+
 
 <?php include('include/js.inc.php'); ?>
 
