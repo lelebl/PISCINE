@@ -44,10 +44,6 @@
                     <i class="fa fa-envelope"></i>
                     <span>Messagerie</span>
                 </a>
-                <ul class="sub">
-                    <li><a href="form_component.html">Nouveau message</a></li>
-                    <li><a href="advanced_form.html">Mes messages</a></li>
-                </ul>
             </li>
         </ul></div>        
 <!-- sidebar menu end-->
