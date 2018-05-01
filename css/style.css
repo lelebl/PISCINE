@@ -1910,7 +1910,7 @@ a.mail-dropdown {
     color:#fff;
 }
 .btn-compose:hover,.btn-compose:focus {
-    background:#1ca59e;
+    background:#d9edf7;
     color:#fff;
 }
 ul.inbox-nav {
@@ -4979,7 +4979,7 @@ div.tagsinput span.tag {
     background:#eeeef2 !important;
 }
 .conversation-list .odd .ctext-wrap i {
-    color:#acacac;
+    color:#4a69bd;
 }
 .conversation-list .odd .ctext-wrap:after {
     left:100% !important;
