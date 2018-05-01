@@ -185,9 +185,6 @@ include("include/menu_gauche.inc.php");
                 <section class="panel">
                     <header class="panel-heading">
                         Compétences
-                        <span class="tools pull-right">
-                            <a href="javascript:;" class="fa fa-chevron-down"></a>
-                         </span>
                     </header>
                     <div class="panel-body">
                         <table class="table  table-hover general-table">
@@ -209,10 +206,6 @@ include("include/menu_gauche.inc.php");
                                     </div>
                                 </td>
                                 <td>
-                                  <span class="tools pull-right">
-                                    <a href="javascript:;" class="fa fa-pencil"></a>
-                                    <a href="javascript:;" class="fa fa-times"></a>
-                                  </span>
                                 </td>
                                 
                             </tr>
@@ -226,10 +219,6 @@ include("include/menu_gauche.inc.php");
                                     </div>
                                 </td>
                                 <td>
-                                  <span class="tools pull-right">
-                                    <a href="javascript:;" class="fa fa-pencil"></a>
-                                    <a href="javascript:;" class="fa fa-times"></a>
-                                  </span>
                                 </td>
 
                             </tr>
@@ -243,10 +232,6 @@ include("include/menu_gauche.inc.php");
                                     </div>
                                 </td>
                                 <td>
-                                  <span class="tools pull-right">
-                                    <a href="javascript:;" class="fa fa-pencil"></a>
-                                    <a href="javascript:;" class="fa fa-times"></a>
-                                  </span>
                                 </td>
                             </tr>
                             <tr>
@@ -259,10 +244,6 @@ include("include/menu_gauche.inc.php");
                                     </div>
                                 </td>
                                 <td>
-                                  <span class="tools pull-right">
-                                    <a href="javascript:;" class="fa fa-pencil"></a>
-                                    <a href="javascript:;" class="fa fa-times"></a>
-                                  </span>
                                 </td>
                             </tr>
                             <tr>
@@ -275,10 +256,6 @@ include("include/menu_gauche.inc.php");
                                     </div>
                                 </td>
                                 <td>
-                                  <span class="tools pull-right">
-                                    <a href="javascript:;" class="fa fa-pencil"></a>
-                                    <a href="javascript:;" class="fa fa-times"></a>
-                                  </span>
                                 </td>
                             </tr>
                             <tr>
@@ -291,10 +268,6 @@ include("include/menu_gauche.inc.php");
                                     </div>
                                 </td>
                                 <td>
-                                  <span class="tools pull-right">
-                                    <a href="javascript:;" class="fa fa-pencil"></a>
-                                    <a href="javascript:;" class="fa fa-times"></a>
-                                  </span>
                                 </td>
                             </tr>
                             <tr>
@@ -307,10 +280,6 @@ include("include/menu_gauche.inc.php");
                                     </div>
                                 </td>
                                 <td>
-                                  <span class="tools pull-right">
-                                    <a href="javascript:;" class="fa fa-pencil"></a>
-                                    <a href="javascript:;" class="fa fa-times"></a>
-                                  </span>
                                 </td>
                             </tr>
                             <tr>
@@ -323,10 +292,6 @@ include("include/menu_gauche.inc.php");
                                     </div>
                                 </td>
                                 <td>
-                                  <span class="tools pull-right">
-                                    <a href="javascript:;" class="fa fa-pencil"></a>
-                                    <a href="javascript:;" class="fa fa-times"></a>
-                                  </span>
                                 </td>
                             </tr>
                             <tr>
@@ -339,10 +304,6 @@ include("include/menu_gauche.inc.php");
                                     </div>
                                 </td>
                                 <td>
-                                  <span class="tools pull-right">
-                                    <a href="javascript:;" class="fa fa-pencil"></a>
-                                    <a href="javascript:;" class="fa fa-times"></a>
-                                  </span>
                                 </td>
                             </tr>
                             <tr>
@@ -355,10 +316,6 @@ include("include/menu_gauche.inc.php");
                                     </div>
                                 </td>
                                 <td>
-                                  <span class="tools pull-right">
-                                    <a href="javascript:;" class="fa fa-pencil"></a>
-                                    <a href="javascript:;" class="fa fa-times"></a>
-                                  </span>
                                 </td>
                             </tr>
                             <tr>
@@ -371,10 +328,6 @@ include("include/menu_gauche.inc.php");
                                     </div>
                                 </td>
                                 <td>
-                                  <span class="tools pull-right">
-                                    <a href="javascript:;" class="fa fa-pencil"></a>
-                                    <a href="javascript:;" class="fa fa-times"></a>
-                                  </span>
                                 </td>
                             </tr>
                             <tr>
@@ -387,10 +340,6 @@ include("include/menu_gauche.inc.php");
                                     </div>
                                 </td>
                                 <td>
-                                  <span class="tools pull-right">
-                                    <a href="javascript:;" class="fa fa-pencil"></a>
-                                   <a href="javascript:;" class="fa fa-times"></a>
-                                  </span>
                                 </td>
                             </tr>
                             <tr>
@@ -403,10 +352,6 @@ include("include/menu_gauche.inc.php");
                                     </div>
                                 </td>
                                 <td>
-                                  <span class="tools pull-right">
-                                    <a href="javascript:;" class="fa fa-pencil"></a>
-                                    <a href="javascript:;" class="fa fa-times"></a>
-                                  </span>
                                 </td>
                             </tr>
                             <tr>
@@ -419,10 +364,6 @@ include("include/menu_gauche.inc.php");
                                     </div>
                                 </td>
                                 <td>
-                                  <span class="tools pull-right">
-                                    <a href="javascript:;" class="fa fa-pencil"></a>
-                                    <a href="javascript:;" class="fa fa-times"></a>
-                                  </span>
                                 </td>
                             </tr>
                             <tr>
@@ -435,10 +376,6 @@ include("include/menu_gauche.inc.php");
                                     </div>
                                 </td>
                                 <td>
-                                  <span class="tools pull-right">
-                                    <a href="javascript:;" class="fa fa-pencil"></a>
-                                   <a href="javascript:;" class="fa fa-times"></a>
-                                  </span>
                                 </td>
                             </tr>
                             <tr>
@@ -451,10 +388,6 @@ include("include/menu_gauche.inc.php");
                                     </div>
                                 </td>
                                 <td>
-                                  <span class="tools pull-right">
-                                    <a href="javascript:;" class="fa fa-pencil"></a>
-                                    <a href="javascript:;" class="fa fa-times"></a>
-                                  </span>
                                 </td>
                             </tr>
                             <tr>
@@ -467,10 +400,6 @@ include("include/menu_gauche.inc.php");
                                     </div>
                                 </td>
                                 <td>
-                                  <span class="tools pull-right">
-                                    <a href="javascript:;" class="fa fa-pencil"></a>
-                                    <a href="javascript:;" class="fa fa-times"></a>
-                                  </span>
                                 </td>
                             </tr>
                             <tr>
@@ -483,10 +412,6 @@ include("include/menu_gauche.inc.php");
                                     </div>
                                 </td>
                                 <td>
-                                  <span class="tools pull-right">
-                                    <a href="javascript:;" class="fa fa-pencil"></a>
-                                    <a href="javascript:;" class="fa fa-times"></a>
-                                  </span>
                                 </td>
                             </tr>
                             <tr>
@@ -499,10 +424,6 @@ include("include/menu_gauche.inc.php");
                                     </div>
                                 </td>
                                 <td>
-                                  <span class="tools pull-right">
-                                    <a href="javascript:;" class="fa fa-pencil"></a>
-                                    <a href="javascript:;" class="fa fa-times"></a>
-                                  </span>
                                 </td>
                             </tr>
                             <tr>
@@ -515,10 +436,6 @@ include("include/menu_gauche.inc.php");
                                     </div>
                                 </td>
                                 <td>
-                                  <span class="tools pull-right">
-                                    <a href="javascript:;" class="fa fa-pencil"></a>
-                                    <a href="javascript:;" class="fa fa-times"></a>
-                                  </span>
                                 </td>
                             </tr>
                             <tr>
@@ -531,10 +448,6 @@ include("include/menu_gauche.inc.php");
                                     </div>
                                 </td>
                                 <td>
-                                  <span class="tools pull-right">
-                                    <a href="javascript:;" class="fa fa-pencil"></a>
-                                    <a href="javascript:;" class="fa fa-times"></a>
-                                  </span>
                                 </td>
                             </tr>
                             <tr>
@@ -547,15 +460,16 @@ include("include/menu_gauche.inc.php");
                                     </div>
                                 </td>
                                 <td>
-                                  <span class="tools pull-right">
-                                    <a href="javascript:;" class="fa fa-pencil"></a>
-                                    <a href="javascript:;" class="fa fa-times"></a>
-                                  </span>
                                 </td>
                             </tr>
                            
                             </tbody>
                         </table>
+
+                    <div class="bouton">
+                         <center> <a href="page_modif_infos.php"> Modifier </a></center>
+                        
+                        </div>
                     </div>
                 </section>
             </div>
