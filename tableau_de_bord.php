@@ -48,28 +48,7 @@ include("include/menu_gauche.inc.php");
                  </div>
 				</div>
 
-				<div class="col-lg-3"> 
-					<div class="panel panel-default">
-                   
-					<div class="panel-heading">
-						<span class="tools pull-right">
-                                <a href="javascript:;" class="fa fa-bookmark" ></a>
-                                <a class="fa fa-times" href="javascript:;"></a>
-                     </span> Offre susceptible <br>de vous interesser
-					 
-                     </div>
-
-                     <div class="panel-body">
-                     	
-                     	    <div class="bouton">
-                     	<p> Descripion de l'offre <br><br><br><br><br></p>
-                     	<center><a href="jepostule.php">POSTULER</a></center><br>
-                     	</div>
-
-
-                     </div>
-                 </div>
-				</div>
+				
 			
 				<div class="col-lg-3"> 
 					<div class="panel panel-default">
@@ -82,8 +61,7 @@ include("include/menu_gauche.inc.php");
                      </div>
 
                      <div class="panel-body">
-                     	
-                     	
+                
 
                      	<div class="mini-stat clearfix">
                             <span class="mini-stat-icon green"><i class="fa fa-female"></i></span>
@@ -99,7 +77,7 @@ include("include/menu_gauche.inc.php");
                      	<div class="mini-stat clearfix">
                             <span class="mini-stat-icon green"><i class="fa fa-female"></i></span>
                             <div class="mini-stat-info">
-                                NOM Prénom de la personne 1 <br>
+                                NOM Prénom de la personne 2 <br>
                                 <p> Job </p><br>
                                 <center><button class="btn btn-primary"> Accepter </button>   <button class="btn btn-default"> Refuser </button></center>
                           
@@ -110,7 +88,7 @@ include("include/menu_gauche.inc.php");
                      	<div class="mini-stat clearfix">
                             <span class="mini-stat-icon green"><i class="fa fa-female"></i></span>
                             <div class="mini-stat-info">
-                                NOM Prénom de la personne 1 <br>
+                                NOM Prénom de la personne 3 <br>
                                 <p> Job </p><br>
                                 <center><button class="btn btn-primary"> Accepter </button>   <button class="btn btn-default"> Refuser </button></center>
                           
@@ -122,6 +100,73 @@ include("include/menu_gauche.inc.php");
                      </div>
                  </div>
 				</div>
+
+                <div class="col-lg-3"> 
+                    <div class="panel panel-default">
+                   
+                    <div class="panel-heading">
+                        <span class="tools pull-right">
+                                <a href="javascript:;" class="fa fa-bookmark" ></a>
+                                <a class="fa fa-times" href="javascript:;"></a>
+                     </span> Offre susceptible <br>de vous interesser
+                     
+                     </div>
+
+                     <div class="panel-body">
+                        
+                            <div class="bouton">
+                        <p> Descripion de l'offre <br><br></p>
+                        <center><a href="jepostule.php">POSTULER</a></center><br>
+                        </div>
+
+
+                     </div>
+                 </div>
+                </div> 
+                <div class="col-lg-3"> 
+                    <div class="panel panel-default">
+                   
+                    <div class="panel-heading">
+                        <span class="tools pull-right">
+                                <a href="javascript:;" class="fa fa-bookmark" ></a>
+                                <a class="fa fa-times" href="javascript:;"></a>
+                     </span> Offre susceptible <br>de vous interesser
+                     
+                     </div>
+
+                     <div class="panel-body">
+                        
+                            <div class="bouton">
+                        <p> Descripion de l'offre <br><br></p>
+                        <center><a href="jepostule.php">POSTULER</a></center><br>
+                        </div>
+
+
+                     </div>
+                 </div>
+                </div>
+                <div class="col-lg-3"> 
+                    <div class="panel panel-default">
+                   
+                    <div class="panel-heading">
+                        <span class="tools pull-right">
+                                <a href="javascript:;" class="fa fa-bookmark" ></a>
+                                <a class="fa fa-times" href="javascript:;"></a>
+                     </span> Offre susceptible <br>de vous interesser
+                     
+                     </div>
+
+                     <div class="panel-body">
+                        
+                            <div class="bouton">
+                        <p> Descripion de l'offre <br><br></p>
+                        <center><a href="jepostule.php">POSTULER</a></center><br>
+                        </div>
+
+
+                     </div>
+                 </div>
+                </div>
 			
 				
 
