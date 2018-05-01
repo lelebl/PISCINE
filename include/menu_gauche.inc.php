@@ -35,7 +35,7 @@
                     <span>Emplois</span>
                 </a>
                 <ul class="sub">
-                    <li><a href="form_component.html">Déposer une offre</a></li>
+                    <li><a href="offre_emploi.php">Déposer une offre</a></li>
                     <li><a href="advanced_form.html">Postuler</a></li>
                 </ul>
             </li>
