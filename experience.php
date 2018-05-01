@@ -15,8 +15,8 @@ include("include/menu_gauche.inc.php");
                 <div class="col-md-12">
                     <!--breadcrumbs start -->
                     <ul class="breadcrumb">
-                        <li><a href="accueil.php"><i class="fa fa-home"></i> Profil</a></li>
-                        <li class="active">Formation</li>
+                        <li><a href="accueil.php"><i class="fa fa-home"></i> Tableau de bord</a></li>
+                        <li class="active">Experience</li>
                     </ul>
                     <!--breadcrumbs end -->
                 </div>
@@ -26,10 +26,7 @@ include("include/menu_gauche.inc.php");
               <div class="col-lg-12">
                 <section class="panel">
                   <header class="panel-heading">
-                    Formation 
-                    <span class="tools pull-right">
-                            <a href="javascript:;" class="fa fa-plus"></a>
-                         </span>
+                    Experience 
 
                   </header>
                   <div class="panel-body">
@@ -39,10 +36,6 @@ include("include/menu_gauche.inc.php");
                                 <th> ECE PARIS</th>
                                 <th>Ecole d'ingénieur</th>
                                 <th>2015 - 2017</th>
-                                <th><span class="tools pull-right">
-                                    <a href="javascript:;" class="fa fa-pencil"></a>
-                                    <a href="javascript:;" class="fa fa-times"></a>
-                                  </span></th>
                             </tr>
                             </thead>
                             <tbody>
@@ -69,10 +62,7 @@ include("include/menu_gauche.inc.php");
                                 <th> SJH</th>
                                 <th>Lycée</th>
                                 <th>2009 - 2015</th>
-                                <th><span class="tools pull-right">
-                                    <a href="javascript:;" class="fa fa-pencil"></a>
-                                    <a href="javascript:;" class="fa fa-times"></a>
-                                  </span></th>
+                                <th>
                             </tr>
                             </thead>
                             <tbody>
