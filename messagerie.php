@@ -1,6 +1,7 @@
 <?php 
 $title="Messagerie";
 include("include/header.inc.php"); 
+$active="messagerie";
 include("include/menu_haut.inc.php");
 include("include/menu_gauche.inc.php");
 ?>
