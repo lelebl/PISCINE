@@ -24,7 +24,7 @@ include("include/menu_gauche.inc.php");
 
       	<div class="panel-body"> 	
 	<center>
-		<button class="btn btn-primary" href="accueil">RETOUR A L'ACCUEIL</button><br><br><br><br><br><br>
+		<a href="tableau_de_bord.php">RETOUR A L'ACCUEIL</a><br><br><br><br><br><br>
 
 	</center></div>
     </section>

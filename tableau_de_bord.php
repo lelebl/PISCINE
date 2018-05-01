@@ -25,16 +25,22 @@ include("include/menu_gauche.inc.php");
 				<div class="col-lg-6"> 
 					<div class="panel panel-default">
                    
-					<div class="panel-heading">Partager une photo, une vidéo, un article 
+					<div class="panel-heading">
+
+						Partager une photo, une vidéo, un article 
 					 
                      </div>
 
                      <div class="panel-body">
-                     	
-                     	 <textarea class="wysihtml5 form-control" rows="9"></textarea><br>
+                     	<div class="boutontab">
+
+                     	<a href="#"><i class="fa fa-camera"></i></a>
+                     	<a href="#"><i class="fa fa-film"></i></a>
+                     	<a href="#"><i class="fa fa-paperclip"></i></a>
+                     	<a href="#"><i class="fa fa-meh-o"></i></a>
+                     	</div>
+                     	<br> <textarea class="wysihtml5 form-control" rows="9"></textarea><br>
                      	<center><button class="btn btn-primary"> POSTULER ! </button></center>
-
-
                      </div>
                  </div>
 				</div>
