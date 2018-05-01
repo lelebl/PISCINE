@@ -4,7 +4,7 @@
 <!--logo start-->
 <div class="brand">
 
-      <a href="index.html" class="logo">
+      <a href="tableau_de_bord.php" class="logo">
       <img src="images/logo.png" alt="">
     </a>
 

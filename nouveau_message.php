@@ -4,6 +4,7 @@ include("include/header.inc.php");
 include("include/menu_haut.inc.php");
 include("include/menu_gauche.inc.php");
 ?>
+
 <body>
     <!--main content start-->
     <section id="main-content" >
@@ -31,25 +32,15 @@ include("include/menu_gauche.inc.php");
                                 </div>
                         </section>
                 </div>
+
 		    	<div class="col-lg-8">
 		                <section class="panel">
 		                    <header class="panel-heading wht-bg">
-		                       <h4 class="gen-case"> Compose Mail
-		                           <form action="#" class="pull-right mail-src-position">
-		                            <div class="input-append">
-		                                <input type="text" class="form-control " placeholder="Search Mail">
-		                            </div>
-		                        </form>
-		                       </h4>
+		                       <h4 class="gen-case"> Compose Mail</h4>
 		                    </header>
 		                    <div class="panel-body">
-		                        <div class="compose-btn pull-right">
-		                            <button class="btn btn-primary btn-sm"><i class="fa fa-check"></i> Send</button>
-		                            <button class="btn btn-sm"><i class="fa fa-times"></i> Discard</button>
-		                            <button class="btn btn-sm">Draft</button>
-		                        </div>
 		                        <div class="compose-mail">
-		                            <form role="form-horizontal" method="post">
+		                            <form role="form-horizontal" id='compose_mail'>
 		                                <div class="form-group">
 		                                    <label for="to" class="">To:</label>
 		                                    <input type="text" tabindex="1" id="to" class="form-control">
@@ -77,12 +68,10 @@ include("include/menu_gauche.inc.php");
 
 		                                <div class="compose-editor">
 		                                    <textarea class="wysihtml5 form-control" rows="9"></textarea>
-		                                    <input type="file" class="default">
+		                                    <input type="file" class="default" id="message">
 		                                </div>
 		                                <div class="compose-btn">
-		                                    <button class="btn btn-primary btn-sm"><i class="fa fa-check"></i> Send</button>
-		                                    <button class="btn btn-sm"><i class="fa fa-times"></i> Discard</button>
-		                                    <button class="btn btn-sm">Draft</button>
+		                                    <input class="btn btn-primary btn-sm" type="submit" name="Envoyer"><i class="fa fa-check"></i> 
 		                                </div>
 
 		                            </form>
@@ -97,6 +86,7 @@ include("include/menu_gauche.inc.php");
 
 
 	<?php include('include/js.inc.php'); ?>
+
 
 </body>
 </html>
