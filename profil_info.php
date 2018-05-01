@@ -1,5 +1,5 @@
 <?php 
-$title="ModificationInformations";
+$title="Profil";
 include("include/header.inc.php"); 
 include("include/menu_haut.inc.php");
 include("include/menu_gauche.inc.php");
@@ -15,8 +15,8 @@ include("include/menu_gauche.inc.php");
                 <div class="col-md-12">
                     <!--breadcrumbs start -->
                     <ul class="breadcrumb">
-                        <li><a href="accueil.php"><i class="fa fa-home"></i> Profil</a></li>
-                        <li class="active">Modification de mes informations personelles</li>
+                        <li><a href="tableau_de_bord.php"><i class="fa fa-home"></i> Accueil</a></li>
+                        <li class="active">Profil</li>
                     </ul>
                     <!--breadcrumbs end -->
                 </div>
@@ -33,43 +33,13 @@ include("include/menu_gauche.inc.php");
                     <div class="col-lg-6">
                         
                         <table class="table">
-                            
-                            
-                            
                             <tr>
-                                <td><a href="#">PHOTO</a></td>
-                                <td>
-                                </td>
-                                
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="images item " >
-                                        <a href="#myModal" data-toggle="modal">
-                                   <img src="images/imgO1.png" alt="" />
-                               </a>
-                               </div>
-                                    </a>
-
-   
-
-                                </td>
-                                
-                                
-                            </tr>
-                            
-                            <tr>
-                                <td><a href="#">IMAGE DE FOND</a></td>
-                                <td>choix de l'image de fond
-                                </td>
-                                
+                                  <img src="images/logo.png" alt="">
                             </tr>
                             <tr>
 
                                 <td><a href="#">RESUME</a></td>
                                 <td>résumé</td>
-                                
-                            
                                 
                             </tr>
                             <tr>
@@ -78,10 +48,6 @@ include("include/menu_gauche.inc.php");
                                 </td>
                                 
                             </tr>
-
-                            
-                           
-                            
                         </table>
 
                     </div>
@@ -113,12 +79,6 @@ include("include/menu_gauche.inc.php");
                              <tr>
                                 <td><a href="#">EMAIL</a></td>
                                 <td>email
-                                </td>
-                                
-                            </tr>
-                             <tr>
-                                <td><a href="#">MOT DE PASSE</a></td>
-                                <td>mot de passe
                                 </td>
                                 
                             </tr>
@@ -402,12 +362,6 @@ include("include/menu_gauche.inc.php");
                                         </div>
                                     </div>
                                 </td>
-                                <td>
-                                  <span class="tools pull-right">
-                                    <a href="javascript:;" class="fa fa-pencil"></a>
-                                    <a href="javascript:;" class="fa fa-times"></a>
-                                  </span>
-                                </td>
                             </tr>
                             <tr>
                                 <td><a href="#">Application mobiles</a></td>
@@ -434,22 +388,10 @@ include("include/menu_gauche.inc.php");
                     </header>
                     <div class="panel-body">
                         <table class="table  table-hover general-table">
-                            <thead>
-                              <tr>
-                                <th> Quels sont vos hobbies?</th>
-                                <th>          </th>
-                            </tr>
-
-                            </thead>
                            <tbody>
                             <tr>
                                  <td><a href="#">Sport</a></td>
-                                 <td>
-                                  <span class="tools pull-right">
-                                    <a href="javascript:;" class="fa fa-times"></a>
-                                  </span>
-                                </td>
-                          </tr>
+                            </tr>
                             <tr>
                                 <td><a href="#">Musique</a></td>
                                 <td>

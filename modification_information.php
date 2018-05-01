@@ -15,7 +15,7 @@ include("include/menu_gauche.inc.php");
                 <div class="col-md-12">
                     <!--breadcrumbs start -->
                     <ul class="breadcrumb">
-                        <li><a href="accueil.php"><i class="fa fa-home"></i> Profil</a></li>
+                        <li><a href="tableau_de_bord.php"><i class="fa fa-home"></i> Tableau de bord</a></li>
                         <li class="active">Modification de mes informations personelles</li>
                     </ul>
                     <!--breadcrumbs end -->
