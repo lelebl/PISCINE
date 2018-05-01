@@ -8,7 +8,7 @@
         <!-- sidebar menu start-->            <div class="leftside-navigation">
             <ul class="sidebar-menu" id="nav-accordion">
             <li>
-                <a href="tableau_de_bord.html" <?php if($page == "tableau_de_bord.php" ){echo 'class="active"';} ?>>
+                <a href="tableau_de_bord.php" <?php if($page == "tableau_de_bord.php" ){echo 'class="active"';} ?>>
                     <i class="fa fa-dashboard"></i>
                     <span>Tableau de bord</span>
                 </a>
