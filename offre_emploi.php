@@ -12,6 +12,16 @@ include("include/menu_gauche.inc.php");
     <section id="main-content">
         <section class="wrapper"> 
             <div class="row">
+                <div class="col-md-12">
+                    <!--breadcrumbs start -->
+                    <ul class="breadcrumb">
+                        <li><a href="accueil.php"><i class="fa fa-home"></i> Accueil</a></li>
+                        <li class="active">Soumettre une offre d'emploi </li>
+                    </ul>
+                    <!--breadcrumbs end -->
+                </div>
+            </div>
+            <div class="row">
             <div class="col-lg-12">
 
       <section class="panel">
