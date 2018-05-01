@@ -7,7 +7,6 @@ include("include/menu_gauche.inc.php");
 ?>
 
   <body>
-    <i class="fa fa-chevron-down" data-fa-mask="fa fa-circle "></i>
     <section id="main-content">
         <section class="wrapper">
         <!-- page start-->
@@ -40,13 +39,6 @@ include("include/menu_gauche.inc.php");
                             <tr>
                                 <td><a href="#">PHOTO</a></td>
                                 <td>
-
-
-
-
-
-
-
 
                                   <span class="tools pull-right">
                                     <a href="javascript:;" class="fa fa-pencil"></a>

@@ -5760,4 +5760,25 @@ right: -1px;
     min-height: 400px;;
 }
 
+#drop{
+    font-weight:300;
+    font-family:'Open Sans',sans-serif;
+    color: black;
+    border-color: #32323a;
+
+
+}
+
+.panel-body a {
+
+    background-color: #4a69bd;
+    border-radius: 5px; 
+    padding: 10px; 
+}
+
+.panel-body a:hover {
+
+    background-color: #d9edf7;
+    border-radius: 5px; 
+}
 
