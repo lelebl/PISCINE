@@ -41,13 +41,6 @@ include("include/menu_gauche.inc.php");
                                 <td><a href="#">PHOTO</a></td>
                                 <td>
 
-
-
-
-
-
-
-
                                   <span class="tools pull-right">
                                     <a href="javascript:;" class="fa fa-pencil"></a>
                                   </span>
