@@ -1,5 +1,5 @@
 	<?php
-	$title="Offre d'emploi";
+	$title="Postuler";
 	include("include/header.inc.php"); 
 	include("include/menu_haut.inc.php"); 
 	include("include/menu_gauche.inc.php"); 
@@ -21,11 +21,13 @@
                     <!--breadcrumbs end -->
                 </div>
             </div>
-			<div class="row">
-				<div class="col-lg-12"> 
-					<section class="panel"><header class="panel-heading">OFFRES D'EMPLOI</header></section>
-				</div>
-			</div>
+			<div class="mini-stat clearfix">
+                            <span class="mini-stat-icon green"><i class="fa fa-suitcase"></i></span>
+                            <div class="mini-stat-info">
+                                <br>VOS OFFRES D'EMPLOI
+                           
+                            </div>
+                        </div>
 
 
 			<div class="row"></div>
@@ -35,7 +37,7 @@
 					<div class="panel-heading">Intitulé de l'offre 
 					 <span class="tools pull-right">
                                 <a href="javascript:;" class="fa fa-bookmark" ></a>
-                                <a class="fa fa-times" href="javascript:;"></a>
+                                <a href="" class="fa fa-times"></a>
                      </span>
                      </div>
 

@@ -1,5 +1,5 @@
 <?php
-$title="Offre d'emploi";
+$title="Soumettre une offre d'emploi";
 include("include/header.inc.php"); 
 include("include/menu_haut.inc.php"); 
 include("include/menu_gauche.inc.php"); 
@@ -52,8 +52,7 @@ include("include/menu_gauche.inc.php");
             <br>
           
        
-
-          <center> <button class="btn btn-primary" type="submit"> Mettre en ligne </button></center> 
+          <center><button class="btn btn-primary" type="button"> METTRE EN LIGNE </button></center> 
           <br><br>
       </form>
 
