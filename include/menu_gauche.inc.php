@@ -24,14 +24,14 @@
                     <span>Profil</span>
                 </a>
                 <ul class="sub">
-                    <li><a href="form_component.html">Modification info</a></li>
-                    <li><a href="advanced_form.html">Historique</a></li>
-                    <li><a href="advanced_form.html">Contact</a></li>
+                    <li><a href="">Modification info</a></li>
+                    <li><a href="">Formation</a></li>
+                    <li><a href="">Expérience</a></li>
                 </ul>
             </li>
             <li class="sub-menu">
                 <a href="javascript:;">
-                    <i class="fa fa-book"></i>
+                    <i class="fa fa-certificate"></i>
                     <span>Emplois</span>
                 </a>
                 <ul class="sub">

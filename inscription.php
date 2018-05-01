@@ -55,7 +55,7 @@ include("include/header.inc.php");
 
             <div class="registration">
                 Connectez-vous :
-                <a class="" href="connexion.php">
+                <a class="" href="index.php">
                     Login
                 </a>
             </div>
