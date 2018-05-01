@@ -5801,3 +5801,10 @@ right: -1px;
     color: #d9edf7;
 }
 
+
+
+#clock iframe {
+
+    size: 300%; 
+}
+
