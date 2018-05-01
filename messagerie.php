@@ -1,10 +1,10 @@
 <?php 
 $title="Messagerie";
 include("include/header.inc.php"); 
-$active="messagerie";
 include("include/menu_haut.inc.php");
 include("include/menu_gauche.inc.php");
 ?>
+
 <body>
     <!--main content start-->
     <section id="main-content" >
@@ -28,7 +28,7 @@ include("include/menu_gauche.inc.php");
                                         Nouveau message
                                     </a>
                                     <ul class="nav nav-pills nav-stacked mail-nav">
-                                        <li class="active"><a href="messagerie.php"> <img src="images/charlotte_decary.jpg" style="width: 15%" > Charlotte Decray  <span class="label label-danger pull-right inbox-notification">1</span></a></li>
+                                        <li><a href="messagerie.php"> <img src="images/charlotte_decary.jpg" style="width: 15%" > Charlotte Decray  <span class="label label-danger pull-right inbox-notification">1</span></a></li>
                                         <li><a href="messagerie.php"> <img src="images/emmanuelle.jpg" style="width: 15%" >  Emmanuelle Thiroloix</a></li>
                                 </div>
                         </section>
@@ -99,71 +99,6 @@ include("include/menu_gauche.inc.php");
                                 </div>
                             </div>
                         </section>
-                        <section class="panel panel-info">
-                            <header class="panel-heading">
-                                Emmanuelle Thiroloix
-                            <span class="tools pull-right">
-                                <a class="fa fa-chevron-down" href="javascript:;"></a>
-                                <a class="fa fa-times" href="javascript:;"></a>
-                            </span>
-                            </header>
-                            <div class="panel-body">
-                                <div class="chat-conversation">
-                                    <ul class="conversation-list">
-                                        <li class="clearfix">
-                                            <div class="chat-avatar">
-                                                <img src="images/antoine_lame.jpg" style="width: 120%" >
-                                                <i>10:00</i>
-                                            </div>
-                                            <div class="conversation-text">
-                                                <div class="ctext-wrap">
-                                                    <i>Antoine Lamé</i>
-                                                    <p>
-                                                        Hey Manu t'as fini le front?
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="clearfix odd">
-                                            <div class="chat-avatar">
-                                                <img src="images/emmanuelle.jpg" style="width: 120%" >
-                                                <i>12:05</i>
-                                            </div>
-                                            <div class="conversation-text">
-                                                <div class="ctext-wrap">
-                                                    <i>Emmanuelle Thiroloix</i>
-                                                    <p>
-                                                        BONJOUR déjà! Ahahah je rigole, ouais ça avance plutot bien!
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="clearfix">
-                                            <div class="chat-avatar">
-                                                <img src="images/antoine_lame.jpg" style="width: 120%" >
-                                                <i>13:40</i>
-                                            </div>
-                                            <div class="conversation-text">
-                                                <div class="ctext-wrap">
-                                                    <i>Antoine Lamé</i>
-                                                    <p>
-                                                        Cooooool! Nous aussi on carbure la!
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                    <div class="row">
-                                        <div class="col-xs-9">
-                                            <input type="text" class="form-control chat-input" placeholder="Entrer votre message">
-                                        </div>
-                                        <div class="col-xs-3 chat-send">
-                                            <button type="submit" class="btn btn-default">Envoyer</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
                 </div>
             </div>
 
@@ -171,8 +106,8 @@ include("include/menu_gauche.inc.php");
         </section>
     </section>
 
-
-<?php include('include/js.inc.php'); ?>
+<?php include('include/right_side_bar.php');
+ include('include/js.inc.php'); ?>
 
 </body>
 </html>

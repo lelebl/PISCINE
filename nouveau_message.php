@@ -27,7 +27,7 @@ include("include/menu_gauche.inc.php");
                                         Nouveau message
                                     </a>
                                     <ul class="nav nav-pills nav-stacked mail-nav">
-                                        <li class="active"><a href="messagerie.php"> <img src="images/charlotte_decary.jpg" style="width: 15%" > Charlotte Decray  <span class="label label-danger pull-right inbox-notification">1</span></a></li>
+                                        <li><a href="messagerie.php"> <img src="images/charlotte_decary.jpg" style="width: 15%" > Charlotte Decray  <span class="label label-danger pull-right inbox-notification">1</span></a></li>
                                         <li><a href="messagerie.php"> <img src="images/emmanuelle.jpg" style="width: 15%" >  Emmanuelle Thiroloix</a></li>
                                 </div>
                         </section>
@@ -36,42 +36,25 @@ include("include/menu_gauche.inc.php");
 		    	<div class="col-lg-8">
 		                <section class="panel">
 		                    <header class="panel-heading wht-bg">
-		                       <h4 class="gen-case"> Compose Mail</h4>
+		                       <h4 class="gen-case"> Nouveau message</h4>
 		                    </header>
 		                    <div class="panel-body">
 		                        <div class="compose-mail">
 		                            <form role="form-horizontal" id='compose_mail'>
-		                                <div class="form-group">
-		                                    <label for="to" class="">To:</label>
-		                                    <input type="text" tabindex="1" id="to" class="form-control">
-
-		                                    <div class="compose-options">
-		                                        <a onclick="$(this).hide(); $('#cc').parent().removeClass('hidden'); $('#cc').focus();" href="javascript:;">Cc</a>
-		                                        <a onclick="$(this).hide(); $('#bcc').parent().removeClass('hidden'); $('#bcc').focus();" href="javascript:;">Bcc</a>
-		                                    </div>
-		                                </div>
-
-		                                <div class="form-group hidden">
-		                                    <label for="cc" class="">Cc:</label>
-		                                    <input type="text" tabindex="2" id="cc" class="form-control">
-		                                </div>
-
-		                                <div class="form-group hidden">
-		                                    <label for="bcc" class="">Bcc:</label>
-		                                    <input type="text" tabindex="2" id="bcc" class="form-control">
-		                                </div>
-
-		                                <div class="form-group">
-		                                    <label for="subject" class="">Subject:</label>
-		                                    <input type="text" tabindex="1" id="subject" class="form-control">
-		                                </div>
+				                        <div class="col-lg-12">
+				                            <select class="form-control m-bot15">
+				                                <option>Choisir un destinataire</option>
+				                                <option>Manu</option>
+				                                <option>Smoothie</option>
+				                            </select>
+				                        </div>
 
 		                                <div class="compose-editor">
 		                                    <textarea class="wysihtml5 form-control" rows="9"></textarea>
 		                                    <input type="file" class="default" id="message">
 		                                </div>
 		                                <div class="compose-btn">
-		                                    <input class="btn btn-primary btn-sm" type="submit" name="Envoyer"><i class="fa fa-check"></i> 
+		                                    <button class="btn btn-primary btn-sm" type="submit"><i class="fa fa-check"></i> Envoyer</button>
 		                                </div>
 
 		                            </form>
