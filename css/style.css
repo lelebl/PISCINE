@@ -352,7 +352,7 @@ a.logo {
     font-size:21px;
     color:#2e2e2e;
     float:left;
-    margin:5px 0 0 25px;
+    margin: 5px 0 0 25px;
     text-transform:uppercase;
 }
 a.logo:hover,a.logo:focus {
@@ -4930,7 +4930,7 @@ div.tagsinput span.tag {
     font-weight:bold;
     position:relative;
     font-size:12px;
-    color:#2cb9b3;
+    color:#4a69bd;
 }
 .conversation-list .conversation-text {
     display:inline-block;
@@ -4941,7 +4941,7 @@ div.tagsinput span.tag {
 }
 .conversation-list .ctext-wrap {
     padding:10px;
-    background:#d5f2ef;
+    background:#d9edf7;
     -webkit-border-radius:3px;
     -moz-border-radius:3px;
     border-radius:3px;
@@ -4962,7 +4962,7 @@ div.tagsinput span.tag {
     position:absolute;
     pointer-events:none;
     border-color:rgba(213,242,239,0);
-    border-right-color:#d5f2ef;
+    border-right-color:#d9edf7;
     border-width:5px;
     margin-top:-5px;
 }
