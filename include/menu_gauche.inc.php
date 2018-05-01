@@ -1,46 +1,51 @@
+<?php
+      // On recupere l'URL de la page pour ensuite affecter class = "active" aux liens de nav
+      $page = $_SERVER['REQUEST_URI'];
+      $page = str_replace("/piscine/", "",$page);
+?>
 <aside>
     <div id="sidebar" class="nav-collapse">
         <!-- sidebar menu start-->            <div class="leftside-navigation">
             <ul class="sidebar-menu" id="nav-accordion">
             <li>
-                <a href="index.html">
+                <a href="tableau_de_bord.html" <?php if($page == "tableau_de_bord.php" ){echo 'class="active"';} ?>>
                     <i class="fa fa-dashboard"></i>
                     <span>Tableau de bord</span>
                 </a>
             </li>
             <li class="sub-menu">
-                <a href="javascript:;" class="active">
+                <a href="javascript:;" <?php if($page == "liste_connexion.php" || $page=="ajouter_qq.php"){echo 'class="active"';} ?>>
                     <i class="fa fa-info-circle"></i>
                     <span>Mon réseau</span>
                 </a>
                 <ul class="sub">
-                    <li class="active"><a href="">Liste des connexions</a></li>
-                    <li><a href="">Ajouter quelqu'un</a></li>
+                    <li <?php if($page == "liste_connexion.php" ){echo 'class="active"';} ?>><a href="">Liste des connexions</a></li>
+                    <li <?php if($page == "ajouter_qq.php" ){echo 'class="active"';} ?>><a href="">Ajouter quelqu'un</a></li>
                 </ul>
             </li>
             <li class="sub-menu">
-                <a href="javascript:;">
+                <a href="javascript:;" <?php if($page == "modification_information.php" || $page=="formation.php" || $page=="experience.php"){echo 'class="active"';} ?>>
                     <i class="fa fa-user"></i>
                     <span>Profil</span>
                 </a>
                 <ul class="sub">
-                    <li><a href="">Modification info</a></li>
-                    <li><a href="">Formation</a></li>
-                    <li><a href="">Expérience</a></li>
+                    <li <?php if($page == "modification_information.php" ){echo 'class="active"';} ?>><a href="modification_information.php">Modification info</a></li>
+                    <li <?php if($page == "formation.php" ){echo 'class="active"';} ?>><a href="formation.php">Formation</a></li>
+                    <li <?php if($page == "experience.php" ){echo 'class="active"';} ?>><a href="experience.php">Expérience</a></li>
                 </ul>
             </li>
             <li class="sub-menu">
-                <a href="javascript:;">
+                <a href="javascript:;" <?php if($page == "postuler.php" || $page=="offre_emploi.php"){echo 'class="active"';} ?>>
                     <i class="fa fa-suitcase"></i>
                     <span>Emplois</span>
                 </a>
                 <ul class="sub">
-                    <li><a href="offre_emploi.php">Déposer une offre</a></li>
-                    <li><a href="advanced_form.html">Postuler</a></li>
+                    <li><a href="offre_emploi.php" <?php if($page == "offre_emploi.php" ){echo 'class="active"';} ?>>Déposer une offre</a></li>
+                    <li><a href="postuler.php" <?php if($page == "postuler.php" ){echo 'class="active"';} ?>>Postuler</a></li>
                 </ul>
             </li>
             <li class="sub-menu">
-                <a href="messagerie.php">
+                <a href="messagerie.php" <?php if($page == "messagerie.php" || $page=="nouveau_message.php"){echo 'class="active"';} ?>>
                     <i class="fa fa-envelope"></i>
                     <span>Messagerie</span>
                 </a>
