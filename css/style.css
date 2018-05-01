@@ -5769,16 +5769,31 @@ right: -1px;
 
 }
 
-.panel-body a {
+.bouton a {
 
     background-color: #4a69bd;
     border-radius: 5px; 
     padding: 10px; 
 }
 
-.panel-body a:hover {
+.bouton a:hover {
 
     background-color: #d9edf7;
     border-radius: 5px; 
+}
+
+.boutontab a {
+
+    background-color: #d9edf7;
+    border-radius: 5px; 
+    padding: 10px; 
+}
+
+
+.boutontab a:hover {
+
+    background-color: #ffffff;
+    border-radius: 5px; 
+    padding: 10px; 
 }
 

@@ -33,7 +33,8 @@
                      <div class="panel-body">
                      	
                      	<p> 
-                     		<h4>Descripion de l'offre </h4><br><br>Type de contrat
+                     		<h4>Descripion de l'offre </h4><br><br>
+                     		Type de contrat<br>
 							Avantages<br>
 							Salaire<br>
 							Secteur<br>

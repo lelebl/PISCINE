@@ -52,7 +52,7 @@ include("include/menu_gauche.inc.php");
             <br>
           
        
-          <center><button class="btn btn-primary" type="button"> METTRE EN LIGNE </button></center> 
+          <center><a href="cbon.php">METTRE EN LIGNE</a> </center> 
           <br><br>
       </form>
 
