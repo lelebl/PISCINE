@@ -54,8 +54,8 @@ include("include/header.inc.php");
             <button class="btn btn-lg btn-login btn-block" type="submit">Valider</button>
 
             <div class="registration">
-                Enregistrement réussi!
-                <a class="" href="login.html">
+                Connectez-vous :
+                <a class="" href="connexion.php">
                     Login
                 </a>
             </div>
