@@ -19,8 +19,8 @@
                     <span>Mon réseau</span>
                 </a>
                 <ul class="sub">
-                    <li <?php if($page == "liste_connexion.php" ){echo 'class="active"';} ?>><a href="">Liste des connexions</a></li>
-                    <li <?php if($page == "ajouter_qq.php" ){echo 'class="active"';} ?>><a href="">Ajouter quelqu'un</a></li>
+                    <li <?php if($page == "liste_connexion.php" ){echo 'class="active"';} ?>><a href="liste_connexion.php">Liste des connexions</a></li>
+                    <li <?php if($page == "ajouter_qq.php" ){echo 'class="active"';} ?>><a href="ajouter_qq.php">Ajouter quelqu'un</a></li>
                 </ul>
             </li>
             <li class="sub-menu">
