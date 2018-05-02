@@ -156,7 +156,7 @@
             <ul class="dropdown-menu extended logout">
                 <li><a href="modification_information.php"><i class=" fa fa-suitcase"></i>Profile</a></li>
                 <li><a href="tableau_de_bord.php"><i class="fa fa-cog"></i> Tableau de bord</a></li>
-                <li><a href="connexion.php"><i class="fa fa-key"></i> Déconnecter</a></li>
+                <li><a href="index.php"><i class="fa fa-key"></i> Déconnecter</a></li>
             </ul>
         </li>
         <!-- user login dropdown end -->
