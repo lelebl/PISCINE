@@ -85,7 +85,10 @@ include("include/menu_gauche.inc.php");
                                 <td> Bac mention bien </td>    
                                 
                             </tr>
-                            <div class="bouton">
+                            
+                        </tbody>
+                    </table>
+                    <div class="bouton">
                           <br>
                           
 
@@ -93,8 +96,6 @@ include("include/menu_gauche.inc.php");
                         <br>
                           <br>
                         </div>
-                        </tbody>
-                    </table>
 
 
                   </div>

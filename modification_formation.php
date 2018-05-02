@@ -85,18 +85,19 @@ include("include/menu_gauche.inc.php");
                                 <td> Bac mention bien </td>    
                                 
                             </tr>
-                            <div class="bouton">
+                            
+                        </tbody>
+
+                    </table>
+
+<div class="bouton">
                           <br>
                           
 
-                         <center> <a href="formation.php"> Enregistrer< </a></center>
+                         <center> <a href="formation.php"> Enregistrer</a></center>
                         <br>
                           <br>
                         </div>
-                        </tbody>
-                    </table>
-
-
                   </div>
               </section>
           </div>
