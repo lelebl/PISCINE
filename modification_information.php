@@ -1,5 +1,5 @@
 <?php 
-$title="Messagerie";
+$title="Modification Information";
 include("include/header.inc.php"); 
 include("include/menu_haut.inc.php");
 include("include/menu_gauche.inc.php");
@@ -14,7 +14,7 @@ include("include/menu_gauche.inc.php");
                     <!--breadcrumbs start -->
                     <ul class="breadcrumb">
                         <li><a href="accueil.php"><i class="fa fa-home"></i> Accueil</a></li>
-                        <li class="active">Messagerie</li>
+                        <li class="active">Informations personnelles</li>
                     </ul>
                     <!--breadcrumbs end -->
                 </div>
@@ -28,23 +28,17 @@ include("include/menu_gauche.inc.php");
                             </div>
                                 <div class="panel-body">
             
-                                    <ul >
-                                        <li href="nouveau_message.php" class="btn btn-compose">
+                                    
+                                        <a href="modification_information_modifs.php" class="btn btn-compose">
                                             Informations personelles
-                                            <br>
-                                        </li>
+                                        </a><br><br>
 
-                                    </ul>
-                                    <ul >
-                                        <li href="nouveau_message.php" class="btn btn-compose">
+                                        <a href="modification_information_compétences.php" class="btn btn-compose">
                                             Compétences
-                                        </li>
-                                    </ul>
-                                    <ul>
-                                        <li href="nouveau_message.php" class="btn btn-compose">
-                                            Informations personelles
-                                        </li>
-                                    </ul>
+                                        </a><br><br>
+                                        <a href="modification_information_centres_d'interets.php" class="btn btn-compose">
+                                            Centre d'intérêts
+                                        </a>
                                 </div>
                         </section>
                 </div>
