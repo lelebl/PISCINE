@@ -15,7 +15,7 @@ include("include/menu_gauche.inc.php");
                 <div class="col-md-12">
                     <!--breadcrumbs start -->
                     <ul class="breadcrumb">
-                        <li><a href="accueil.php"><i class="fa fa-home"></i> Profil</a></li>
+                        <li><a href="tableau_de_bord.php"><i class="fa fa-home"></i> Profil</a></li>
                         <li class="active">Formation</li>
                     </ul>
                     <!--breadcrumbs end -->
@@ -35,10 +35,6 @@ include("include/menu_gauche.inc.php");
                                 <th> ECE PARIS</th>
                                 <th>Ecole d'ingénieur</th>
                                 <th>2015 - 2017</th>
-                                <th><span class="tools pull-right">
-                                    <a href="javascript:;" class="fa fa-pencil"></a>
-                                    <a href="javascript:;" class="fa fa-times"></a>
-                                  </span></th>
                             </tr>
                             </thead>
                             <tbody>
@@ -63,10 +59,6 @@ include("include/menu_gauche.inc.php");
                                 <th> <br><br>SJH</th>
                                 <th>Lycée</th>
                                 <th>2009 - 2015</th>
-                                <th><span class="tools pull-right">
-                                    <a href="javascript:;" class="fa fa-pencil"></a>
-                                    <a href="javascript:;" class="fa fa-times"></a>
-                                  </span></th>
                             </tr>
                             </thead>
                             <tbody>

@@ -15,7 +15,7 @@ include("include/menu_gauche.inc.php");
                 <div class="col-md-12">
                     <!--breadcrumbs start -->
                     <ul class="breadcrumb">
-                        <li><a href="accueil.php"><i class="fa fa-home"></i> Tableau de bord</a></li>
+                        <li><a href="tableau_de_bord.php"><i class="fa fa-home"></i> Tableau de bord</a></li>
                         <li class="active">Experience</li>
                     </ul>
                     <!--breadcrumbs end -->
@@ -55,11 +55,9 @@ include("include/menu_gauche.inc.php");
                                 
                             </tr>
                         </tbody>
-                    </table>
-                    <table class="table">
                             <thead>
                             <tr>
-                                <th> SJH</th>
+                                <th> <br> <br> SJH</th>
                                 <th>Lycée</th>
                                 <th>2009 - 2015</th>
                                 <th>
