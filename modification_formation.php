@@ -43,17 +43,17 @@ include("include/menu_gauche.inc.php");
                             </thead>
                             <tbody>
                             <tr>
-                                <td><a href="#">Domaine</a></td>
+                                <td><a >Domaine</a></td>
                                 <td>Ingienerie</td>    
                                 
                             </tr>
                             <tr>
-                                <td><a href="#">Associations</a></td>
+                                <td><a >Associations</a></td>
                                 <td>SDI, Les Caves, UPA</td>    
                                 
                             </tr>
                             <tr>
-                                <td><a href="#">Description</a></td>
+                                <td><a >Description</a></td>
                                 <td>Majeur: Ocres, Mineur: Ingiénérie d'affaire</td>    
                                 
                             </tr>
@@ -71,17 +71,17 @@ include("include/menu_gauche.inc.php");
                             </thead>
                             <tbody>
                             <tr>
-                                <td><a href="#">Domaine</a></td>
+                                <td><a >Domaine</a></td>
                                 <td>Bac scientifique</td>    
                                 
                             </tr>
                             <tr>
-                                <td><a href="#">Associations</a></td>
+                                <td><a >Associations</a></td>
                                 <td> Soeurs de la miséricorde</td>    
                                 
                             </tr>
                             <tr>
-                                <td><a href="#">Description</a></td>
+                                <td><a >Description</a></td>
                                 <td> Bac mention bien </td>    
                                 
                             </tr>
