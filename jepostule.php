@@ -11,7 +11,7 @@
 
 		<section id="main-content">
 			<section class="wrapper">
-					<div class="row">
+				<div class="row">
                     <div class="col-md-12">
                     <!--breadcrumbs start -->
                     <ul class="breadcrumb">
@@ -19,7 +19,8 @@
                         <li class="active">Soumettre une offre d'emploi </li>
                     </ul>
                     <!--breadcrumbs end -->
-                </div></div>
+                    </div>
+                </div>
                 <div class="col-lg-12">
                 <div class="panel panel-default">
                    
