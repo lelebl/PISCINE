@@ -1,5 +1,5 @@
 <?php 
-$title="Modification Information Centres d'interets";
+$title="modification Centres d'interets";
 include("include/header.inc.php"); 
 include("include/menu_haut.inc.php");
 include("include/menu_gauche.inc.php");
@@ -14,37 +14,15 @@ include("include/menu_gauche.inc.php");
                     <!--breadcrumbs start -->
                     <ul class="breadcrumb">
                         <li><a href="accueil.php"><i class="fa fa-home"></i> Accueil</a></li>
-                        <li class="active">Centres d'intérêts</li>
+                        <li class="active">Modification Centres d'intérêts</li>
                     </ul>
                     <!--breadcrumbs end -->
                 </div>
             </div>
 
             <div class="row">
-                <div class="col-lg-4">
-                        <section class="panel">
-                            <div class="panel-heading">
-                                Informations du profil
-                            </div>
-                                <div class="panel-body">
             
-                                    
-                                        <a href="modification_information_modifs.php" class="btn btn-compose">
-                                            Informations personnelles
-                                        </a><br><br>
-
-                                        <a href="modification_information_compétences.php" class="btn btn-compose">
-                                            Compétences
-                                        </a><br><br>
-                                        <a href="modification_information_centres_d'interets.php" class="btn btn-compose">
-                                            Centre d'intérêts
-                                        </a>
-                                </div>
-                        </section>
-                </div>
-                
-            
-                <div class="col-lg-8">
+                <div class="col-lg-12">
                         <section class="panel">
                     <header class="panel-heading">
                         Centres d'intérêts
@@ -99,7 +77,7 @@ include("include/menu_gauche.inc.php");
                           
                         </table>
                         <div class="bouton">
-                         <center> <a href="page_modif_centres_interets.php"> Modifier </a></center>
+                         <center> <a href="modification_information_centres_d'interets.php"> Enregistrer </a></center>
                         
                         </div>
                     </div>
