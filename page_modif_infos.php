@@ -14,7 +14,7 @@ include("include/menu_gauche.inc.php");
                     <!--breadcrumbs start -->
                     <ul class="breadcrumb">
                         <li><a href="accueil.php"><i class="fa fa-home"></i> Accueil</a></li>
-                        <li class="active">Modification Informations Personnelles</li>
+                        <li class="active"> Modification Informations Personnelles</li>
                     </ul>
                     <!--breadcrumbs end -->
                 </div>
@@ -116,7 +116,7 @@ include("include/menu_gauche.inc.php");
                             </tr>
                             <tr>
                                 <td><a href="#">TELEPHONE</a></td>
-                                <td>telephone
+                                <td><input type="number" class="form-control" placeholder="telephone" min="0" max="9999999999" autofocus >
                                 </td>
                                 
                             </tr>
@@ -159,20 +159,16 @@ include("include/menu_gauche.inc.php");
                                   
                                      <br>
                                       <br>
-
-
-                                    <div class="boutontab">
-
-                                      <center><a href="#"><i class="fa fa-paperclip"></i></a></center>
-                                    </div>
-                                    <!--<form id="upload" method="post" action="upload.php" enctyper="multipart/form-data"-->
+                                    <form id="upload" method="post" action="upload.php" enctype="multipart/form-data">
+                               <center><h5><input type="file" name="upl" multiple=""></h5>
+                                   <ul>
+                                <!-- The file uploads will be shown here -->
+                              </ul></center>  
+                        </form>
                                     <br>
                                     <br>
                                     
-                                    <div class="bouton">
-
-                                      <center><a href="tableau_de_bord.php">Enregistrer</a></center><br><br>
-                                    </div>
+                                    
 
 
 
@@ -186,7 +182,7 @@ include("include/menu_gauche.inc.php");
                           <br>
                           
 
-                         <center> <a href="modification_information_modifs.php"> Modifier </a></center>
+                         <center> <a href="modification_information_modifs.php"> Enregistrer </a></center>
                         <br>
                           <br>
                         </div>
