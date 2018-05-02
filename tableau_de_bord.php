@@ -220,41 +220,38 @@ include("include/menu_gauche.inc.php");
                 <header class="panel-heading">
                     VOTRE FIL D'ACTUALITE  <span class="tools pull-right">
                     <a href="javascript:;" class="fa fa-chevron-down"></a>
-                    <a href="javascript:;" class="fa fa-cog"></a>
                     <a href="javascript:;" class="fa fa-times"></a>
                     </span>
                 </header>
                 <div class="panel-body">
                     
                     <div class="alert alert-danger">
-                        <span class="alert-icon"><i class="fa fa-facebook"></i></span>
+                        <span class="alert-icon"><i class="fa fa-align-justify"></i></span>
                         <div class="notification-info">
                             <ul class="clearfix notification-meta">
-                                <li class="pull-left notification-sender"><span><a href="#">Jonathan Smith</a></span> mentioned you in a post </li>
-                                <li class="pull-right notification-time">7 Hours Ago</li>
+                                <li class="pull-left notification-sender"><span><a href="#">Léa Blanchard</a><br></span> POST </li>
+                                <li class="pull-right notification-time">Il y a 7 heures</li>
                             </ul>
-                            <p>
-                                Very cool photo jack
-                            </p>
+                        
                         </div>
                     </div>
                     <div class="alert alert-success ">
-                        <span class="alert-icon"><i class="fa fa-comments-o"></i></span>
+                        <span class="alert-icon"><i class="fa fa-align-justify"></i></span>
                         <div class="notification-info">
                             <ul class="clearfix notification-meta">
-                                <li class="pull-left notification-sender">You have 5 message unread</li>
-                                <li class="pull-right notification-time">1 min ago</li>
+                                    <li class="pull-left notification-sender"><span><a href="#">Charlotte Decary</a><br></span> POST </li>
+                                <li class="pull-right notification-time">Il y a 7 heures</li>
                             </ul>
                             <p>
-                                <a href="#">Anjelina Mewlo, Jack Flip</a> and <a href="#">3 others</a>
+                                <a href="#">Anjelina Mewlo, Jack Flip</a> et <a href="#">3 autres aiment ça </a>
                             </p>
                         </div>
                     </div>
                     <div class="alert alert-warning ">
-                        <span class="alert-icon"><i class="fa fa-bell-o"></i></span>
+                        <span class="alert-icon"><i class="fa fa-align-justify"></i></span>
                         <div class="notification-info">
                             <ul class="clearfix notification-meta">
-                                <li class="pull-left notification-sender">Domain Renew Deadline 7 days ahead</li>
+                                <li class="pull-left notification-sender">Emmanuelle Thiroloix</li>
                                 <li class="pull-right notification-time">5 Days Ago</li>
                             </ul>
                             <p>
@@ -263,188 +260,191 @@ include("include/menu_gauche.inc.php");
                         </div>
                     </div>           
                  <div class="alert alert-danger">
-                        <span class="alert-icon"><i class="fa fa-facebook"></i></span>
+                        <span class="alert-icon"><i class="fa fa-align-justify"></i></span>
                         <div class="notification-info">
                             <ul class="clearfix notification-meta">
-                                <li class="pull-left notification-sender"><span><a href="#">Jonathan Smith</a></span> mentioned you in a post </li>
+                                <li class="pull-left notification-sender"><span><a href="#">Jonathan Smith</a></span> <br> POST <br></li>
                                 <li class="pull-right notification-time">7 Hours Ago</li>
                             </ul>
-                            <p>
-                                Very cool photo jack
-                            </p>
+                     
+                        </div>
+                    </div>
+                    <div class="alert alert-danger">
+                        <span class="alert-icon"><i class="fa fa-align-justify"></i></span>
+                        <div class="notification-info">
+                            <ul class="clearfix notification-meta">
+                                <li class="pull-left notification-sender"><span><a href="#">Léa Blanchard</a><br></span> POST </li>
+                                <li class="pull-right notification-time">Il y a 7 heures</li>
+                            </ul>
+                        
                         </div>
                     </div>
                     <div class="alert alert-success ">
-                        <span class="alert-icon"><i class="fa fa-comments-o"></i></span>
+                        <span class="alert-icon"><i class="fa fa-align-justify"></i></span>
                         <div class="notification-info">
                             <ul class="clearfix notification-meta">
-                                <li class="pull-left notification-sender">You have 5 message unread</li>
-                                <li class="pull-right notification-time">1 min ago</li>
+                                    <li class="pull-left notification-sender"><span><a href="#">Charlotte Decary</a><br></span> POST </li>
+                                <li class="pull-right notification-time">Il y a 7 heures</li>
                             </ul>
                             <p>
-                                <a href="#">Anjelina Mewlo, Jack Flip</a> and <a href="#">3 others</a>
+                                <a href="#">Anjelina Mewlo, Jack Flip</a> et <a href="#">3 autres aiment ça </a>
                             </p>
                         </div>
                     </div>
                     <div class="alert alert-warning ">
-                        <span class="alert-icon"><i class="fa fa-bell-o"></i></span>
+                        <span class="alert-icon"><i class="fa fa-align-justify"></i></span>
                         <div class="notification-info">
                             <ul class="clearfix notification-meta">
-                                <li class="pull-left notification-sender">Domain Renew Deadline 7 days ahead</li>
+                                <li class="pull-left notification-sender">Emmanuelle Thiroloix</li>
                                 <li class="pull-right notification-time">5 Days Ago</li>
                             </ul>
                             <p>
                                 Next 5 July Thursday is the last day
                             </p>
                         </div>
-                    </div>
-             
-               <div class="alert alert-danger">
-                        <span class="alert-icon"><i class="fa fa-facebook"></i></span>
-                        <div class="notification-info">
-                            <ul class="clearfix notification-meta">
-                                <li class="pull-left notification-sender"><span><a href="#">Jonathan Smith</a></span> mentioned you in a post </li>
-                                <li class="pull-right notification-time">7 Hours Ago</li>
-                            </ul>
-                            <p>
-                                Very cool photo jack
-                            </p>
-                        </div>
-                    </div>
-                    <div class="alert alert-success ">
-                        <span class="alert-icon"><i class="fa fa-comments-o"></i></span>
-                        <div class="notification-info">
-                            <ul class="clearfix notification-meta">
-                                <li class="pull-left notification-sender">You have 5 message unread</li>
-                                <li class="pull-right notification-time">1 min ago</li>
-                            </ul>
-                            <p>
-                                <a href="#">Anjelina Mewlo, Jack Flip</a> and <a href="#">3 others</a>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="alert alert-warning ">
-                        <span class="alert-icon"><i class="fa fa-bell-o"></i></span>
-                        <div class="notification-info">
-                            <ul class="clearfix notification-meta">
-                                <li class="pull-left notification-sender">Domain Renew Deadline 7 days ahead</li>
-                                <li class="pull-right notification-time">5 Days Ago</li>
-                            </ul>
-                            <p>
-                                Next 5 July Thursday is the last day
-                            </p>
-                        </div>
-                    </div>
-                <div class="alert alert-danger">
-                        <span class="alert-icon"><i class="fa fa-facebook"></i></span>
-                        <div class="notification-info">
-                            <ul class="clearfix notification-meta">
-                                <li class="pull-left notification-sender"><span><a href="#">Jonathan Smith</a></span> mentioned you in a post </li>
-                                <li class="pull-right notification-time">7 Hours Ago</li>
-                            </ul>
-                            <p>
-                                Very cool photo jack
-                            </p>
-                        </div>
-                    </div>
-                    <div class="alert alert-success ">
-                        <span class="alert-icon"><i class="fa fa-comments-o"></i></span>
-                        <div class="notification-info">
-                            <ul class="clearfix notification-meta">
-                                <li class="pull-left notification-sender">You have 5 message unread</li>
-                                <li class="pull-right notification-time">1 min ago</li>
-                            </ul>
-                            <p>
-                                <a href="#">Anjelina Mewlo, Jack Flip</a> and <a href="#">3 others</a>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="alert alert-warning ">
-                        <span class="alert-icon"><i class="fa fa-bell-o"></i></span>
-                        <div class="notification-info">
-                            <ul class="clearfix notification-meta">
-                                <li class="pull-left notification-sender">Domain Renew Deadline 7 days ahead</li>
-                                <li class="pull-right notification-time">5 Days Ago</li>
-                            </ul>
-                            <p>
-                                Next 5 July Thursday is the last day
-                            </p>
-                        </div>
-                    </div>
+                    </div>           
                  <div class="alert alert-danger">
-                        <span class="alert-icon"><i class="fa fa-facebook"></i></span>
+                        <span class="alert-icon"><i class="fa fa-align-justify"></i></span>
                         <div class="notification-info">
                             <ul class="clearfix notification-meta">
-                                <li class="pull-left notification-sender"><span><a href="#">Jonathan Smith</a></span> mentioned you in a post </li>
+                                <li class="pull-left notification-sender"><span><a href="#">Jonathan Smith</a></span> <br> POST <br></li>
                                 <li class="pull-right notification-time">7 Hours Ago</li>
                             </ul>
-                            <p>
-                                Very cool photo jack
-                            </p>
+                     
+                        </div>
+                    </div>
+                    <div class="alert alert-danger">
+                        <span class="alert-icon"><i class="fa fa-align-justify"></i></span>
+                        <div class="notification-info">
+                            <ul class="clearfix notification-meta">
+                                <li class="pull-left notification-sender"><span><a href="#">Léa Blanchard</a><br></span> POST </li>
+                                <li class="pull-right notification-time">Il y a 7 heures</li>
+                            </ul>
+                        
                         </div>
                     </div>
                     <div class="alert alert-success ">
-                        <span class="alert-icon"><i class="fa fa-comments-o"></i></span>
+                        <span class="alert-icon"><i class="fa fa-align-justify"></i></span>
                         <div class="notification-info">
                             <ul class="clearfix notification-meta">
-                                <li class="pull-left notification-sender">You have 5 message unread</li>
-                                <li class="pull-right notification-time">1 min ago</li>
+                                    <li class="pull-left notification-sender"><span><a href="#">Charlotte Decary</a><br></span> POST </li>
+                                <li class="pull-right notification-time">Il y a 7 heures</li>
                             </ul>
                             <p>
-                                <a href="#">Anjelina Mewlo, Jack Flip</a> and <a href="#">3 others</a>
+                                <a href="#">Anjelina Mewlo, Jack Flip</a> et <a href="#">3 autres aiment ça </a>
                             </p>
                         </div>
                     </div>
                     <div class="alert alert-warning ">
-                        <span class="alert-icon"><i class="fa fa-bell-o"></i></span>
+                        <span class="alert-icon"><i class="fa fa-align-justify"></i></span>
                         <div class="notification-info">
                             <ul class="clearfix notification-meta">
-                                <li class="pull-left notification-sender">Domain Renew Deadline 7 days ahead</li>
+                                <li class="pull-left notification-sender">Emmanuelle Thiroloix</li>
                                 <li class="pull-right notification-time">5 Days Ago</li>
                             </ul>
                             <p>
                                 Next 5 July Thursday is the last day
                             </p>
                         </div>
-                    </div>
-                <div class="alert alert-danger">
-                        <span class="alert-icon"><i class="fa fa-facebook"></i></span>
+                    </div>           
+                 <div class="alert alert-danger">
+                        <span class="alert-icon"><i class="fa fa-align-justify"></i></span>
                         <div class="notification-info">
                             <ul class="clearfix notification-meta">
-                                <li class="pull-left notification-sender"><span><a href="#">Jonathan Smith</a></span> mentioned you in a post </li>
+                                <li class="pull-left notification-sender"><span><a href="#">Jonathan Smith</a></span> <br> POST <br></li>
                                 <li class="pull-right notification-time">7 Hours Ago</li>
                             </ul>
-                            <p>
-                                Very cool photo jack
-                            </p>
+                     
+                        </div>
+                    </div>
+                    <div class="alert alert-danger">
+                        <span class="alert-icon"><i class="fa fa-align-justify"></i></span>
+                        <div class="notification-info">
+                            <ul class="clearfix notification-meta">
+                                <li class="pull-left notification-sender"><span><a href="#">Léa Blanchard</a><br></span> POST </li>
+                                <li class="pull-right notification-time">Il y a 7 heures</li>
+                            </ul>
+                        
                         </div>
                     </div>
                     <div class="alert alert-success ">
-                        <span class="alert-icon"><i class="fa fa-comments-o"></i></span>
+                        <span class="alert-icon"><i class="fa fa-align-justify"></i></span>
                         <div class="notification-info">
                             <ul class="clearfix notification-meta">
-                                <li class="pull-left notification-sender">You have 5 message unread</li>
-                                <li class="pull-right notification-time">1 min ago</li>
+                                    <li class="pull-left notification-sender"><span><a href="#">Charlotte Decary</a><br></span> POST </li>
+                                <li class="pull-right notification-time">Il y a 7 heures</li>
                             </ul>
                             <p>
-                                <a href="#">Anjelina Mewlo, Jack Flip</a> and <a href="#">3 others</a>
+                                <a href="#">Anjelina Mewlo, Jack Flip</a> et <a href="#">3 autres aiment ça </a>
                             </p>
                         </div>
                     </div>
                     <div class="alert alert-warning ">
-                        <span class="alert-icon"><i class="fa fa-bell-o"></i></span>
+                        <span class="alert-icon"><i class="fa fa-align-justify"></i></span>
                         <div class="notification-info">
                             <ul class="clearfix notification-meta">
-                                <li class="pull-left notification-sender">Domain Renew Deadline 7 days ahead</li>
+                                <li class="pull-left notification-sender">Emmanuelle Thiroloix</li>
                                 <li class="pull-right notification-time">5 Days Ago</li>
                             </ul>
                             <p>
                                 Next 5 July Thursday is the last day
                             </p>
                         </div>
+                    </div>           
+                 <div class="alert alert-danger">
+                        <span class="alert-icon"><i class="fa fa-align-justify"></i></span>
+                        <div class="notification-info">
+                            <ul class="clearfix notification-meta">
+                                <li class="pull-left notification-sender"><span><a href="#">Jonathan Smith</a></span> <br> POST <br></li>
+                                <li class="pull-right notification-time">7 Hours Ago</li>
+                            </ul>
+                     
+                        </div>
                     </div>
-
-                       </div>
+                    <div class="alert alert-danger">
+                        <span class="alert-icon"><i class="fa fa-align-justify"></i></span>
+                        <div class="notification-info">
+                            <ul class="clearfix notification-meta">
+                                <li class="pull-left notification-sender"><span><a href="#">Léa Blanchard</a><br></span> POST </li>
+                                <li class="pull-right notification-time">Il y a 7 heures</li>
+                            </ul>
+                        
+                        </div>
+                    </div>
+                    <div class="alert alert-success ">
+                        <span class="alert-icon"><i class="fa fa-align-justify"></i></span>
+                        <div class="notification-info">
+                            <ul class="clearfix notification-meta">
+                                    <li class="pull-left notification-sender"><span><a href="#">Charlotte Decary</a><br></span> POST </li>
+                                <li class="pull-right notification-time">Il y a 7 heures</li>
+                            </ul>
+                            <p>
+                                <a href="#">Anjelina Mewlo, Jack Flip</a> et <a href="#">3 autres aiment ça </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="alert alert-warning ">
+                        <span class="alert-icon"><i class="fa fa-align-justify"></i></span>
+                        <div class="notification-info">
+                            <ul class="clearfix notification-meta">
+                                <li class="pull-left notification-sender">Emmanuelle Thiroloix</li>
+                                <li class="pull-right notification-time">5 Days Ago</li>
+                            </ul>
+                            <p>
+                                Next 5 July Thursday is the last day
+                            </p>
+                        </div>
+                    </div>           
+                 <div class="alert alert-danger">
+                        <span class="alert-icon"><i class="fa fa-align-justify"></i></span>
+                        <div class="notification-info">
+                            <ul class="clearfix notification-meta">
+                                <li class="pull-left notification-sender"><span><a href="#">Jonathan Smith</a></span> <br> POST <br></li>
+                                <li class="pull-right notification-time">7 Hours Ago</li>
+                            </ul>
+                     
+                        </div>
+                    </div>
                 </section>
             </div>
             <!--fil d'actualité -->
