@@ -7,10 +7,10 @@ if(isset($_SESSION['auth'])){
 }
 if(!empty($_POST) && !empty($_POST['username']) && !empty($_POST['password'])){
     require_once 'include/db.php';
-    echo "UIGDBUKGED9UJGBDIUKJVBIDUKJVBID";
-    $req = $pdo->prepare('SELECT * FROM informations WHERE (username = :username OR email = :username)');
-    $req->execute(['username' => $_POST['username']]);
-    $user = $req->fetchObject();
+    $req = $pdo->prepare('SELECT * FROM informations WHERE (username = ?)');
+    $req->execute([$_POST['username']]);
+    $user = $req->fetch();
+    print_r($user);
     if(password_verify($_POST['password'], $user->password)){
         $_SESSION['auth'] = $user;
         $_SESSION['flash']['success'] = 'Vous êtes maintenant connecté';
@@ -25,6 +25,7 @@ if(!empty($_POST) && !empty($_POST['username']) && !empty($_POST['password'])){
         $_SESSION['flash']['danger'] = 'Identifiant ou mot de passe incorrecte';
     }
 }
+
 ?>
 
 <?php 
