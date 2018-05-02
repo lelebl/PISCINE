@@ -1,12 +1,12 @@
 <?php
 require_once 'include/functions.php';
 session_start();
-if(!empty($_POST)){
 
+if(!empty($_POST)){
     $errors = array();
     require_once 'include/db.php';
 
-    if(empty($_POST['username']) || !preg_match('/^[a-zA-Z0-9_]+$/', $_POST['username'])){
+    if(empty($_POST['username'])){
         $errors['username'] = "Votre pseudo n'est pas valide (alphanumérique)";
     } else {
         $req = $pdo->prepare('SELECT id FROM informations WHERE username = ?');
@@ -58,19 +58,18 @@ if(!empty($_POST)){
 
 if(empty($errors)){
 
-    $req = $pdo->prepare("INSERT INTO informations SET username = ?, password = ?, email = ?, confirmation_token = ?, nom = ?, prenom = ?, date_naissance = ?, adresse = ?, ville = ?, cp = ?, pays = ?, sexe = ?");
+    $req = $pdo->prepare("INSERT INTO informations SET username = ?, password = ?, email = ?, nom = ?, prenom = ?, date_naissance = ?, adresse = ?, ville = ?, cp = ?, pays = ?, sexe = ?");
     $password = password_hash($_POST['password'], PASSWORD_BCRYPT);
     $token = str_random(60);
     $sexe;
     if($_POST['sexe']=='1'){
-        $sexe='F';
-    }
-    else{
         $sexe='H';
     }
-    $req->execute([$_POST['username'], $password, $_POST['email'], $token, $_POST['nom'], $_POST['prenom'], $_POST['date_naissance'], $_POST['adresse'], $_POST['ville'], $_POST['cp'], $_POST['pays'], $sexe]);
+    else{
+        $sexe='F';
+    }
+    $req->execute([$_POST['username'], $password, $_POST['email'], $_POST['nom'], $_POST['prenom'], $_POST['date_naissance'], $_POST['adresse'], $_POST['ville'], $_POST['cp'], $_POST['pays'], $sexe]);
     $user_id = $pdo->lastInsertId();
-    mail($_POST['email'], 'Confirmation de votre compte', "Afin de valider votre compte merci de cliquer sur ce lien\n\nhttp://local.dev/Lab/Comptes/confirm.php?id=$user_id&token=$token");
     $_SESSION['flash']['success'] = 'Un email de confirmation vous a été envoyé pour valider votre compte';
     header('Location: index.php');
     exit();
@@ -89,7 +88,7 @@ include("include/header.inc.php");
 
     <div class="container">
 
-      <form class="form-signin" action="">
+      <form class="form-signin" action="" method="POST">
         <h2 class="form-signin-heading">Créez votre compte</h2>
         <div class="login-wrap">
             <?php if(!empty($errors)): ?>
@@ -97,14 +96,14 @@ include("include/header.inc.php");
                 <p>Vous n'avez pas rempli le formulaire correctement</p>
                 <ul>
                     <?php foreach($errors as $error): ?>
-                       <li><?= $error; ?></li>
+                       <li><?php echo $error; ?></li>
                     <?php endforeach; ?>
                 </ul>
             </div>
             <?php endif; ?>
 
             <p>Entrez vos informations de connexion</p>
-            <input type="text" class="form-control" name="pseudo" placeholder="Pseudo" autofocus>
+            <input type="text" class="form-control" name="username" placeholder="Pseudo" autofocus>
             <input type="password" class="form-control" name="password" placeholder="Mot de passe">
             <input type="password" class="form-control" name="password_confirm" placeholder="Confirmer le mot de passe">
             
@@ -115,7 +114,7 @@ include("include/header.inc.php");
                     <input name="sexe" id="radio-01" value="1" type="radio" checked /> Homme
                 </label>
                 <label class="label_radio col-lg-6 col-sm-6" for="radio-02">
-                    <input name="sexe" id="radio-02" value="1" type="radio" /> Femme
+                    <input name="sexe" id="radio-02" value="2" type="radio" /> Femme
                 </label>
             </div>
             <br>
