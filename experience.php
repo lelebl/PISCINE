@@ -81,6 +81,14 @@ include("include/menu_gauche.inc.php");
                             </tr>
                         </tbody>
                     </table>
+                    <div class="bouton">
+                          <br>
+                          
+
+                         <center> <a href="page_modif_experience.php"> Modifier </a></center>
+                        <br>
+                          <br>
+                        </div>
 
 
                   </div>
