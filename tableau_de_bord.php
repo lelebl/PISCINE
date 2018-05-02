@@ -109,18 +109,18 @@ include("include/menu_gauche.inc.php");
                
                 <div class="panel-heading">
 
-                    Partager une photo, une vidéo, un article 
+                    Partager une photo, une vidéo, un article
                  
                  </div>
 
                  <div class="panel-body">
                     <div class="boutontab">
 
-                    <a href="#"><i class="fa fa-camera"></i></a>
-                    <a href="#"><i class="fa fa-film"></i></a>
-                    <a href="#"><i class="fa fa-paperclip"></i></a>
+                    <a href="#Photo" type="button" data-toggle="modal"><i class="fa fa-camera"></i></a>
+                    <a href="#Video" type="button" data-toggle="modal"><i class="fa fa-film"></i></a>
+                    <a href="#Lien" type="button" data-toggle="modal"><i class="fa fa-paperclip"></i></a>
                     </div>
-                    <br> <textarea class="wysihtml5 form-control" rows="9"></textarea><br>
+                    <br> <textarea class="form-control" rows="9" placeholder="Exprimez-vous..." ></textarea><br>
                     <div class="boutontab">
                     <center><a href="#"><i class="fa fa-smile-o"></i></a>
                             <a href="#"><i class="fa fa-thumbs-up"></i></a>
@@ -538,14 +538,220 @@ include("include/menu_gauche.inc.php");
                     </div>
                 </div>
 
-	</section>
+
+
+        <div class="modal fade" id="Photo" tabindex="-1" role="dialog" aria-labelledby="Photo" aria-hidden="true"> 
+            <div class="modal-dialog modal-md">
+                <div class="modal-content"> 
+                    <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title text-center">Partager une photo</h4>
+                </div>
+
+                <div class="modal-body text-center">
+                    <h4 class="m-t-0">Edition</h4>
+                    <form>
+                        
+                        <div class="form-group">
+                            <label class="sr-only">Veuillez entrer votre texte ici</label>
+                            <div class="input-group">
+                                <div class="input-group-addon"><span class="fa fa-pencil-square-o"></span></div>
+                                <textarea class="form-control" id="exampleTextarea" rows="4" placeholder="Texte"></textarea>
+                            </div>
+                        </div>
+
+
+
+                        <div class="form-group">
+                            <label class="sr-only">Photo</label>
+                            <div class="input-group">
+                               <form id="upload" method="post" action="upload.php" enctype="multipart/form-data">
+                               <center><h5><input type="file" name="upl" multiple=""></h5>
+                                   <ul>
+                                <!-- The file uploads will be shown here -->
+                              </ul></center>  
+                        </form>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="sr-only">Date de publication</label>
+                            <div class="input-group">
+                                <div class="input-group-addon"><span class="fa fa-calendar"></span></div>
+                                <input type="date" class="form-control" placeholder="jj/mm/aaaa">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="sr-only">Emotion</label>
+                            <div class="input-group">
+                                <div class="input-group-addon"><span class="fa fa-smile-o"></span></div>
+                                <select class="form-control custom-select">
+                                    <option selected="">Content(e)</option>
+                                    <option>Fier(e)</option>
+                                    <option>Enervé(e)</option>
+                                    <option>Fatigué(e)</option>
+                                    <option>Motivé(e)</option>
+                                     <option>Déçu(e)</option>
+                                </select>
+                            </div>
+                        </div>
+                    <div class="bouton">
+                        <br><a href="tableau_de_bord.php">POSTER</a><br><br><br>
+                        </div>
+                    </form>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="Video" tabindex="-1" role="dialog" aria-labelledby="Video" aria-hidden="true"> 
+            <div class="modal-dialog modal-md">
+                <div class="modal-content"> 
+                    <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title text-center">Partager une vidéo</h4>
+                </div>
+
+                <div class="modal-body text-center">
+                    <h4 class="m-t-0">Edition</h4>
+                    <form>
+                        
+                        <div class="form-group">
+                            <label class="sr-only"></label>
+                            <div class="input-group">
+                                <div class="input-group-addon"><span class="fa fa-pencil-square-o"></span></div>
+                                <textarea class="form-control" id="exampleTextarea" rows="4" placeholder="Veuillez entrer votre texte ici"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="sr-only">Video</label>
+                            <div class="input-group">
+                               <form id="upload" method="post" action="upload.php" enctype="multipart/form-data">
+                               <center><h5><input type="file" name="upl" multiple=""></h5>
+                                   <ul>
+                                <!-- The file uploads will be shown here -->
+                              </ul></center>  
+                        </form>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="sr-only">Date de publication</label>
+                            <div class="input-group">
+                                <div class="input-group-addon"><span class="fa fa-calendar"></span></div>
+                                <input type="date" class="form-control" placeholder="jj/mm/aaaa">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="sr-only">Emotion</label>
+                            <div class="input-group">
+                                <div class="input-group-addon"><span class="fa fa-smile-o"></span></div>
+                                <select class="form-control custom-select">
+                                    <option selected="">Content(e)</option>
+                                    <option>Fier(e)</option>
+                                    <option>Enervé(e)</option>
+                                    <option>Fatigué(e)</option>
+                                    <option>Motivé(e)</option>
+                                     <option>Déçu(e)</option>
+                                </select>
+                            </div>
+                        </div>
+                    <div class="bouton">
+                        <br><a href="tableau_de_bord.php">POSTER</a><br><br><br>
+                        </div>
+                    </form>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="Lien" tabindex="-1" role="dialog" aria-labelledby="Lien" aria-hidden="true"> 
+            <div class="modal-dialog modal-md">
+                <div class="modal-content"> 
+                    <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title text-center">Partager un lien </h4>
+                </div>
+
+                <div class="modal-body text-center">
+                    <h4 class="m-t-0">Edition</h4>
+                    <form>
+                        
+                        <div class="form-group">
+                            <label class="sr-only"></label>
+                            <div class="input-group">
+                                <div class="input-group-addon"><span class="fa fa-pencil-square-o"></span></div>
+                                <textarea class="form-control" id="exampleTextarea" rows="4" placeholder="Veuillez entrer votre texte ici"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="sr-only">Lien</label>
+                            <p>Copier le lien URL : </p>
+                            <div class="input-group">
+                                <div class="input-group-addon"><span class="fa fa-code"></span> </div>
+                                
+                               <input class="form-control" type="url" name="lien">
+                           </div>
+                       </div>
+                    
+                        
+                        <div class="form-group">
+                            <label class="sr-only">Date de publication</label>
+                            <div class="input-group">
+                                <div class="input-group-addon"><span class="fa fa-calendar"></span></div>
+                                <input type="date" class="form-control" placeholder="jj/mm/aaaa">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="sr-only">Emotion</label>
+                            <div class="input-group">
+                                <div class="input-group-addon"><span class="fa fa-smile-o"></span></div>
+                                <select class="form-control custom-select">
+                                    <option selected="">Content(e)</option>
+                                    <option>Fier(e)</option>
+                                    <option>Enervé(e)</option>
+                                    <option>Fatigué(e)</option>
+                                    <option>Motivé(e)</option>
+                                     <option>Déçu(e)</option>
+                                </select>
+                            </div>
+                        </div>
+                    <div class="bouton">
+                       <center>< <br><a href="tableau_de_bord.php">POSTER</a><br><br><br></center>
+                        </div>
+               </div>
+           </form>
+       </div>
+   </div>
+</div>
+</div>
 </section>
-	
+</section>
+                    
   <!-- Placed js at the end of the document so the pages load faster -->
 
     <!--Core js-->
+<script src="../assets/js/jquery.min.js"></script>
+<script src="../assets/js/chart.js"></script>
+<script src="../assets/js/toolkit.js"></script>
+<script src="../assets/js/application.js"></script>
+<script>
+// execute/clear BS loaders for docs
+    $(function(){
+        if (window.BS&&window.BS.loader&&window.BS.loader.length) {
+            while(BS.loader.length){(BS.loader.pop())()}
+        }
+    })
+</script>
 
 <?php include('include/right_side_bar.php');
  include('include/js.inc.php'); ?>
+
+
 </body>
 
