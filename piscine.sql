@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost
--- Généré le :  mar. 01 mai 2018 à 08:47
+-- Généré le :  mer. 02 mai 2018 à 11:13
 -- Version du serveur :  5.6.38
 -- Version de PHP :  7.2.1
 
@@ -13,6 +13,39 @@ SET time_zone = "+00:00";
 --
 -- Base de données :  `piscine`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `commentaires`
+--
+
+CREATE TABLE `commentaires` (
+  `id` int(10) NOT NULL,
+  `date` datetime(6) NOT NULL,
+  `texte` varchar(255) NOT NULL,
+  `id_post` int(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `emploi`
+--
+
+CREATE TABLE `emploi` (
+  `intitule` varchar(255) NOT NULL,
+  `type` varchar(255) NOT NULL,
+  `avantages` varchar(255) NOT NULL,
+  `salaire` varchar(255) NOT NULL,
+  `secteur` varchar(255) NOT NULL,
+  `langues` varchar(255) NOT NULL,
+  `lieu` varchar(255) NOT NULL,
+  `diplome` varchar(255) NOT NULL,
+  `qualites` varchar(255) NOT NULL,
+  `exigences` varchar(255) NOT NULL,
+  `id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -69,7 +102,7 @@ CREATE TABLE `informations` (
   `photo` varchar(100) NOT NULL,
   `image_fond` varchar(100) NOT NULL,
   `competences` set('Pack Office','C','C++','Java','HTML/CSS','Espagnol','Anglais','Allemand','Matlab','Gestion de projet','Analyse financière','Design Thinking','Prototypage','Big Data','BlockChain','Entreprenariat','SQL','Leadership','Linux','Web Design','WordPress','Applications mobiles') NOT NULL,
-  `interets` varchar(100) NOT NULL,
+  `interets` set('Sport','Musique','Voyage','Cuisine') NOT NULL,
   `resume` longtext NOT NULL,
   `email` varchar(30) NOT NULL,
   `mdp` varchar(30) NOT NULL,
@@ -82,7 +115,47 @@ CREATE TABLE `informations` (
 
 INSERT INTO `informations` (`membre_id`, `nom`, `prenom`, `date_naissance`, `telephone`, `sexe`, `promo`, `pays`, `cp`, `adresse`, `profession`, `type`, `photo`, `image_fond`, `competences`, `interets`, `resume`, `email`, `mdp`, `pseudo`) VALUES
 (0, '', '', NULL, '', '', '', '', 0, '', '', '', '', '', 'HTML/CSS,Espagnol,Anglais,Allemand,Matlab,Gestion de projet,Analyse financière,BlockChain', '', '', '', '', ''),
-(1, 'Blanchard', 'Léa', '1997-05-10', '0672219012', 'M', 'ING3', 'France', 75015, '26 rue desnouettes', 'Etudiant(e) Licence', 'auteur', 'https://pixabay.com/fr/ballon-tour-en-montgolfi%C3%A8re-mission-2331488/', 'https://pixabay.com/fr/ballon-tour-en-montgolfi%C3%A8re-mission-2331488/', 'C++,Java,HTML/CSS,Espagnol,Anglais', 'cool', 'coucou moi cest lele je suis a l\'ece', '', '', '');
+(1, 'Blanchard', 'Léa', '1997-05-10', '0672219012', 'M', 'ING3', 'France', 75015, '26 rue desnouettes', 'Etudiant(e) Licence', 'auteur', 'https://pixabay.com/fr/ballon-tour-en-montgolfi%C3%A8re-mission-2331488/', 'https://pixabay.com/fr/ballon-tour-en-montgolfi%C3%A8re-mission-2331488/', 'C++,Java,HTML/CSS,Espagnol,Anglais', '', 'coucou moi cest lele je suis a l\'ece', '', '', '');
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `likes`
+--
+
+CREATE TABLE `likes` (
+  `id` int(10) NOT NULL,
+  `id_post` int(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `messagerie`
+--
+
+CREATE TABLE `messagerie` (
+  `id` int(11) NOT NULL,
+  `mp_expediteur` int(11) NOT NULL,
+  `mp_receveur` int(11) NOT NULL,
+  `mp_titre` varchar(100) CHARACTER SET latin1 COLLATE latin1_general_ci NOT NULL,
+  `mp_text` text CHARACTER SET latin1 COLLATE latin1_general_ci NOT NULL,
+  `mp_time` int(11) NOT NULL,
+  `mp_lu` enum('0','1') CHARACTER SET latin1 COLLATE latin1_general_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `notifications`
+--
+
+CREATE TABLE `notifications` (
+  `id` int(10) NOT NULL,
+  `texte` varchar(255) NOT NULL,
+  `date` datetime(6) NOT NULL,
+  `type` enum('Ajout','Emploi') NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -108,7 +181,10 @@ CREATE TABLE `possede` (
   `id_experience` int(10) NOT NULL,
   `id_formation` int(10) NOT NULL,
   `id_partage` int(10) NOT NULL,
-  `id_post` int(10) NOT NULL
+  `id_post` int(10) NOT NULL,
+  `id_emploi` int(11) NOT NULL,
+  `id_commentaire` int(10) NOT NULL,
+  `id_notification` int(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -162,6 +238,18 @@ CREATE TABLE `users` (
 --
 
 --
+-- Index pour la table `commentaires`
+--
+ALTER TABLE `commentaires`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Index pour la table `emploi`
+--
+ALTER TABLE `emploi`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Index pour la table `experience`
 --
 ALTER TABLE `experience`
@@ -179,6 +267,24 @@ ALTER TABLE `formation`
 ALTER TABLE `informations`
   ADD PRIMARY KEY (`membre_id`),
   ADD UNIQUE KEY `membre_id` (`membre_id`);
+
+--
+-- Index pour la table `likes`
+--
+ALTER TABLE `likes`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Index pour la table `messagerie`
+--
+ALTER TABLE `messagerie`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Index pour la table `notifications`
+--
+ALTER TABLE `notifications`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Index pour la table `partages`
@@ -217,6 +323,18 @@ ALTER TABLE `users`
 --
 
 --
+-- AUTO_INCREMENT pour la table `commentaires`
+--
+ALTER TABLE `commentaires`
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT pour la table `emploi`
+--
+ALTER TABLE `emploi`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT pour la table `experience`
 --
 ALTER TABLE `experience`
@@ -226,6 +344,24 @@ ALTER TABLE `experience`
 -- AUTO_INCREMENT pour la table `formation`
 --
 ALTER TABLE `formation`
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT pour la table `likes`
+--
+ALTER TABLE `likes`
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT pour la table `messagerie`
+--
+ALTER TABLE `messagerie`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT pour la table `notifications`
+--
+ALTER TABLE `notifications`
   MODIFY `id` int(10) NOT NULL AUTO_INCREMENT;
 
 --
