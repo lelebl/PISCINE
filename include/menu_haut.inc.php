@@ -69,15 +69,15 @@
                 </li>
                 <li>
                     <div class="alert alert-info clearfix">
-                        <span class="alert-icon"><i class="glyphicon glyphicon-book"></i></span>
+                        <span class="alert-icon"><i class="fa fa-exclamation"></i></span>
                         <div class="noti-info">
-                            <a href="#"> Vous avez une demande de livre!</a>
+                            <a href="#"> Charlotte a publier un post!</a>
                         </div>
                     </div>
                 </li>
                 <li>
                     <div class="alert alert-danger clearfix">
-                        <span class="alert-icon"><i class="glyphicon glyphicon-user"></i></span>
+                        <span class="alert-icon"><i class="fa fa-user"></i></span>
                         <div class="noti-info">
                             <a href="#"> Vous avez une demande de contact</a>
                         </div>
@@ -87,6 +87,56 @@
             </ul>
         </li>
         <!-- notification dropdown end -->
+        <li id="header_user_bar" class="dropdown">
+            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+
+                <i class="fa fa-user"></i>
+                <span class="badge bg-success">3</span>
+            </a>
+            <ul class="dropdown-menu extended notification">
+                <li>
+                    <p>Ajout de relation</p>
+                </li>
+                <li>
+                    <div class="alert alert-success clearfix">
+                        <span class="photo"><img alt="avatar" src="images/léa_blanchard.jpg"></span>
+                        <span class="tools pull-right">
+                                <a href="javascript:;" class="fa fa-check" ></a>
+                                <a href="javascript:;" class="fa fa-times" ></a>
+                        </span>
+                        <div class="noti-info">
+                            <p> Léa Blanchard</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="alert alert-success clearfix">
+                        <span class="photo"><img alt="avatar" src="images/smoothie.jpg"></span>
+                        <span class="tools pull-right">
+                                <a href="javascript:;" class="fa fa-check" ></a>
+                                <a href="javascript:;" class="fa fa-times" ></a>
+                        </span>
+                        <div class="noti-info">
+                            <p> Smoothie Leloroux</p>
+                        </div>
+                        
+                    </div>
+                </li>
+                <li>
+                    <div class="alert alert-success clearfix">
+                        <span class="photo"><img alt="avatar" src="images/marine.jpg"></span>
+                        <span class="tools pull-right">
+                                <a href="javascript:;" class="fa fa-check" ></a>
+                                <a href="javascript:;" class="fa fa-times" ></a>
+                        </span>
+                        <div class="noti-info">
+                            <p> Marine Thiroloix</p>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+        </li>
     </ul>
     <!--  notification end -->
 </div>
@@ -94,18 +144,18 @@
     <!--search & user info start-->
     <ul class="nav pull-right top-menu">
         <li>
-            <input type="text" class="form-control search" placeholder=" Rechercher">
+            <input type="text" class="form-control search"  placeholder=" Rechercher">
         </li>
         <!-- user login dropdown start-->
         <li class="dropdown">
-            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+            <a data-toggle="dropdown" class="dropdown-toggle" href="modification_information.php">
                 <img alt="" src="images/antoine_lame.jpg">
                 <span class="username">Antoine Lamé</span>
                 <b class="caret"></b>
             </a>
             <ul class="dropdown-menu extended logout">
-                <li><a href="#"><i class=" fa fa-suitcase"></i>Profile</a></li>
-                <li><a href="#"><i class="fa fa-cog"></i> Réglage</a></li>
+                <li><a href="modification_information.php"><i class=" fa fa-suitcase"></i>Profile</a></li>
+                <li><a href="tableau_de_bord.php"><i class="fa fa-cog"></i> Tableau de bord</a></li>
                 <li><a href="connexion.php"><i class="fa fa-key"></i> Déconnecter</a></li>
             </ul>
         </li>
