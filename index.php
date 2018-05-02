@@ -1,6 +1,7 @@
 <?php
 require_once 'include/functions.php';
 reconnect_from_cookie();
+$error="";
 if(isset($_SESSION['auth'])){
     header('Location: tableau_de_bord.php');
     exit();
@@ -10,20 +11,27 @@ if(!empty($_POST) && !empty($_POST['username']) && !empty($_POST['password'])){
     $req = $pdo->prepare('SELECT * FROM informations WHERE (username = ?)');
     $req->execute([$_POST['username']]);
     $user = $req->fetch();
-    print_r($user);
-    if(password_verify($_POST['password'], $user->password)){
-        $_SESSION['auth'] = $user;
-        $_SESSION['flash']['success'] = 'Vous êtes maintenant connecté';
-        if($_POST['remember']){
-            $remember_token = str_random(250);
-            $pdo->prepare('UPDATE informations SET remember_token = ? WHERE id = ?')->execute([$remember_token, $user->id]);
-            setcookie('remember', $user->id . '==' . $remember_token . sha1($user->id . 'ratonlaveurs'), time() + 60 * 60 * 24 * 7);
-        }
-        header('Location: tableau_de_bord.php');
-        exit();
-    }else{
-        $_SESSION['flash']['danger'] = 'Identifiant ou mot de passe incorrecte';
-    }
+    if(!empty($user->password)){
+      if($_POST['password']== $user->password){
+        echo "oyhijkb";
+          $_SESSION['auth'] = $user;
+          $_SESSION['flash']['success'] = 'Vous êtes maintenant connecté';
+          if($_POST['remember']){
+              $remember_token = str_random(250);
+              $pdo->prepare('UPDATE informations SET remember_token = ? WHERE id = ?')->execute([$remember_token, $user->id]);
+              setcookie('remember', $user->id . '==' . $remember_token . sha1($user->id . 'ratonlaveurs'), time() + 60 * 60 * 24 * 7);
+          }
+          header('Location: tableau_de_bord.php');
+          exit();
+      }else{
+          $_SESSION['flash']['danger'] = 'Identifiant ou mot de passe incorrecte';
+           $error="Identifiant ou mot de passe incorrects";
+      }
+  }else{
+          $_SESSION['flash']['danger'] = 'Identifiant ou mot de passe incorrecte';
+          $error="Identifiant ou mot de passe incorrects";
+      }
+
 }
 
 ?>
@@ -42,6 +50,9 @@ include("include/header.inc.php");
         <h2 class="form-signin-heading">Connecte toi !</h2>
         <div class="login-wrap">
             <div class="user-login-info">
+                <p> <?php if($error!=""){
+                  echo ($error);
+                }?></p>
                 <input type="text" class="form-control" name="username" placeholder="Pseudo" autofocus>
                 <input type="password" class="form-control" name="password" placeholder="Mot de passe">
             </div>

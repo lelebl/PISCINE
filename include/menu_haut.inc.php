@@ -156,14 +156,40 @@
             <ul class="dropdown-menu extended logout">
                 <li><a href="modification_information.php"><i class=" fa fa-suitcase"></i>Profile</a></li>
                 <li><a href="tableau_de_bord.php"><i class="fa fa-cog"></i> Tableau de bord</a></li>
-                <li><a href="index.php"><i class="fa fa-key"></i> Déconnecter</a></li>
+                <li><a href="logout.php"><i class="fa fa-key"></i> Déconnecter</a></li>
+                <li><a href="#modif_mdp" type="button" data-toggle="modal"><i class="fa fa-unlock-alt"></i> Changer password</a></li>
             </ul>
         </li>
         <!-- user login dropdown end -->
     </ul>
     <!--search & user info end-->
 </div>
+
 </header>
+<div class="modal fade" id="modif_mdp" tabindex="-1" role="dialog" aria-labelledby="modif_mdp" aria-hidden="true"> 
+    <div class="modal-dialog modal-md">
+        <div class="modal-content"> 
+            <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h4 class="modal-title text-center">Modifier mon mot de passe</h4>
+        </div>
+
+        <div class="modal-body text-center">
+            <form method="POST">
+                <div class="form-group">
+                    <input class="form-control" type="password" name="password" placeholder="Changer de mot de passe"/>
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="password" name="password_confirm" placeholder="Confirmation du mot de passe"/>
+                </div>
+            <div class="bouton">
+                <br><a href="modif_mdp.php">Changer</a><br><br><br>
+            </div>
+            </form>
+        </div>
+        </div>
+    </div>
+</div>
 
 <!--header end-->
 

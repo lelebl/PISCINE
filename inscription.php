@@ -59,7 +59,7 @@ if(!empty($_POST)){
 if(empty($errors)){
 
     $req = $pdo->prepare("INSERT INTO informations SET username = ?, password = ?, email = ?, nom = ?, prenom = ?, date_naissance = ?, adresse = ?, ville = ?, cp = ?, pays = ?, sexe = ?");
-    $password = password_hash($_POST['password'], PASSWORD_BCRYPT);
+    //$password = password_hash($_POST['password'], PASSWORD_BCRYPT);
     $token = str_random(60);
     $sexe;
     if($_POST['sexe']=='1'){
@@ -68,7 +68,7 @@ if(empty($errors)){
     else{
         $sexe='F';
     }
-    $req->execute([$_POST['username'], $password, $_POST['email'], $_POST['nom'], $_POST['prenom'], $_POST['date_naissance'], $_POST['adresse'], $_POST['ville'], $_POST['cp'], $_POST['pays'], $sexe]);
+    $req->execute([$_POST['username'],$_POST['password'], $_POST['email'], $_POST['nom'], $_POST['prenom'], $_POST['date_naissance'], $_POST['adresse'], $_POST['ville'], $_POST['cp'], $_POST['pays'], $sexe]);
     $user_id = $pdo->lastInsertId();
     $_SESSION['flash']['success'] = 'Un email de confirmation vous a été envoyé pour valider votre compte';
     header('Location: index.php');
