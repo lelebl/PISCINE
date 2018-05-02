@@ -433,14 +433,9 @@ include("include/menu_gauche.inc.php");
 <!--right sidebar end-->
 
 </section>
-    <!--Core js-->
-    <?php include('include/js.inc.php'); ?>
-<!--common script init for all pages-->
-<script src="js/scripts.js"></script>
-
-<!--script for this page-->
-<script src="js/gritter.js" type="text/javascript"></script>
-
+   
+   <?php include('include/right_side_bar.php');
+ include('include/js.inc.php'); ?>
 
   </body>
 </html>

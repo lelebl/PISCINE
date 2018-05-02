@@ -90,8 +90,8 @@
 
 	  <!-- Placed js at the end of the document so the pages load faster -->
 
-	    <!--Core js-->
-	    <?php include('include/js.inc.php'); ?>
+<?php include('include/right_side_bar.php');
+ include('include/js.inc.php'); ?>
 
 
 
