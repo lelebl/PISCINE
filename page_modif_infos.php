@@ -1,5 +1,5 @@
 <?php 
-$title="ModificationInformations";
+$title="Modification Informations";
 include("include/header.inc.php"); 
 include("include/menu_haut.inc.php");
 include("include/menu_gauche.inc.php");
@@ -33,8 +33,6 @@ include("include/menu_gauche.inc.php");
                      	<div class="col-lg-6">
                      		
      <table class="table">
-                            
-                            
                             
                             <tr>
                                 <td><a href="#">NOM</a></td>

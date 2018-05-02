@@ -9,7 +9,7 @@ include("include/header.inc.php");
     <div class="container">
 
       <form class="form-signin" action="index.html">
-        <h2 class="form-signin-heading">Connecte toi!</h2>
+        <h2 class="form-signin-heading">Connecte toi !</h2>
         <div class="login-wrap">
             <div class="user-login-info">
                 <input type="text" class="form-control" placeholder="Pseudo" autofocus>
