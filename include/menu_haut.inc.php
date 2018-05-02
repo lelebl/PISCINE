@@ -94,18 +94,18 @@
     <!--search & user info start-->
     <ul class="nav pull-right top-menu">
         <li>
-            <input type="text" class="form-control search" placeholder=" Rechercher">
+            <input type="text" class="form-control search"  placeholder=" Rechercher">
         </li>
         <!-- user login dropdown start-->
         <li class="dropdown">
-            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+            <a data-toggle="dropdown" class="dropdown-toggle" href="modification_information.php">
                 <img alt="" src="images/antoine_lame.jpg">
                 <span class="username">Antoine Lamé</span>
                 <b class="caret"></b>
             </a>
             <ul class="dropdown-menu extended logout">
-                <li><a href="#"><i class=" fa fa-suitcase"></i>Profile</a></li>
-                <li><a href="#"><i class="fa fa-cog"></i> Réglage</a></li>
+                <li><a href="modification_information.php"><i class=" fa fa-suitcase"></i>Profile</a></li>
+                <li><a href="tableau_de_bord.php"><i class="fa fa-cog"></i> Tableau de bord</a></li>
                 <li><a href="connexion.php"><i class="fa fa-key"></i> Déconnecter</a></li>
             </ul>
         </li>
