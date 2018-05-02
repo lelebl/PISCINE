@@ -77,7 +77,14 @@
 
 
                      	<center>
-                     		<button class="btn btn-primary" type="button" formtarget="jepostule.php"> JE POSTULE ! </button></center>
+                            <div class="bouton">
+                          <br>
+                          
+
+                         <center> <a href="postuler.php"> Je postule! </a></center>
+                        <br>
+                          <br>
+                        </div></center>
 							
 
 

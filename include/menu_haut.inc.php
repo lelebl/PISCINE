@@ -5,7 +5,7 @@
 <div class="brand">
 
       <a href="tableau_de_bord.php" class="logo">
-      <img src="images/logo.png" alt="">
+      <img src="images/logo1.png" alt="">
     </a>
 
     <div class="sidebar-toggle-box">
@@ -43,13 +43,13 @@
                 
                 <li>
                     <a href="messagerie.php">
-                        <span class="photo"><img alt="avatar" src="images/mika.jpg"></span>
+                        <span class="photo"><img alt="avatar" src="images/smoothie.jpg"></span>
                                 <span class="subject">
                                 <span class="from">Mika</span>
                                 <span class="time">2 hour ago</span>
                                 </span>
                                 <span class="message">
-                                    Holà, on en est où dans le PSTE?
+                                    Holà, on en est où?
                                 </span>
                     </a>
                 </li>
@@ -149,8 +149,8 @@
         <!-- user login dropdown start-->
         <li class="dropdown">
             <a data-toggle="dropdown" class="dropdown-toggle" href="modification_information.php">
-                <img alt="" src="images/antoine_lame.jpg">
-                <span class="username">Antoine Lamé</span>
+                <img alt="" src="images/charlotte_decary.jpg">
+                <span class="username">Charlotte Decary</span>
                 <b class="caret"></b>
             </a>
             <ul class="dropdown-menu extended logout">
