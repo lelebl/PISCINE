@@ -26,7 +26,7 @@
                    
 					<div class="panel-heading">Intitulé de l'offre 
 					 <span class="tools pull-right">
-                                <a href="javascript:;" class="fa fa-bookmark" ></a>
+                                <a href="javascript:;" class="fa fa-chevron-down" ></a>
                                 <a href="" class="fa fa-times"></a>
                      </span>
                      </div>
