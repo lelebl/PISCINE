@@ -36,7 +36,7 @@ include("include/menu_gauche.inc.php");
                                 <th>Ecole d'ingénieur</th>
                                 <th>2015 - 2017</th>
                                 <th><span class="tools pull-right">
-                                    <a href="javascript:;" class="fa fa-pencil"></a>
+                                    <a href="#modifier" type="button" data-toggle="modal" class="fa fa-pencil"></a>
                                     <a href="javascript:;" class="fa fa-times"></a>
                                   </span></th>
                             </tr>
@@ -64,7 +64,7 @@ include("include/menu_gauche.inc.php");
                                 <th>Lycée</th>
                                 <th>2009 - 2015</th>
                                 <th><span class="tools pull-right">
-                                    <a href="javascript:;" class="fa fa-pencil"></a>
+                                   <a href="#modifier" type="button" data-toggle="modal" class="fa fa-pencil"></a>
                                     <a href="javascript:;" class="fa fa-times"></a>
                                   </span></th>
                             </tr>
@@ -103,11 +103,109 @@ include("include/menu_gauche.inc.php");
           </div>
           
       </div>
+
+       <div class="modal fade" id="modifier" tabindex="-1" role="dialog" aria-labelledby="modifier" aria-hidden="true"> 
+            <div class="modal-dialog modal-md">
+                <div class="modal-content"> 
+                    <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title text-center">Modifier la formation</h4>
+                </div>
+
+                <div class="modal-body text-center">
+                    <h4 class="m-t-0">Edition</h4>
+                    <form>
+                        <div class="form-group">
+                            <p>Date de début : </p>
+                            <label class="sr-only">Date de debut</label>
+                            <div class="input-group">
+                                <div class="input-group-addon"><span class="fa fa-calendar"></span></div>
+                                <input type="date" class="form-control" placeholder="jj/mm/aaaa">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <p>Date de fin : </p>
+                            <label class="sr-only">Date de fin</label>
+                            <div class="input-group">
+                                <div class="input-group-addon"><span class="fa fa-calendar"></span></div>
+                                <input type="date" class="form-control" placeholder="jj/mm/aaaa">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="sr-only">Ecole</label>
+                            <div class="input-group">
+                                <div class="input-group-addon"><span class="fa fa-suitcase"></span></div>
+                                <input type="text" class="form-control" placeholder="Ecole">
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label class="sr-only">Domaine</label>
+                            <div class="input-group">
+                                <div class="input-group-addon"><span class="fa fa-flask"></span></div>
+                                <input type="text" class="form-control" placeholder="Domaine">
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label class="sr-only">Assos</label>
+                            <div class="input-group">
+                                <div class="input-group-addon"><span class="fa fa-users"></span></div>
+                                <input type="text" class="form-control" placeholder="Associations">
+                            </div>
+                        </div>
+                        
+                        
+
+                        <div class="form-group">
+                            <label class="sr-only">Diplome</label>
+                            <div class="input-group">
+                                <div class="input-group-addon"><span class="fa fa-trophy"></span></div>
+                                <input type="text" class="form-control" placeholder="Diplome">
+                            </div>
+                        </div>
+
+                                                <div class="form-group">
+                            <label class="sr-only">Description</label>
+                            <div class="input-group">
+                                <div class="input-group-addon"><span class="fa fa-pencil-square-o"></span></div>
+                                <textarea class="form-control" id="exampleTextarea" rows="4" placeholder="Description"></textarea>
+                            </div>
+                        </div>
+                    <div class="bouton">
+                        <br><a href="formation.php">POSTER</a><br><br><br>
+                        </div>
+                    </form>
+                </div>
+                </div>
+            </div>
+        </div>
   </section>
 </section>
 
+ <!-- Placed js at the end of the document so the pages load faster -->
+
+    <!--Core js-->
+<script src="../assets/js/jquery.min.js"></script>
+<script src="../assets/js/chart.js"></script>
+<script src="../assets/js/toolkit.js"></script>
+<script src="../assets/js/application.js"></script>
+<script>
+// execute/clear BS loaders for docs
+    $(function(){
+        if (window.BS&&window.BS.loader&&window.BS.loader.length) {
+            while(BS.loader.length){(BS.loader.pop())()}
+        }
+    })
+</script>
+
 <?php include('include/right_side_bar.php');
  include('include/js.inc.php'); ?>
+
 
 </body>
 </html>
