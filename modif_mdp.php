@@ -1,5 +1,9 @@
 <?php
 require 'include/functions.php';
+
+if(session_status() == PHP_SESSION_NONE){
+    session_start();
+}
 logged_only();
 if(!empty($_POST)){
 
@@ -13,4 +17,5 @@ if(!empty($_POST)){
         header('Location: tableau_de_bord.php');
     }
 
-}?>
+}
+?>
