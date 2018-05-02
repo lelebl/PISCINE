@@ -29,7 +29,7 @@
                     <span>Profil</span>
                 </a>
                 <ul class="sub">
-                    <li <?php if($page == "modification_information.php" ){echo 'class="active"';} ?>><a href="modification_information.php">Modification info</a></li>
+                    <li <?php if($page == "modification_information.php" ){echo 'class="active"';} ?>><a href="modification_information.php">Informations personnelles</a></li>
                     <li <?php if($page == "formation.php" ){echo 'class="active"';} ?>><a href="formation.php">Formation</a></li>
                     <li <?php if($page == "experience.php" ){echo 'class="active"';} ?>><a href="experience.php">Expérience</a></li>
                 </ul>
