@@ -103,8 +103,8 @@ include("include/menu_gauche.inc.php");
   </section>
 </section>
 
-
-<?php include('include/js.inc.php'); ?>
+<?php include('include/right_side_bar.php');
+ include('include/js.inc.php'); ?>
 
 </body>
 </html>
