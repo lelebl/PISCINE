@@ -14,6 +14,8 @@ include("include/menu_gauche.inc.php");
                     <!--breadcrumbs start -->
                     <ul class="breadcrumb">
                         <li><a href="accueil.php"><i class="fa fa-home"></i> Accueil</a></li>
+                        
+                        <li><a href="modification_information.php"></i> Information personnelles</a></li>
                         <li class="active">Centres d'intérêts</li>
                     </ul>
                     <!--breadcrumbs end -->
