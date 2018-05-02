@@ -107,6 +107,12 @@ CREATE TABLE `informations` (
   `password` varchar(30) NOT NULL,
   `username` varchar(10) NOT NULL,
   `id` int(10) NOT NULL
+  `confirmation_token` varchar(60) DEFAULT NULL,
+  `confirmed_at` datetime DEFAULT NULL,
+  `reset_token` varchar(60) DEFAULT NULL,
+  `reset_at` datetime DEFAULT NULL,
+  `remember_token` varchar(255) DEFAULT NULL,
+  `admin` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -216,22 +222,6 @@ CREATE TABLE `relations` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
-
---
--- Structure de la table `users`
---
-
-CREATE TABLE `users` (
-  `id` int(11) NOT NULL,
-  `email` varchar(255) NOT NULL,
-  `password` varchar(255) NOT NULL,
-  `confirmation_token` varchar(60) DEFAULT NULL,
-  `confirmed_at` datetime DEFAULT NULL,
-  `reset_token` varchar(60) DEFAULT NULL,
-  `reset_at` datetime DEFAULT NULL,
-  `remember_token` varchar(255) DEFAULT NULL,
-  `admin` int(11) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Index pour les tables déchargées
