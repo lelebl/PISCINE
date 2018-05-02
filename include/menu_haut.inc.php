@@ -49,7 +49,7 @@
                                 <span class="time">2 hour ago</span>
                                 </span>
                                 <span class="message">
-                                    Holà, on en est où dans le PSTE?
+                                    Holà, on en est où?
                                 </span>
                     </a>
                 </li>

@@ -24,7 +24,7 @@ include("include/menu_gauche.inc.php");
         </div>
         <!--fin entete-->
 
-         <!--carroussel
+         <!--carroussel du louvre lol 
         <div class="row"> 
          
             <div class="col-lg-12"> 
