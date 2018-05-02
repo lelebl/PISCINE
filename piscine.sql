@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost
--- Généré le :  mer. 02 mai 2018 à 11:40
+-- Généré le :  mer. 02 mai 2018 à 11:51
 -- Version du serveur :  5.6.38
 -- Version de PHP :  7.2.1
 
@@ -106,7 +106,7 @@ CREATE TABLE `informations` (
   `email` varchar(30) NOT NULL,
   `password` varchar(30) NOT NULL,
   `username` varchar(10) NOT NULL,
-  `id` int(10) NOT NULL
+  `id` int(10) NOT NULL,
   `confirmation_token` varchar(60) DEFAULT NULL,
   `confirmed_at` datetime DEFAULT NULL,
   `reset_token` varchar(60) DEFAULT NULL,
@@ -119,9 +119,9 @@ CREATE TABLE `informations` (
 -- Déchargement des données de la table `informations`
 --
 
-INSERT INTO `informations` (`nom`, `prenom`, `date_naissance`, `telephone`, `sexe`, `promo`, `pays`, `cp`, `adresse`, `profession`, `type`, `photo`, `image_fond`, `competences`, `interets`, `resume`, `email`, `password`, `username`, `id`) VALUES
-('', '', NULL, '', '', '', '', 0, '', '', '', '', '', 'HTML/CSS,Espagnol,Anglais,Allemand,Matlab,Gestion de projet,Analyse financière,BlockChain', '', '', '', '', '', 1),
-('Blanchard', 'Léa', '1997-05-10', '0672219012', 'M', 'ING3', 'France', 75015, '26 rue desnouettes', 'Etudiant(e) Licence', 'auteur', 'https://pixabay.com/fr/ballon-tour-en-montgolfi%C3%A8re-mission-2331488/', 'https://pixabay.com/fr/ballon-tour-en-montgolfi%C3%A8re-mission-2331488/', 'C++,Java,HTML/CSS,Espagnol,Anglais', '', 'coucou moi cest lele je suis a l\'ece', '', '', '', 2);
+INSERT INTO `informations` (`nom`, `prenom`, `date_naissance`, `telephone`, `sexe`, `promo`, `pays`, `cp`, `adresse`, `profession`, `type`, `photo`, `image_fond`, `competences`, `interets`, `resume`, `email`, `password`, `username`, `id`, `confirmation_token`, `confirmed_at`, `reset_token`, `reset_at`, `remember_token`, `admin`) VALUES
+('', '', NULL, '', '', '', '', 0, '', '', '', '', '', 'HTML/CSS,Espagnol,Anglais,Allemand,Matlab,Gestion de projet,Analyse financière,BlockChain', '', '', '', '', '', 1, NULL, NULL, NULL, NULL, NULL, NULL),
+('Blanchard', 'Léa', '1997-05-10', '0672219012', 'M', 'ING3', 'France', 75015, '26 rue desnouettes', 'Etudiant(e) Licence', 'auteur', 'https://pixabay.com/fr/ballon-tour-en-montgolfi%C3%A8re-mission-2331488/', 'https://pixabay.com/fr/ballon-tour-en-montgolfi%C3%A8re-mission-2331488/', 'C++,Java,HTML/CSS,Espagnol,Anglais', '', 'coucou moi cest lele je suis a l\'ece', '', '', '', 2, NULL, NULL, NULL, NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -221,8 +221,6 @@ CREATE TABLE `relations` (
   `état` enum('accepté','refusé') NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- --------------------------------------------------------
-
 --
 -- Index pour les tables déchargées
 --
@@ -302,12 +300,6 @@ ALTER TABLE `relations`
   ADD PRIMARY KEY (`id`);
 
 --
--- Index pour la table `users`
---
-ALTER TABLE `users`
-  ADD PRIMARY KEY (`id`);
-
---
 -- AUTO_INCREMENT pour les tables déchargées
 --
 
@@ -339,7 +331,7 @@ ALTER TABLE `formation`
 -- AUTO_INCREMENT pour la table `informations`
 --
 ALTER TABLE `informations`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT pour la table `likes`
@@ -370,9 +362,3 @@ ALTER TABLE `partages`
 --
 ALTER TABLE `posts`
   MODIFY `id` int(10) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT pour la table `users`
---
-ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
