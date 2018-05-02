@@ -27,10 +27,6 @@ include("include/menu_gauche.inc.php");
                 <section class="panel">
                   <header class="panel-heading">
                     Formation 
-                    <span class="tools pull-right">
-                            <a href="javascript:;" class="fa fa-plus"></a>
-                         </span>
-
                   </header>
                   <div class="panel-body">
                   	<table class="table">
@@ -62,11 +58,9 @@ include("include/menu_gauche.inc.php");
                                 
                             </tr>
                         </tbody>
-                    </table>
-                    <table class="table">
                             <thead>
                             <tr>
-                                <th> SJH</th>
+                                <th> <br><br>SJH</th>
                                 <th>Lycée</th>
                                 <th>2009 - 2015</th>
                                 <th><span class="tools pull-right">
@@ -91,6 +85,14 @@ include("include/menu_gauche.inc.php");
                                 <td> Bac mention bien </td>    
                                 
                             </tr>
+                            <div class="bouton">
+                          <br>
+                          
+
+                         <center> <a href="modification_formation.php"> Modifier </a></center>
+                        <br>
+                          <br>
+                        </div>
                         </tbody>
                     </table>
 
