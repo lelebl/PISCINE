@@ -5,7 +5,7 @@
 <div class="brand">
 
       <a href="tableau_de_bord.php" class="logo">
-      <img src="images/logo.png" alt="">
+      <img src="images/logo1.png" alt="">
     </a>
 
     <div class="sidebar-toggle-box">
