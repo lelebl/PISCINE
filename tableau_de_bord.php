@@ -24,9 +24,9 @@ include("include/menu_gauche.inc.php");
         </div>
         <!--fin entete-->
 
-
+         <!--carroussel
         <div class="row"> 
-          <!--carroussel-->
+         
             <div class="col-lg-12"> 
                     <section class="panel">
                          <div id="c-slide" class="carousel slide auto panel-body">
@@ -61,7 +61,7 @@ include("include/menu_gauche.inc.php");
                          </div>
                     </section>
             </div>
-        </div>
+        </div>-->
 
         <!--demande d'amis / partage / offres d'emplois --> 
         <div class="row">

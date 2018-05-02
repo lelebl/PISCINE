@@ -15,8 +15,8 @@ include("include/menu_gauche.inc.php");
                 <div class="col-md-12">
                     <!--breadcrumbs start -->
                     <ul class="breadcrumb">
-                        <li><a href="tableau_de_bord.php"><i class="fa fa-home"></i> Tableau de bord</a></li>
-                        <li class="active">Experience</li>
+                        <li><a href="tableau_de_bord.php"><i class="fa fa-home"></i> Profil</a></li>
+                        <li class="active">Expérience</li>
                     </ul>
                     <!--breadcrumbs end -->
                 </div>
@@ -26,57 +26,47 @@ include("include/menu_gauche.inc.php");
               <div class="col-lg-12">
                 <section class="panel">
                   <header class="panel-heading">
-                    Experience 
-
+                   Expérience
                   </header>
                   <div class="panel-body">
-                  	<table class="table">
+                    <table class="table">
                             <thead>
                             <tr>
-                                <th> ECE PARIS</th>
-                                <th>Ecole d'ingénieur</th>
+                                <th> Poste</th>
+                                <th>Entreprise</th>
                                 <th>2015 - 2017</th>
                             </tr>
                             </thead>
                             <tbody>
                             <tr>
-                                <td><a href="#">Domaine</a></td>
-                                <td>Ingienerie</td>    
+                                <td><a >Lieu</a></td>
+                                <td>Paris</td>    
                                 
                             </tr>
+    
                             <tr>
-                                <td><a href="#">Associations</a></td>
-                                <td>SDI, Les Caves, UPA</td>    
-                                
-                            </tr>
-                            <tr>
-                                <td><a href="#">Description</a></td>
-                                <td>Majeur: Ocres, Mineur: Ingiénérie d'affaire</td>    
+                                <td><a >Description</a></td>
+                                <td>Stage </td>    
                                 
                             </tr>
                         </tbody>
                             <thead>
                             <tr>
-                                <th> <br> <br> SJH</th>
-                                <th>Lycée</th>
-                                <th>2009 - 2015</th>
-                                <th>
+                                <th> Poste</th>
+                                <th>Entreprise</th>
+                                <th>2015 - 2017</th>
                             </tr>
                             </thead>
                             <tbody>
                             <tr>
-                                <td><a href="#">Domaine</a></td>
-                                <td>Bac scientifique</td>    
+                                <td><a >Lieu</a></td>
+                                <td>Paris</td>    
                                 
                             </tr>
+    
                             <tr>
-                                <td><a href="#">Associations</a></td>
-                                <td> Soeurs de la miséricorde</td>    
-                                
-                            </tr>
-                            <tr>
-                                <td><a href="#">Description</a></td>
-                                <td> Bac mention bien </td>    
+                                <td><a >Description</a></td>
+                                <td>Stage </td>    
                                 
                             </tr>
                         </tbody>
@@ -98,7 +88,6 @@ include("include/menu_gauche.inc.php");
       </div>
   </section>
 </section>
-
 
 <?php include('include/right_side_bar.php');
  include('include/js.inc.php'); ?>
