@@ -65,7 +65,7 @@ include("include/menu_gauche.inc.php");
                             </thead>
                            <tbody>
                             <tr>
-                                 <td><a href="#">Sport</a></td>
+                                 <td><a >Sport</a></td>
                                  <td>
                                   <span class="tools pull-right">
                                     <a href="javascript:;" class="fa fa-times"></a>
@@ -73,7 +73,7 @@ include("include/menu_gauche.inc.php");
                                 </td>
                           </tr>
                             <tr>
-                                <td><a href="#">Musique</a></td>
+                                <td><a >Musique</a></td>
                                 <td>
                                   <span class="tools pull-right">
                                     <a href="javascript:;" class="fa fa-times"></a>
@@ -82,7 +82,7 @@ include("include/menu_gauche.inc.php");
 
                             </tr>
                             <tr>
-                                <td><a href="#">Voyage</a></td>
+                                <td><a >Voyage</a></td>
                                 <td>
                                   <span class="tools pull-right">
                                     <a href="javascript:;" class="fa fa-times"></a>
@@ -90,7 +90,7 @@ include("include/menu_gauche.inc.php");
                                 </td>
                             </tr>
                             <tr>
-                                <td><a href="#">Cuisine</a></td>
+                                <td><a >Cuisine</a></td>
                                 <td>
                                   <span class="tools pull-right">
                                     <a href="javascript:;" class="fa fa-times"></a>

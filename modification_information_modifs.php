@@ -69,82 +69,82 @@ include("include/menu_gauche.inc.php");
                             <br><br><br><br>
                             
                             <tr>
-                                <td><a href="#">NOM</a></td>
+                                <td><a>NOM</a></td>
                                 <td>
                                     nom
                                 </td>
                                 
                             </tr>
                             <tr>
-                                <td><a href="#">PRENOM</a></td>
+                                <td><a >PRENOM</a></td>
                                 <td>
                                     prenom
                                 </td>
                                 
                             </tr>
                             <tr>
-                                <td><a href="#">PSEUDO</a></td>
+                                <td><a >PSEUDO</a></td>
                                 <td>pseudo
                                 </td>
                                 
                             </tr>
                              <tr>
-                                <td><a href="#">EMAIL</a></td>
+                                <td><a >EMAIL</a></td>
                                 <td>email
                                 </td>
                                 
                             </tr>
                              <tr>
-                                <td><a href="#">MOT DE PASSE</a></td>
+                                <td><a >MOT DE PASSE</a></td>
                                 <td>mot de passe
                                 </td>
                                 
                             </tr>
                              <tr>
-                                <td><a href="#">DATE DE NAISSANCE</a></td>
+                                <td><a>DATE DE NAISSANCE</a></td>
                                 <td>date de naissance
                                 </td>
                                 
                             </tr>
                             <tr>
-                                <td><a href="#">ADRESSE</a></td>
+                                <td><a >ADRESSE</a></td>
                                 <td>adresse
                                 </td>
                                 
                             </tr>
                             <tr>
-                                <td><a href="#">VILLE</a></td>
+                                <td><a >VILLE</a></td>
                                 <td>ville
                                 </td>
                                 
                             </tr>
                             <tr>
-                                <td><a href="#">CODE POSTAL</a></td>
+                                <td><a >CODE POSTAL</a></td>
                                 <td>code postal
                                 </td>
                                 
                             </tr><tr>
-                                <td><a href="#">PAYS</a></td>
+                                <td><a >PAYS</a></td>
                                 <td>pays
                                   <span class="tools pull-right">
                                 </td>
                                 
                             </tr>
                             <tr>
-                                <td><a href="#">TELEPHONE</a></td>
+                                <td><a >TELEPHONE</a></td>
                                 <td>telephone
                                 </td>
                                 
                             </tr>
                             <tr>
-                                <td><a href="#">DATE DE NAISSANCE</a></td>
+                                <td><a>DATE DE NAISSANCE</a></td>
                                 <td>date de naissance
                                 </td>
                                 
                             </tr>
                             <tr>
 
-                                <td><a href="#">RESUME</a></td>
+                                <td><a >RESUME</a></td>
                                 <td> Et la on a un suoper resume<br>
                                  trop style et tout et tout 
                                   et bla bla
@@ -158,13 +158,13 @@ include("include/menu_gauche.inc.php");
                                 
                             </tr>
                             <tr>
-                                <td><a href="#">CV</a></td>
+                                <td><a >CV</a></td>
                                 <td>
 
 
                                     <div class="boutontab">
 
-                                      <a href="#"><i class="fa fa-paperclip"></i></a>
+                                      <a ><i class="fa fa-paperclip"></i></a>
                                     </div>
                                     
 

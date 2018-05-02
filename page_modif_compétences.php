@@ -40,7 +40,7 @@ include("include/menu_gauche.inc.php");
                             </thead>
                             <tbody>
                             <tr>
-                                <td><a href="#">Pack Office</a></td>
+                                <td><a >Pack Office</a></td>
                                 <td>
                                     <div class="progress progress-striped progress-xs">
                                         <div style="width: 20%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" role="progressbar" class="progress-bar progress-bar-danger">
@@ -53,7 +53,7 @@ include("include/menu_gauche.inc.php");
                                 
                             </tr>
                             <tr>
-                                <td><a href="#">C</a></td>
+                                <td><a >C</a></td>
                                 <td>
                                     <div class="progress progress-striped progress-xs">
                                         <div style="width: 20%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" role="progressbar" class="progress-bar progress-bar-danger">
@@ -66,7 +66,7 @@ include("include/menu_gauche.inc.php");
 
                             </tr>
                             <tr>
-                                <td><a href="#">C++</a></td>
+                                <td><a >C++</a></td>
                                 <td>
                                     <div class="progress progress-striped progress-xs">
                                         <div style="width: 20%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" role="progressbar" class="progress-bar progress-bar-danger">
@@ -78,7 +78,7 @@ include("include/menu_gauche.inc.php");
                                 </td>
                             </tr>
                             <tr>
-                                <td><a href="#">Java</a></td>
+                                <td><a >Java</a></td>
                                 <td>
                                     <div class="progress progress-striped progress-xs">
                                         <div style="width: 20%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" role="progressbar" class="progress-bar progress-bar-danger">
@@ -90,7 +90,7 @@ include("include/menu_gauche.inc.php");
                                 </td>
                             </tr>
                             <tr>
-                                <td><a href="#">HTML/CSS</a></td>
+                                <td><a >HTML/CSS</a></td>
                                 <td>
                                     <div class="progress progress-striped progress-xs">
                                         <div style="width: 20%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" role="progressbar" class="progress-bar progress-bar-danger">
@@ -102,7 +102,7 @@ include("include/menu_gauche.inc.php");
                                 </td>
                             </tr>
                             <tr>
-                                <td><a href="#">Espagnol</a></td>
+                                <td><a >Espagnol</a></td>
                                 <td>
                                     <div class="progress progress-striped progress-xs">
                                         <div style="width: 20%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" role="progressbar" class="progress-bar progress-bar-danger">
@@ -114,7 +114,7 @@ include("include/menu_gauche.inc.php");
                                 </td>
                             </tr>
                             <tr>
-                                <td><a href="#">Anglais</a></td>
+                                <td><a >Anglais</a></td>
                                 <td>
                                     <div class="progress progress-striped progress-xs">
                                         <div style="width: 20%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" role="progressbar" class="progress-bar progress-bar-danger">
@@ -126,7 +126,7 @@ include("include/menu_gauche.inc.php");
                                 </td>
                             </tr>
                             <tr>
-                                <td><a href="#">Allemand</a></td>
+                                <td><a >Allemand</a></td>
                                 <td>
                                     <div class="progress progress-striped progress-xs">
                                         <div style="width: 20%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" role="progressbar" class="progress-bar progress-bar-danger">
@@ -138,7 +138,7 @@ include("include/menu_gauche.inc.php");
                                 </td>
                             </tr>
                             <tr>
-                                <td><a href="#">Matlab</a></td>
+                                <td><a >Matlab</a></td>
                                 <td>
                                     <div class="progress progress-striped progress-xs">
                                         <div style="width: 20%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" role="progressbar" class="progress-bar progress-bar-danger">
@@ -150,7 +150,7 @@ include("include/menu_gauche.inc.php");
                                 </td>
                             </tr>
                             <tr>
-                                <td><a href="#">Gestion de projet</a></td>
+                                <td><a >Gestion de projet</a></td>
                                 <td>
                                     <div class="progress progress-striped progress-xs">
                                         <div style="width: 20%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" role="progressbar" class="progress-bar progress-bar-danger">
@@ -162,7 +162,7 @@ include("include/menu_gauche.inc.php");
                                 </td>
                             </tr>
                             <tr>
-                                <td><a href="#">Analyse financière</a></td>
+                                <td><a >Analyse financière</a></td>
                                 <td>
                                     <div class="progress progress-striped progress-xs">
                                         <div style="width: 20%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" role="progressbar" class="progress-bar progress-bar-danger">
@@ -174,7 +174,7 @@ include("include/menu_gauche.inc.php");
                                 </td>
                             </tr>
                             <tr>
-                                <td><a href="#">Design Thinking</a></td>
+                                <td><a >Design Thinking</a></td>
                                 <td>
                                     <div class="progress progress-striped progress-xs">
                                         <div style="width: 20%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" role="progressbar" class="progress-bar progress-bar-danger">
@@ -186,7 +186,7 @@ include("include/menu_gauche.inc.php");
                                 </td>
                             </tr>
                             <tr>
-                                <td><a href="#">Prototypage</a></td>
+                                <td><a >Prototypage</a></td>
                                 <td>
                                     <div class="progress progress-striped progress-xs">
                                         <div style="width: 20%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" role="progressbar" class="progress-bar progress-bar-danger">
@@ -198,7 +198,7 @@ include("include/menu_gauche.inc.php");
                                 </td>
                             </tr>
                             <tr>
-                                <td><a href="#">BigData</a></td>
+                                <td><a >BigData</a></td>
                                 <td>
                                     <div class="progress progress-striped progress-xs">
                                         <div style="width: 20%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" role="progressbar" class="progress-bar progress-bar-danger">
@@ -210,7 +210,7 @@ include("include/menu_gauche.inc.php");
                                 </td>
                             </tr>
                             <tr>
-                                <td><a href="#">BlockChain</a></td>
+                                <td><a >BlockChain</a></td>
                                 <td>
                                     <div class="progress progress-striped progress-xs">
                                         <div style="width: 20%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" role="progressbar" class="progress-bar progress-bar-danger">
@@ -222,7 +222,7 @@ include("include/menu_gauche.inc.php");
                                 </td>
                             </tr>
                             <tr>
-                                <td><a href="#">Entreprenariat</a></td>
+                                <td><a >Entreprenariat</a></td>
                                 <td>
                                     <div class="progress progress-striped progress-xs">
                                         <div style="width: 20%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" role="progressbar" class="progress-bar progress-bar-danger">
@@ -234,7 +234,7 @@ include("include/menu_gauche.inc.php");
                                 </td>
                             </tr>
                             <tr>
-                                <td><a href="#">SQL</a></td>
+                                <td><a >SQL</a></td>
                                 <td>
                                     <div class="progress progress-striped progress-xs">
                                         <div style="width: 20%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" role="progressbar" class="progress-bar progress-bar-danger">
@@ -246,7 +246,7 @@ include("include/menu_gauche.inc.php");
                                 </td>
                             </tr>
                             <tr>
-                                <td><a href="#">Leadership</a></td>
+                                <td><a >Leadership</a></td>
                                 <td>
                                     <div class="progress progress-striped progress-xs">
                                         <div style="width: 20%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" role="progressbar" class="progress-bar progress-bar-danger">
@@ -258,7 +258,7 @@ include("include/menu_gauche.inc.php");
                                 </td>
                             </tr>
                             <tr>
-                                <td><a href="#">Linux</a></td>
+                                <td><a >Linux</a></td>
                                 <td>
                                     <div class="progress progress-striped progress-xs">
                                         <div style="width: 20%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" role="progressbar" class="progress-bar progress-bar-danger">
@@ -270,7 +270,7 @@ include("include/menu_gauche.inc.php");
                                 </td>
                             </tr>
                             <tr>
-                                <td><a href="#">Web Design</a></td>
+                                <td><a >Web Design</a></td>
                                 <td>
                                     <div class="progress progress-striped progress-xs">
                                         <div style="width: 20%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" role="progressbar" class="progress-bar progress-bar-danger">
@@ -282,7 +282,7 @@ include("include/menu_gauche.inc.php");
                                 </td>
                             </tr>
                             <tr>
-                                <td><a href="#">WordPress</a></td>
+                                <td><a >WordPress</a></td>
                                 <td>
                                     <div class="progress progress-striped progress-xs">
                                         <div style="width: 20%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" role="progressbar" class="progress-bar progress-bar-danger">
@@ -294,7 +294,7 @@ include("include/menu_gauche.inc.php");
                                 </td>
                             </tr>
                             <tr>
-                                <td><a href="#">Application mobiles</a></td>
+                                <td><a >Application mobiles</a></td>
                                 <td>
                                     <div class="progress progress-striped progress-xs">
                                         <div style="width: 20%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" role="progressbar" class="progress-bar progress-bar-danger">

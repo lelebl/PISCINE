@@ -48,61 +48,61 @@ include("include/menu_gauche.inc.php");
                                 <table class="table">
                             <br><br>
                             <tr>
-                                <td><a href="#">NOM</a></td>
+                                <td><a >NOM</a></td>
                                 <td>
                                     <input type="text" class="form-control" placeholder="Nom" autofocus>
                                 </td>
                                 
                             </tr>
                             <tr>
-                                <td><a href="#">PRENOM</a></td>
+                                <td><a >PRENOM</a></td>
                                 <td>
                                     <input type="text" class="form-control" placeholder="Prénom" autofocus>
                                 </td>
                                 
                             </tr>
                             <tr>
-                                <td><a href="#">PSEUDO</a></td>
+                                <td><a >PSEUDO</a></td>
                                 <td><input type="text" class="form-control" placeholder="Pseudo" autofocus>
                                 </td>
                                 
                             </tr>
                              <tr>
-                                <td><a href="#">EMAIL</a></td>
+                                <td><a >EMAIL</a></td>
                                 <td>
                                     <input type="text" class="form-control" placeholder="Email" autofocus>
                                 </td>
                                 
                             </tr>
                              <tr>
-                                <td><a href="#">MOT DE PASSE</a></td>
+                                <td><a >MOT DE PASSE</a></td>
                                 <td><input type="password" class="form-control" placeholder="Mot de passe">
                                 </td>
                                 
                             </tr>
                             
                             <tr>
-                                <td><a href="#">ADRESSE</a></td>
+                                <td><a >ADRESSE</a></td>
                                 <td>
                                      <input type="text" class="form-control" placeholder="Addresse" autofocus>
                                 </td>
                                 
                             </tr>
                             <tr>
-                                <td><a href="#">VILLE</a></td>
+                                <td><a >VILLE</a></td>
                                 <td>
                                     <input type="text" class="form-control" placeholder="Ville" autofocus >
                                 </td>
                                 
                             </tr>
                             <tr>
-                                <td><a href="#">CODE POSTAL</a></td>
+                                <td><a>CODE POSTAL</a></td>
                                 <td>
                                     <input type="number" class="form-control" placeholder="Code postal" min="0" max="99999" autofocus >
                                 </td>
                                 
                             </tr><tr>
-                                <td><a href="#">PAYS</a></td>
+                                <td><a >PAYS</a></td>
                                 <td>
                                     <select name="pays" class="form-control" id="pays"placeholder="Pays">
                 <option value="France">France</option>      
@@ -115,13 +115,13 @@ include("include/menu_gauche.inc.php");
                                 
                             </tr>
                             <tr>
-                                <td><a href="#">TELEPHONE</a></td>
+                                <td><a >TELEPHONE</a></td>
                                 <td><input type="number" class="form-control" placeholder="telephone" min="0" max="9999999999" autofocus >
                                 </td>
                                 
                             </tr>
                             <tr>
-                                <td><a href="#">DATE DE NAISSANCE</a></td>
+                                <td><a>DATE DE NAISSANCE</a></td>
                                 <td>
                                     <input type="date" class="form-control" placeholder="Date" autofocus >
                                 </td>
@@ -130,7 +130,7 @@ include("include/menu_gauche.inc.php");
                             <tr>
                                 <tr>
 
-                                <td><a href="#">RESUME</a></td>
+                                <td><a >RESUME</a></td>
                                 <td>
 
                                   
@@ -153,7 +153,7 @@ include("include/menu_gauche.inc.php");
                                 
                             </tr>
                             <tr>
-                                <td><a href="#">CV</a></td>
+                                <td><a >CV</a></td>
                                 <td>
 
                                   

@@ -61,7 +61,7 @@ include("include/menu_gauche.inc.php");
                             </thead>
                             <tbody>
                             <tr>
-                                <td><a href="#">Pack Office</a></td>
+                                <td><a >Pack Office</a></td>
                                 <td>
                                     <div class="progress progress-striped progress-xs">
                                         <div style="width: 20%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" role="progressbar" class="progress-bar progress-bar-danger">
@@ -74,7 +74,7 @@ include("include/menu_gauche.inc.php");
                                 
                             </tr>
                             <tr>
-                                <td><a href="#">C</a></td>
+                                <td><a >C</a></td>
                                 <td>
                                     <div class="progress progress-striped progress-xs">
                                         <div style="width: 20%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" role="progressbar" class="progress-bar progress-bar-danger">
@@ -87,7 +87,7 @@ include("include/menu_gauche.inc.php");
 
                             </tr>
                             <tr>
-                                <td><a href="#">C++</a></td>
+                                <td><a>C++</a></td>
                                 <td>
                                     <div class="progress progress-striped progress-xs">
                                         <div style="width: 20%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" role="progressbar" class="progress-bar progress-bar-danger">
@@ -99,7 +99,7 @@ include("include/menu_gauche.inc.php");
                                 </td>
                             </tr>
                             <tr>
-                                <td><a href="#">Java</a></td>
+                                <td><a >Java</a></td>
                                 <td>
                                     <div class="progress progress-striped progress-xs">
                                         <div style="width: 20%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" role="progressbar" class="progress-bar progress-bar-danger">
@@ -111,7 +111,7 @@ include("include/menu_gauche.inc.php");
                                 </td>
                             </tr>
                             <tr>
-                                <td><a href="#">HTML/CSS</a></td>
+                                <td><a >HTML/CSS</a></td>
                                 <td>
                                     <div class="progress progress-striped progress-xs">
                                         <div style="width: 20%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" role="progressbar" class="progress-bar progress-bar-danger">
@@ -123,7 +123,7 @@ include("include/menu_gauche.inc.php");
                                 </td>
                             </tr>
                             <tr>
-                                <td><a href="#">Espagnol</a></td>
+                                <td><a >Espagnol</a></td>
                                 <td>
                                     <div class="progress progress-striped progress-xs">
                                         <div style="width: 20%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" role="progressbar" class="progress-bar progress-bar-danger">
@@ -135,7 +135,7 @@ include("include/menu_gauche.inc.php");
                                 </td>
                             </tr>
                             <tr>
-                                <td><a href="#">Anglais</a></td>
+                                <td><a >Anglais</a></td>
                                 <td>
                                     <div class="progress progress-striped progress-xs">
                                         <div style="width: 20%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" role="progressbar" class="progress-bar progress-bar-danger">
