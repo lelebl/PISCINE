@@ -40,7 +40,6 @@ if ($db_found) {
 	<body>
 	
 	<section id="main-content">
-		<section class="wrapper">
 			<!--entete-->
             <div class="row">
                 <div class="col-md-12">
@@ -55,7 +54,7 @@ if ($db_found) {
             <!--entete-->
 
             <!--head-->
-			<div class="mini-stat clearfix">
+			<div class="mini-stat clearfix"><br><br>
                             <span class="mini-stat-icon green"><i class="fa fa-suitcase"></i></span>
                             <div class="mini-stat-info">
                                 <br>VOS OFFRES D'EMPLOI
@@ -65,7 +64,7 @@ if ($db_found) {
             <!--head-->
 
         </section>
-    </section>
+    
 
 <?php
     while ($db_field = mysqli_fetch_assoc($result)) {
@@ -73,9 +72,9 @@ if ($db_found) {
 ?>
 			 
     <section id="main-content">
-        <section class="wrapper">
+        
             <div class="row">
-				<div class="col-lg-4"> 
+				<div class="col-lg-12"> 
 					<div class="panel panel-default">
                    
 					<div class="panel-heading"><?php echo $db_field['intitule'];?>
@@ -91,7 +90,7 @@ if ($db_found) {
                             Type : <?php echo $db_field['type'];?><br>
                             Secteur : <?php echo $db_field['secteur'];?>  <br>
                             Lieu : <?php echo $db_field['lieu'];?>  <br><br></p>
-                     	<center><a href="jepostule.php">POSTULER</a></center><br>
+                     	<center><a href="jepostule.php">JE POSTULE MAINTENANT !</a></center><br>
                      	</div>
 
                      </div>
@@ -99,7 +98,7 @@ if ($db_found) {
 				</div>
 			</div>
         </section>
-    </section>
+
 
 
 

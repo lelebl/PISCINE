@@ -55,7 +55,7 @@ include("include/menu_gauche.inc.php");
             <br>
           
        
-          <center><button name="mettre en ligne" type="submit"></center> 
+          <center><button class="btn btn-primary"  type="submit">METTRE EN LIGNE</center> 
           <br><br>
         
       </form>
