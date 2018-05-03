@@ -1,10 +1,13 @@
 <?php
+
 $title="Tableau de bord";
+require 'include/functions.php';
+if(session_status() == PHP_SESSION_NONE){
+    session_start();
+}
 include("include/header.inc.php"); 
 include("include/menu_haut.inc.php"); 
 include("include/menu_gauche.inc.php"); 
-
-
 ?>
 
 <body>
