@@ -36,6 +36,7 @@
                      	<p> 
                      		<h4>Descripion de l'offre </h4><br><br>
                      		Type de contrat<br>
+                            Entreprise <br>
 							Avantages<br>
 							Salaire<br>
 							Secteur<br>

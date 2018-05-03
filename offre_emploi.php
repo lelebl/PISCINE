@@ -29,7 +29,9 @@ include("include/menu_gauche.inc.php");
         <div class="panel-body">
             <div class="position-center">
                     <form class="form-sigin" action="index.html">
+
             <input type="text" class="form-control" placeholder="Intitulé de l'offre" autofocus><br><br>
+            <input type="text" class="form-control" placeholder="Entreprise"><br><br>
             <input type="text" class="form-control" placeholder="Type de contrat"><br><br>
             <input type="text" class="form-control" placeholder="Avantages"><br><br>
             <input type="text" class="form-control" placeholder="Salaire"><br><br>
