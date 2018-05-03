@@ -1,6 +1,6 @@
 <?php
 
-$title="Soumettre une offre d'emplois";
+$title="Soumettre une offre d'emploi";
 require 'include/functions.php';
 include("include/header.inc.php"); 
 include("include/menu_haut.inc.php"); 
@@ -28,35 +28,36 @@ include("include/menu_gauche.inc.php");
         <header class="panel-heading">VOTRE OFFRE D'EMPLOI</header> 
         <div class="panel-body">
             <div class="position-center">
-                    <form class="form-sigin" action="index.html">
+      
 
-            <input type="text" class="form-control" placeholder="Intitulé de l'offre" autofocus><br><br>
-            <input type="text" class="form-control" placeholder="Entreprise"><br><br>
-            <input type="text" class="form-control" placeholder="Type de contrat"><br><br>
-            <input type="text" class="form-control" placeholder="Avantages"><br><br>
-            <input type="text" class="form-control" placeholder="Salaire"><br><br>
-            <input type="text" class="form-control" placeholder="Secteur"><br><br>
-            <input type="text" class="form-control" placeholder="Langues exigées"><br><br>
-            <input type="text" class="form-control" placeholder="Lieu"><br><br>
+
+        <form class="form-signin" method="post" action="cbon.php">
+
+            <input type="text" class="form-control" name="intitule" placeholder="Intitulé de l'offre" autofocus><br><br>
+            <input type="text" class="form-control" name="type" placeholder="Type de contrat"><br><br>
+            <input type="text" class="form-control" name="avantages" placeholder="Avantages"><br><br>
+            <input type="text" class="form-control" name="salaire" placeholder="Salaire"><br><br>
+            <input type="text" class="form-control" name="secteur" placeholder="Secteur"><br><br>
+            <input type="text" class="form-control" name="langues" placeholder="Langues exigées"><br><br>
+            <input type="text" class="form-control" name="lieu" placeholder="Lieu"><br><br>
 
             <br><br><br>
 
             <h3>Profil recherché</h3><br>
-             <input type="text" class="form-control" placeholder="Diplomes"><br><br>
-             <input type="text" class="form-control" placeholder="Qualités"><br><br>
-            <input type="text" class="form-control" placeholder="Exigences (lettre de motivation, permis etc.)" autofocus><br><br>
-<br><br>
+             <input type="text" class="form-control" name="diplome" placeholder="Diplomes"><br><br>
+             <input type="text" class="form-control" name="qualites" placeholder="Qualités"><br><br>
+            <input type="text" class="form-control" name="exigences" placeholder="Exigences (lettre de motivation, permis etc.)" autofocus><br><br><br><br>
             <br>
             <h3> Vos coordonnées </h3><br>
             <input type="text" class="form-control" placeholder="Nom" autofocus><br><br>
             <input type="text" class="form-control" placeholder="Prénom" autofocus><br><br>
             <input type="text" class="form-control" placeholder="Email" autofocus><br><br>
             <br>
-          <div class="bouton">
+          
        
-          <center><a href="cbon.php">METTRE EN LIGNE</a> </center> 
+          <center><button class="btn btn-primary"  type="submit">METTRE EN LIGNE</center> 
           <br><br>
-          </div>
+        
       </form>
 
             </div>
@@ -74,7 +75,10 @@ include("include/menu_gauche.inc.php");
 
   <!-- Placed js at the end of the document so the pages load faster -->
 
-    <?php include('include/right_side_bar.php');
+    <?php
+
+
+     include('include/right_side_bar.php');
  include('include/js.inc.php'); ?>
 
 
