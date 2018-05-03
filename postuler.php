@@ -100,11 +100,61 @@ if ($db_found) {
                             Qualités : <?php echo $db_field['qualites'];?><br>
                             Exigences (lettre de motivation, permis etc.) : <?php echo $db_field['exigences'];?><br>
                             <br><br><br>
-                     	<center><a href="jepostule.php">JE POSTULE MAINTENANT !</a></center><br>
+                     	<center><a href="#Postuler" type="button" class="btn btn-primary" data-toggle="modal">JE POSTULE MAINTENANT !</i></a></center><br>
                      	</div>
 
                      </div>
-                 </div>
+
+
+        <!--fenetre CV-->
+        <div class="modal fade" id="Postuler" tabindex="-1" role="dialog" aria-labelledby="Video" aria-hidden="true"> 
+            <div class="modal-dialog modal-md">
+                <div class="modal-content"> 
+                    <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title text-center">Pièces nécessaires pour postuler</h4>
+                </div>
+
+                <div class="modal-body text-center">
+                
+                    <form>
+                        <br>
+                        <div class="form-group">
+                            <label class="sr-only">CV</label>
+                           <div class="text-left"> <h5>CV : </h5></div>
+                            <div class="input-group">
+                               <form id="upload" method="post" action="upload.php" enctype="multipart/form-data">
+                                <center><h5><input type="file" name="upl" multiple=""></h5>
+                                   <ul>
+                                <!-- The file uploads will be shown here -->
+                                   </ul></center>  
+                               </form>
+                            </div>
+                        </div><br>
+
+                        <div class="form-group">
+                            <label class="sr-only">Lettre de motivation</label>
+                            <div class="text-left"> <h5>Lettre de motivation : </h5></div>
+                            <div class="input-group">
+                               <form id="upload" method="post" action="upload.php" enctype="multipart/form-data">
+                                <center><h5><input type="file" name="upl" multiple=""></h5>
+                                   <ul>
+                                <!-- The file uploads will be shown here -->
+                                   </ul></center>  
+                               </form>
+                            </div>
+                        </div>
+                        
+                    <div class="bouton">
+                        <br><a href="tableau_de_bord.php">POSTULER</a><br><br><br>
+                        </div>
+                    </form>
+                </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
 				</div>
 			</div>
         </section>
