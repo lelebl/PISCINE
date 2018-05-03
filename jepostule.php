@@ -48,7 +48,7 @@ if ($db_found) {
                     <!--breadcrumbs start -->
                     <ul class="breadcrumb">
                         <li><a href="tableau_de_bord.php"><i class="fa fa-home"></i> Accueil</a></li>
-                        <li class="active">Soumettre une offre d'emploi </li>
+                        <li class="active">Je postule </li>
                     </ul>
                     <!--breadcrumbs end -->
                     </div>
