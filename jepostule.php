@@ -5,6 +5,38 @@ require 'include/functions.php';
 include("include/header.inc.php"); 
 include("include/menu_haut.inc.php"); 
 include("include/menu_gauche.inc.php"); 
+
+
+
+
+$intitule = $_GET['intitule'];
+$type = $_GET['type'];
+$avantages = $_GET['avantages'];
+$salaire = $_GET['salaire'];
+$secteur = $_GET['secteur'];
+$langues= $_GET['langues'];
+$lieu = $_GET['lieu'];
+$diplome = $_GET['diplome'];
+$qualites= $_GET['qualites'];
+$exigences = $_GET['exigences'];
+
+
+
+
+define('DB_SERVER','localhost');
+define('DB_USER','root');
+define('DB_PASS','root');
+
+$database = "piscine";
+
+$db_handle=mysqli_connect(DB_SERVER,DB_USER,DB_PASS);
+$db_found = mysqli_select_db($db_handle, $database);
+
+if ($db_found) {
+    $sql = 'SELECT * FROM emploi';
+    $result = mysqli_query($db_handle, $sql);
+    while ($db_field = mysqli_fetch_assoc($result)) {
+
 ?>
 	<body>
 		
@@ -24,7 +56,7 @@ include("include/menu_gauche.inc.php");
                 <div class="col-lg-12">
                 <div class="panel panel-default">
                    
-					<div class="panel-heading">Intitulé de l'offre 
+					<div class="panel-heading"><?php echo $db_field['intitule'];?>
 					 <span class="tools pull-right">
                                 <a href="javascript:;" class="fa fa-chevron-down" ></a>
                                 <a href="" class="fa fa-times"></a>
@@ -35,21 +67,20 @@ include("include/menu_gauche.inc.php");
                      	
                      	<p> 
                      		<h4>Descripion de l'offre </h4><br><br>
-                     		Type de contrat<br>
-                            Entreprise <br>
-							Avantages<br>
-							Salaire<br>
-							Secteur<br>
-							Langues exigées<br>
-							Lieu<br>
+                     		Type de contrat : <?php echo $db_field['type'];?><br>
+							Avantages : <?php echo $db_field['avantages'];?><br>
+							Salaire : <?php echo $db_field['salaire'];?><br>
+							Secteur : <?php echo $db_field['secteur'];?><br>
+							Langues exigées : <?php echo $db_field['langues'];?> <br>
+							Lieu : <?php echo $db_field['lieu'];?><br>
 							<br><br>
             				<h4>Profil recherché</h4><br>
-							Diplomes<br>
-							Qualités<br>
-							Exigences (lettre de motivation, permis etc.)<br>
+							Diplomes : <?php echo $db_field['diplome'];?><br>
+							Qualités : <?php echo $db_field['qualites'];?><br>
+							Exigences (lettre de motivation, permis etc.) : <?php echo $db_field['exigences'];?><br>
 							<br><br><br>
            				 	<h4> Coordoonées de l’employeur </h4><br>
-         					Nom<br>
+         					Nom <br>
 							Prénom<br>
 							Email
 						</p>
@@ -69,7 +100,7 @@ include("include/menu_gauche.inc.php");
                             <ul>
                                 <!-- The file uploads will be shown here -->
                             </ul>
-<br><br><br>
+                            <br><br><br>
                         </form>
                         </center>
                     
@@ -99,7 +130,12 @@ include("include/menu_gauche.inc.php");
 
 	  <!-- Placed js at the end of the document so the pages load faster -->
 
-<?php include('include/right_side_bar.php');
+<?php 
+}
+}
+mysqli_close($db_handle);
+ 
+include('include/right_side_bar.php');
  include('include/js.inc.php'); ?>
 
 
