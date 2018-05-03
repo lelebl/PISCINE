@@ -1,10 +1,11 @@
-<?php 
-$title="Modification Information";
-include("include/header.inc.php"); 
-include("include/menu_haut.inc.php");
-include("include/menu_gauche.inc.php");
-?>
+<?php
 
+$title="Modification Information";
+require 'include/functions.php';
+include("include/header.inc.php"); 
+include("include/menu_haut.inc.php"); 
+include("include/menu_gauche.inc.php"); 
+?>
 <body>
     <!--main content start-->
     <section id="main-content" >
@@ -33,7 +34,7 @@ include("include/menu_gauche.inc.php");
                                             Informations personelles
                                         </a><br><br>
 
-                                        <a href="modification_information_compétences.php" class="btn btn-compose">
+                                        <a href="modification_information_competences.php" class="btn btn-compose">
                                             Compétences
                                         </a><br><br>
                                         <a href="modification_information_centres_d'interets.php" class="btn btn-compose">

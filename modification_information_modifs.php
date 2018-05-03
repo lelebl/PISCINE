@@ -1,10 +1,11 @@
-<?php 
-$title="Modification Information Modifs";
-include("include/header.inc.php"); 
-include("include/menu_haut.inc.php");
-include("include/menu_gauche.inc.php");
-?>
+<?php
 
+$title="Modification Information Modifs";
+require 'include/functions.php';
+include("include/header.inc.php"); 
+include("include/menu_haut.inc.php"); 
+include("include/menu_gauche.inc.php"); 
+?>
 <body>
     <!--main content start-->
     <section id="main-content" >

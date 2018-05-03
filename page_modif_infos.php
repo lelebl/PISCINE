@@ -1,8 +1,10 @@
-<?php 
-$title="vrai modification information";
+<?php
+
+$title="Modification Information";
+require 'include/functions.php';
 include("include/header.inc.php"); 
-include("include/menu_haut.inc.php");
-include("include/menu_gauche.inc.php");
+include("include/menu_haut.inc.php"); 
+include("include/menu_gauche.inc.php"); 
 ?>
 
 <body>

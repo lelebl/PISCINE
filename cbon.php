@@ -1,10 +1,10 @@
 <?php
-$title="Offre d'emploi";
+
+$title="Offre d'emplois";
+require 'include/functions.php';
 include("include/header.inc.php"); 
 include("include/menu_haut.inc.php"); 
 include("include/menu_gauche.inc.php"); 
-
-
 ?>
 
 <body>

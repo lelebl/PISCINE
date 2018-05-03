@@ -1,11 +1,11 @@
-	<?php
-	$title="Je postule";
-	include("include/header.inc.php"); 
-	include("include/menu_haut.inc.php"); 
-	include("include/menu_gauche.inc.php"); 
+<?php
 
-
-	?>
+$title="Je postule";
+require 'include/functions.php';
+include("include/header.inc.php"); 
+include("include/menu_haut.inc.php"); 
+include("include/menu_gauche.inc.php"); 
+?>
 	<body>
 		
 

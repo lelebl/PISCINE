@@ -1,10 +1,10 @@
 <?php
-$title="Tableau de bord";
+
+$title="Modification Compétences";
+require 'include/functions.php';
 include("include/header.inc.php"); 
 include("include/menu_haut.inc.php"); 
 include("include/menu_gauche.inc.php"); 
-
-
 ?>
 
 

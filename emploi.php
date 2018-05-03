@@ -1,11 +1,10 @@
 <?php
-$title="Emplois";
-include("include/header.inc.php"); 
 
+$title="Emplois";
+require 'include/functions.php';
+include("include/header.inc.php"); 
 include("include/menu_haut.inc.php"); 
 include("include/menu_gauche.inc.php"); 
-
-
 ?>
 
 

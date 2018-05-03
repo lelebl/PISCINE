@@ -1,8 +1,10 @@
-<?php 
-$title="Modification Information Centres d'interets";
+<?php
+
+$title="Modification Information centre d'interets";
+require 'include/functions.php';
 include("include/header.inc.php"); 
-include("include/menu_haut.inc.php");
-include("include/menu_gauche.inc.php");
+include("include/menu_haut.inc.php"); 
+include("include/menu_gauche.inc.php"); 
 ?>
 
 <body>
