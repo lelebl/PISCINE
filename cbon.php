@@ -30,11 +30,8 @@ $db_found = mysqli_select_db($db_handle, $database);
 if ($db_found){
 $sql = 'INSERT INTO emploi(intitule, type, avantages, salaire, secteur, langues, lieu, diplome, qualites, exigences) VALUES ("'.$intitule.'","'.$type.'", "'.$avantages.'","'.$salaire.'","'.$secteur.'", "'.$langues.'", "'.$lieu.'", "'.$diplome.'", "'.$qualites.'", "'.$exigences.'")';
    $req = mysqli_query($db_handle, $sql);
-
-
-
-while ($db_field = mysqli_fetch_assoc($req))
-{
+}
+mysqli_close($db_handle);
 
 ?>
 <body>
@@ -66,8 +63,7 @@ while ($db_field = mysqli_fetch_assoc($req))
     </section>
 
     <?php 
- }}
-mysqli_close($db_handle);
+
 
 include('include/right_side_bar.php');
  include('include/js.inc.php'); ?>
