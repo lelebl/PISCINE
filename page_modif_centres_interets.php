@@ -5,6 +5,27 @@ require 'include/functions.php';
 include("include/header.inc.php"); 
 include("include/menu_haut.inc.php"); 
 include("include/menu_gauche.inc.php"); 
+
+$all_int= array('Sport', 'Musique', 'Voyage', 'Cuisine');
+
+if(!empty($_POST)){
+    require_once 'include/db.php';
+    $user_id = $_SESSION['auth']->id;
+    $modif_int="";
+    $a=0;
+    foreach ($all_int as $modif) {
+        if (isset($_POST[$modif])){
+            if($a==0){
+                 $modif_int=$modif;
+            }
+            else $modif_int=$modif_int.",".$modif;
+            $a++;
+        }    
+    }
+
+    $pdo->prepare('UPDATE informations SET interets = ? WHERE id = ?')->execute([$modif_int, $user_id]);
+    $_SESSION['auth']->interets=$modif_int;
+}
 ?>
 
 <body>

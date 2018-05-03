@@ -122,7 +122,7 @@ include("include/header.inc.php");
             <input type="text" class="form-control" name="nom" placeholder="Nom" autofocus>
             <input type="text" class="form-control" name="prenom" placeholder="Prénom" autofocus>
             <input type="text" class="form-control" name="email" placeholder="Email" autofocus>
-            <input type="date" class="form-control" name="date" placeholder="Date" autofocus >
+            <input type="date" class="form-control" name="date_naissance" placeholder="Date" autofocus >
             <br>
             <input type="text" class="form-control" name="adresse" placeholder="Addresse" autofocus>
             <input type="text" class="form-control" name="ville" placeholder="Ville" autofocus >

@@ -5,6 +5,8 @@ require 'include/functions.php';
 include("include/header.inc.php"); 
 include("include/menu_haut.inc.php"); 
 include("include/menu_gauche.inc.php"); 
+
+$nb_comp=count($_SESSION['auth']->competences);
 ?>
 <body>
     <!--main content start-->
@@ -15,7 +17,7 @@ include("include/menu_gauche.inc.php");
                     <!--breadcrumbs start -->
                     <ul class="breadcrumb">
                         <li><a href="accueil.php"><i class="fa fa-home"></i> Accueil</a></li>
-                        <li class="active">Informations personnelles</li>
+                        <li class="active">Profil</li>
                     </ul>
                     <!--breadcrumbs end -->
                 </div>
@@ -55,18 +57,32 @@ include("include/menu_gauche.inc.php");
                        </div>
                        <div class="col-lg-4">
                            <div class="profile-desk">
-                               <h1>Prenom Nom</h1>
-                               <span class="text-muted">Ecole</span>
-                               <p>
-                                    Compétences: Maths, Anglais, Francais, Power point, ect 
-                               </p>
-                           </div>
+                               <h1><?php echo($_SESSION['auth']->nom." ".$_SESSION['auth']->prenom); ?></h1>
+                            </div>
                        </div>
                        <div class="col-lg-4">
                            <div class="profile-statistics">
-                               <h1>8</h1>
-                               <p>Amis</p>
-                               <h1>9</h1>
+                                    <?php
+                                    if(!empty($_SESSION['auth']->interets)){
+                                        $interets=explode(",",$_SESSION['auth']->interets);
+                                        $nb_interet=count($interets);
+                                    }
+                                    else{
+                                        $nb_interet="0";
+                                        $interets="";
+                                    }
+                                    if(!empty($_SESSION['auth']->competences)){
+                                        $competences=explode(",",$_SESSION['auth']->competences);
+                                        $nb_comp=count($competences);
+                                    }
+                                    else{
+                                        $nb_comp="0";
+                                        $competences="";
+                                    }
+                                    ?>
+                               <h1><?php echo $nb_comp ?></h1>
+                               <p>Compétences</p>
+                               <h1><?php echo $nb_interet ?></h1>
                                <p>Centres d'interet</p>
                            </div>
                        </div>

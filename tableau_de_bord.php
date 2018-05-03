@@ -10,6 +10,7 @@ include("include/menu_haut.inc.php");
 include("include/menu_gauche.inc.php"); 
 ?>
 
+
 <body>
 
 <section id="main-content">

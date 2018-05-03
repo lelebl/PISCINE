@@ -154,7 +154,7 @@ logged_only();
         <li class="dropdown">
             <a data-toggle="dropdown" class="dropdown-toggle" href="modification_information.php">
                 <img alt="" src="images/charlotte_decary.jpg">
-                <span class="username">Charlotte Decary</span>
+                <span class="username"><?php echo($_SESSION['auth']->username); ?></span>
                 <b class="caret"></b>
             </a>
             <ul class="dropdown-menu extended logout">
