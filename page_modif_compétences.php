@@ -57,7 +57,7 @@ include("include/menu_gauche.inc.php");
                                 <td>
                                     <div class="progress progress-striped progress-xs">
                                         <div style="width: 20%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" role="progressbar" class="progress-bar progress-bar-danger">
-                                            <span class="sr-only">230% Complete (success)</span>
+                                            <span class="sr-only">23% Complete (success)</span>
                                         </div>
                                     </div>
                                 </td>

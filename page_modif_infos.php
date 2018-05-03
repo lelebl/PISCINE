@@ -40,7 +40,7 @@ include("include/menu_gauche.inc.php");
                                   <h1>Prenom Nom</h1>
                                   <span class="text-muted">Ecole</span>
                                   <p>
-                                    Compétences: Maths, Anglais, Francais, Power point, ect 
+                                    Compétences: Maths, Anglais, Francais, Power point, etc. 
                                   </p>
                                 
                               </div>
