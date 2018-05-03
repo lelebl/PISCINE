@@ -17,6 +17,7 @@ $lieu = $_GET['lieu'];
 $diplome = $_GET['diplome'];
 $qualites= $_GET['qualites'];
 $exigences = $_GET['exigences'];
+$id = $_GET['id'];
 
 
 
@@ -33,7 +34,7 @@ $db_found = mysqli_select_db($db_handle, $database);
 if ($db_found) {
     $sql = 'SELECT * FROM emploi';
     $result = mysqli_query($db_handle, $sql);
-    while ($db_field = mysqli_fetch_assoc($result)) {
+
 ?>
 
 	<body>
@@ -63,8 +64,17 @@ if ($db_found) {
                         </div>
             <!--head-->
 
+        </section>
+    </section>
 
-			<div class="row"></div>
+<?php
+    while ($db_field = mysqli_fetch_assoc($result)) {
+
+?>
+			 
+    <section id="main-content">
+        <section class="wrapper">
+            <div class="row">
 				<div class="col-lg-4"> 
 					<div class="panel panel-default">
                    
@@ -79,299 +89,8 @@ if ($db_found) {
                      	<div class="bouton">
                      	<p> Description de l'offre <br>
                             Type : <?php echo $db_field['type'];?><br>
-                            Secteur : <?php echo $db_field['secteur'];?><br>
-                            Lieu : <?php echo $db_field['lieu'];?><br><br></p>
-                     	<center><a href="jepostule.php">POSTULER</a></center><br>
-                     	</div>
-
-                     </div>
-                 </div>
-				</div>
-			
-				<div class="col-lg-4"> 
-					<div class="panel panel-default">
-                   
-					<div class="panel-heading">Intitulé de l'offre 
-					 <span class="tools pull-right">
-                                <a href="javascript:;" class="fa fa-chevron-down" ></a>
-                                <a class="fa fa-times" href="javascript:;"></a>
-                     </span>
-                     </div>
-
-                     <div class="panel-body">
-                     	<div class="bouton">
-                     	<p> Descripion de l'offre <br><br><br><br><br></p>
-                     	<center><a href="jepostule.php">POSTULER</a></center><br>
-                     	</div>
-                     </div>
-                 </div>
-				</div>
-			
-				<div class="col-lg-4"> 
-					<div class="panel panel-default">
-                   
-					<div class="panel-heading">Intitulé de l'offre 
-					 <span class="tools pull-right">
-                                <a href="javascript:;" class="fa fa-chevron-down" ></a>
-                                <a class="fa fa-times" href="javascript:;"></a>
-                     </span>
-                     </div>
-
-                     <div class="panel-body">
-                     	<div class="bouton">
-                     	<p> Descripion de l'offre <br><br><br><br><br></p>
-                     	<center><a href="jepostule.php">POSTULER</a></center><br>
-                     	</div>
-                     </div>
-                 </div>
-				</div>
-			</div>
-
-			<div class="row"></div>
-				<div class="col-lg-4"> 
-					<div class="panel panel-default">
-                   
-					<div class="panel-heading">Intitulé de l'offre 
-					 <span class="tools pull-right">
-                                <a href="javascript:;" class="fa fa-chevron-down" ></a>
-                                <a class="fa fa-times" href="javascript:;"></a>
-                     </span>
-                     </div>
-
-                     <div class="panel-body">
-                     	<div class="bouton">
-                     	<p> Descripion de l'offre <br><br><br><br><br></p>
-                     	<center><a href="jepostule.php">POSTULER</a></center><br>
-                     	</div>
-
-                     </div>
-                 </div>
-				</div>
-			
-				<div class="col-lg-4"> 
-					<div class="panel panel-default">
-                   
-					<div class="panel-heading">Intitulé de l'offre 
-					 <span class="tools pull-right">
-                                <a href="javascript:;" class="fa fa-chevron-down" ></a>
-                                <a class="fa fa-times" href="javascript:;"></a>
-                     </span>
-                     </div>
-
-                     <div class="panel-body">
-                     	<div class="bouton">
-                     	<p> Descripion de l'offre <br><br><br><br><br></p>
-                     	<center><a href="jepostule.php">POSTULER</a></center><br>
-                     	</div>
-
-                     </div>
-                 </div>
-				</div>
-			
-				<div class="col-lg-4"> 
-					<div class="panel panel-default">
-                   
-					<div class="panel-heading">Intitulé de l'offre 
-					 <span class="tools pull-right">
-                                <a href="javascript:;" class="fa fa-chevron-down" ></a>
-                                <a class="fa fa-times" href="javascript:;"></a>
-                     </span>
-                     </div>
-
-                     <div class="panel-body">
-                   <div class="bouton">
-                     	<p> Descripion de l'offre <br><br><br><br><br></p>
-                     	<center><a href="jepostule.php">POSTULER</a></center><br>
-                     	</div>
-                     </div>
-                 </div>
-				</div>
-			</div>
-
-
-
-			<div class="row"></div>
-				<div class="col-lg-4"> 
-					<div class="panel panel-default">
-                   
-					<div class="panel-heading">Intitulé de l'offre 
-					 <span class="tools pull-right">
-                                <a href="javascript:;" class="fa fa-chevron-down" ></a>
-                                <a class="fa fa-times" href="javascript:;"></a>
-                     </span>
-                     </div>
-
-                     <div class="panel-body">
-                     	
-                     <div class="bouton">
-                     	<p> Descripion de l'offre <br><br><br><br><br></p>
-                     	<center><a href="jepostule.php">POSTULER</a></center><br>
-                     	</div>
-
-                     </div>
-                 </div>
-				</div>
-			
-				<div class="col-lg-4"> 
-					<div class="panel panel-default">
-                   
-					<div class="panel-heading">Intitulé de l'offre 
-					 <span class="tools pull-right">
-                                <a href="javascript:;" class="fa fa-chevron-down" ></a>
-                                <a class="fa fa-times" href="javascript:;"></a>
-                     </span>
-                     </div>
-
-                     <div class="panel-body">
-                     	<div class="bouton">
-                     	<p> Descripion de l'offre <br><br><br><br><br></p>
-                     	<center><a href="jepostule.php">POSTULER</a></center><br>
-                     	</div>
-                     </div>
-                 </div>
-				</div>
-			
-				<div class="col-lg-4"> 
-					<div class="panel panel-default">
-                   
-					<div class="panel-heading">Intitulé de l'offre 
-					 <span class="tools pull-right">
-                                <a href="javascript:;" class="fa fa-chevron-down" ></a>
-                                <a class="fa fa-times" href="javascript:;"></a>
-                     </span>
-                     </div>
-
-                     <div class="panel-body">
-                     <div class="bouton">
-                     	<p> Descripion de l'offre <br><br><br><br><br></p>
-                     	<center><a href="jepostule.php">POSTULER</a></center><br>
-                     	</div>
-                     </div>
-                 </div>
-				</div>
-			</div>
-
-
-
-
-			<div class="row"></div>
-				<div class="col-lg-4"> 
-					<div class="panel panel-default">
-                   
-					<div class="panel-heading">Intitulé de l'offre 
-					 <span class="tools pull-right">
-                                <a href="javascript:;" class="fa fa-chevron-down" ></a>
-                                <a class="fa fa-times" href="javascript:;"></a>
-                     </span>
-                     </div>
-
-                     <div class="panel-body">
-                     <div class="bouton">
-                     	<p> Descripion de l'offre <br><br><br><br><br></p>
-                     	<center><a href="jepostule.php">POSTULER</a></center><br>
-                     	</div>
-
-                     </div>
-                 </div>
-				</div>
-			
-				<div class="col-lg-4"> 
-					<div class="panel panel-default">
-                   
-					<div class="panel-heading">Intitulé de l'offre 
-					 <span class="tools pull-right">
-                                <a href="javascript:;" class="fa fa-chevron-down" ></a>
-                                <a class="fa fa-times" href="javascript:;"></a>
-                     </span>
-                     </div>
-
-                     <div class="panel-body">
-                     	<div class="bouton">
-                     	<p> Descripion de l'offre <br><br><br><br><br></p>
-                     	<center><a href="jepostule.php">POSTULER</a></center><br>
-                     	</div>
-                     </div>
-                 </div>
-				</div>
-			
-				<div class="col-lg-4"> 
-					<div class="panel panel-default">
-                   
-					<div class="panel-heading">Intitulé de l'offre 
-					 <span class="tools pull-right">
-                                <a href="javascript:;" class="fa fa-chevron-down" ></a>
-                                <a class="fa fa-times" href="javascript:;"></a>
-                     </span>
-                     </div>
-
-                     <div class="panel-body">
-                   <div class="bouton">
-                     	<p> Descripion de l'offre <br><br><br><br><br></p>
-                     	<center><a href="jepostule.php">POSTULER</a></center><br>
-                     	</div>
-                     </div>
-                 </div>
-				</div>
-			</div>
-
-
-
-
-			<div class="row"></div>
-				<div class="col-lg-4"> 
-					<div class="panel panel-default">
-                   
-					<div class="panel-heading">Intitulé de l'offre 
-					 <span class="tools pull-right">
-                                <a href="javascript:;" class="fa fa-chevron-down" ></a>
-                                <a class="fa fa-times" href="javascript:;"></a>
-                     </span>
-                     </div>
-
-                     <div class="panel-body">
-                     	<div class="bouton">
-                     	<p> Descripion de l'offre <br><br><br><br><br></p>
-                     	<center><a href="jepostule.php">POSTULER</a></center><br>
-                     	</div>
-
-                     </div>
-                 </div>
-				</div>
-			
-				<div class="col-lg-4"> 
-					<div class="panel panel-default">
-                   
-					<div class="panel-heading">Intitulé de l'offre 
-					 <span class="tools pull-right">
-                                <a href="javascript:;" class="fa fa-chevron-down" ></a>
-                                <a class="fa fa-times" href="javascript:;"></a>
-                     </span>
-                     </div>
-
-                     <div class="panel-body">
-                   <div class="bouton">
-                     	<p> Descripion de l'offre <br><br><br><br><br></p>
-                     	<center><a href="jepostule.php">POSTULER</a></center><br>
-                     	</div>
-
-                     </div>
-                 </div>
-				</div>
-			
-				<div class="col-lg-4"> 
-					<div class="panel panel-default">
-                   
-					<div class="panel-heading">Intitulé de l'offre 
-					 <span class="tools pull-right">
-                                <a href="javascript:;" class="fa fa-chevron-down" ></a>
-                                <a class="fa fa-times" href="javascript:;"></a>
-                     </span>
-                     </div>
-
-                     <div class="panel-body">
-                     	
-                     	<div class="bouton">
-                     	<p> Descripion de l'offre <br><br><br><br><br></p>
+                            Secteur : <?php echo $db_field['secteur'];?>  <br>
+                            Lieu : <?php echo $db_field['lieu'];?>  <br><br></p>
                      	<center><a href="jepostule.php">POSTULER</a></center><br>
                      	</div>
 
@@ -379,195 +98,9 @@ if ($db_found) {
                  </div>
 				</div>
 			</div>
+        </section>
+    </section>
 
-<div class="row"></div>
-				<div class="col-lg-4"> 
-					<div class="panel panel-default">
-                   
-					<div class="panel-heading">Intitulé de l'offre 
-					 <span class="tools pull-right">
-                                <a href="javascript:;" class="fa fa-chevron-down" ></a>
-                                <a class="fa fa-times" href="javascript:;"></a>
-                     </span>
-                     </div>
-
-                     <div class="panel-body">
-                     <div class="bouton">
-                     	<p> Descripion de l'offre <br><br><br><br><br></p>
-                     	<center><a href="jepostule.php">POSTULER</a></center><br>
-                     	</div>
-
-                     </div>
-                 </div>
-				</div>
-			
-				<div class="col-lg-4"> 
-					<div class="panel panel-default">
-                   
-					<div class="panel-heading">Intitulé de l'offre 
-					 <span class="tools pull-right">
-                                <a href="javascript:;" class="fa fa-chevron-down" ></a>
-                                <a class="fa fa-times" href="javascript:;"></a>
-                     </span>
-                     </div>
-
-                     <div class="panel-body">
-                     <div class="bouton">
-                     	<p> Descripion de l'offre <br><br><br><br><br></p>
-                     	<center><a href="jepostule.php">POSTULER</a></center><br>
-                     	</div>
-                     </div>
-                 </div>
-				</div>
-			
-				<div class="col-lg-4"> 
-					<div class="panel panel-default">
-                   
-					<div class="panel-heading">Intitulé de l'offre 
-					 <span class="tools pull-right">
-                                <a href="javascript:;" class="fa fa-chevron-down" ></a>
-                                <a class="fa fa-times" href="javascript:;"></a>
-                     </span>
-                     </div>
-
-                     <div class="panel-body">
-                     	
-                    <div class="bouton">
-                     	<p> Descripion de l'offre <br><br><br><br><br></p>
-                     	<center><a href="jepostule.php">POSTULER</a></center><br>
-                     	</div>
-                     </div>
-                 </div>
-				</div>
-			</div>
-<div class="row"></div>
-				<div class="col-lg-4"> 
-					<div class="panel panel-default">
-                   
-					<div class="panel-heading">Intitulé de l'offre 
-					 <span class="tools pull-right">
-                                <a href="javascript:;" class="fa fa-chevron-down" ></a>
-                                <a class="fa fa-times" href="javascript:;"></a>
-                     </span>
-                     </div>
-
-                     <div class="panel-body">
-                  <div class="bouton">
-                     	<p> Descripion de l'offre <br><br><br><br><br></p>
-                     	<center><a href="jepostule.php">POSTULER</a></center><br>
-                     	</div>
-
-                     </div>
-                 </div>
-				</div>
-			
-				<div class="col-lg-4"> 
-					<div class="panel panel-default">
-                   
-					<div class="panel-heading">Intitulé de l'offre 
-					 <span class="tools pull-right">
-                                <a href="javascript:;" class="fa fa-chevron-down" ></a>
-                                <a class="fa fa-times" href="javascript:;"></a>
-                     </span>
-                     </div>
-
-                     <div class="panel-body">
-                     	<div class="bouton">
-                     	<p> Descripion de l'offre <br><br><br><br><br></p>
-                     	<center><a href="jepostule.php">POSTULER</a></center><br>
-                     	</div>
-                     </div>
-                 </div>
-				</div>
-			
-				<div class="col-lg-4"> 
-					<div class="panel panel-default">
-                   
-					<div class="panel-heading">Intitulé de l'offre 
-					 <span class="tools pull-right">
-                                <a href="javascript:;" class="fa fa-chevron-down" ></a>
-                                <a class="fa fa-times" href="javascript:;"></a>
-                     </span>
-                     </div>
-
-                     <div class="panel-body">
-                     <div class="bouton">
-                     	<p> Descripion de l'offre <br><br><br><br><br></p>
-                     	<center><a href="jepostule.php">POSTULER</a></center><br>
-                     	</div>
-
-                     </div>
-                 </div>
-				</div>
-			</div>
-<div class="row"></div>
-				<div class="col-lg-4"> 
-					<div class="panel panel-default">
-                   
-					<div class="panel-heading">Intitulé de l'offre 
-					 <span class="tools pull-right">
-                                <a href="javascript:;" class="fa fa-chevron-down" ></a>
-                                <a class="fa fa-times" href="javascript:;"></a>
-                     </span>
-                     </div>
-
-                     <div class="panel-body">
-                     	
-                    <div class="bouton">
-                     	<p> Descripion de l'offre <br><br><br><br><br></p>
-                     	<center><a href="jepostule.php">POSTULER</a></center><br>
-                     	</div>
-
-                     </div>
-                 </div>
-				</div>
-			
-				<div class="col-lg-4"> 
-					<div class="panel panel-default">
-                   
-					<div class="panel-heading">Intitulé de l'offre 
-					 <span class="tools pull-right">
-                                <a href="javascript:;" class="fa fa-chevron-down" ></a>
-                                <a class="fa fa-times" href="javascript:;"></a>
-                     </span>
-                     </div>
-
-                     <div class="panel-body">
-                     	<div class="bouton">
-                     	<p> Descripion de l'offre <br><br><br><br><br></p>
-                     	<center><a href="jepostule.php">POSTULER</a></center><br>
-                     	</div>
-
-
-                     </div>
-                 </div>
-				</div>
-			
-				<div class="col-lg-4"> 
-					<div class="panel panel-default">
-                   
-					<div class="panel-heading">Intitulé de l'offre 
-					 <span class="tools pull-right">
-                                <a href="javascript:;" class="fa fa-chevron-down" ></a>
-                                <a class="fa fa-times" href="javascript:;"></a>
-                     </span>
-                     </div>
-
-                     <div class="panel-body">
-                     <div class="bouton">
-                     	<p> Descripion de l'offre <br><br><br><br><br></p>
-                     	<center><a href="jepostule.php">POSTULER</a></center><br>
-                     	</div>
-                     </div>
-                 </div>
-				</div>
-			</div>
-
-
-			</div>
-
-		</section>
-	</section>
 
 
 
@@ -580,6 +113,13 @@ if ($db_found) {
 }
 mysqli_close($db_handle);
      include('include/right_side_bar.php');
- include('include/js.inc.php'); ?>
+ include('include/js.inc.php'); 
+ ?>
+
 
 	</body>
+
+
+
+
+
