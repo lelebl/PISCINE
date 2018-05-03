@@ -60,20 +60,7 @@ include("include/menu_gauche.inc.php");
                             </tr>
                             </thead>
                             <tbody>
-                            <tr>
-                                <td><a >Pack Office</a></td>
-                                <td>
-                                    <div class="progress progress-striped progress-xs">
-                                        <div style="width: 20%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" role="progressbar" class="progress-bar progress-bar-danger">
-                                            <span class="sr-only">10% Complete (success)</span>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td>
-                                </td>
-                                
-                            </tr>
-                            <tr>
+                            
                                 <td><a >C</a></td>
                                 <td>
                                     <div class="progress progress-striped progress-xs">
@@ -85,6 +72,20 @@ include("include/menu_gauche.inc.php");
                                 <td>
                                 </td>
 
+                            </tr>
+                            <tr>
+                                <tr>
+                                <td><a >Pack Office</a></td>
+                                <td>
+                                    <div class="progress progress-striped progress-xs">
+                                        <div style="width: 20%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" role="progressbar" class="progress-bar progress-bar-danger">
+                                            <span class="sr-only">10% Complete (success)</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                </td>
+                                
                             </tr>
                             <tr>
                                 <td><a>C++</a></td>

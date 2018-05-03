@@ -29,17 +29,18 @@ include("include/menu_gauche.inc.php");
                                 <div class="panel-body">
             
                                     <table class="table">
-                            <tr>
-                                <td><a>Nom</a></td>
-                                <td>
-                                    <input type="text" class="form-control" placeholder="Nom" autofocus>
-                                </td>
-                                
-                            </tr>
+                            
                             <tr>
                                 <td><a >Prenom</a></td>
                                 <td>
                                     <input type="text" class="form-control" placeholder="Prénom" autofocus>
+                                </td>
+                                
+                            </tr>
+                            <tr>
+                                <td><a>Nom</a></td>
+                                <td>
+                                    <input type="text" class="form-control" placeholder="Nom" autofocus>
                                 </td>
                                 
                             </tr>
