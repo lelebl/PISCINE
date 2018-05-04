@@ -88,6 +88,12 @@ if(!empty($_POST)){
         $error['cv']="Votre cv à bien été mis à jour!";
         $_SESSION['auth']->cv=$_POST['cv'];
     }
+    if(!empty($_POST['photo'])){
+        $pdo->prepare('UPDATE informations SET photo = ? WHERE id = ?')->execute([$_POST['photo'], $user_id]);
+        $_SESSION['flash']['success'] = "Votre photo a bien été mis à jour";
+        $error['photo']="Votre photo à bien été mis à jour!";
+        $_SESSION['auth']->photo=$_POST['photo'];
+    }
 }
 
 ?>
@@ -139,7 +145,7 @@ if(!empty($_POST)){
 
                               <div class="col-lg-4">
                                   <div class="profile-pic text-center">
-                                    <img src="images/emmanuelle.jpg" alt=""/>
+                                    <img src=<?php echo("images/".$_SESSION['auth']->photo)?> alt=""/>
                                   </div>
                               </div>
 
@@ -269,7 +275,7 @@ if(!empty($_POST)){
                             </header>
                           <div class="panel-body profile-information">
                               <div class="col-lg-10">
-                                <form action="" method="post" enctype="multipart/form-data">
+                                <form action="" method="post" >
                                   <br><br>
                                   <p>Nom</p>
                                     <div class="form-group">
@@ -327,11 +333,10 @@ if(!empty($_POST)){
                                         </ul></center>  
                                     <br>
                                     <p>Photo</p>
-                                     <center><h5><input type="file" name="photo" multiple=""/></h5>
-                                        <ul>
-                                        <!-- The file uploads will be shown here -->
-                                        </ul></center>  
-                                    <br>
+                                    <div class="form-group">
+                                     <center><input type="file" class="default" name="photo" />
+                                        </center>  
+                                    </div>
                                   <button class="btn btn-primary">Enregistrer</button>
                                 </form>
                               </div>
