@@ -37,8 +37,8 @@ if(!empty($_POST)){
     if(empty($_POST['prenom'])){
         $errors['prenom'] = "Vous devez rentrer un prénom valide";
     }
-    if(empty($_POST['date']) ){
-        $errors['date'] = "Vous devez rentrer une date de naissance valide";
+    if(empty($_POST['date_naissance']) ){
+        $errors['date_naissance'] = "Vous devez rentrer une date de naissance valide";
     }
     if(empty($_POST['adresse'])){
         $errors['adresse'] = "Vous devez rentrer une adresse valide";

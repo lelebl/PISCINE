@@ -5,6 +5,13 @@ require 'include/functions.php';
 include("include/header.inc.php"); 
 include("include/menu_haut.inc.php"); 
 include("include/menu_gauche.inc.php"); 
+require_once 'include/db.php';
+
+$req=$pdo->prepare('SELECT * FROM formation WHERE username = ?');
+$req->execute([$_SESSION['auth']->username]);
+$formation=$req->fetchAll();
+
+
 ?>
 
 <body>
@@ -29,69 +36,43 @@ include("include/menu_gauche.inc.php");
                 <section class="panel">
                   <header class="panel-heading">
                     Formation 
+                    <span class="tools pull-right">
+                    <a href="javascript:;" class="fa fa-chevron-down"></a>
+                    <a href="modif_form.php" class="fa fa-pencil"> </a>
+                    <a href="ajouter_form.php" class="fa fa-plus"> </a>
+                     </span>
                   </header>
                   <div class="panel-body">
                   	<table class="table">
+                        <?php 
+                        if(count($formation)>0):
+                        foreach ($formation as $form) :?>
                             <thead>
                             <tr>
-                                <th> ECE PARIS</th>
-                                <th>Ecole d'ingénieur</th>
-                                <th>2015 - 2017</th>
+                                <th> <?php echo($form->ecole); ?></th>
+                                <th> <?php echo($form->diplome); ?></th>
+                                <th> <?php echo($form->date_debut." - ".$form->date_fin); ?> </th>
                             </tr>
                             </thead>
                             <tbody>
                             <tr>
-                                <td><a >Domaine</a></td>
-                                <td>Ingienerie</td>    
+                                <td><a >Domaine </a></td>
+                                <td><?php echo($form->domaine); ?></td>    
                                 
                             </tr>
                             <tr>
                                 <td><a >Associations</a></td>
-                                <td>SDI, Les Caves, UPA</td>    
+                                <td><?php echo($form->associations); ?></td>    
                                 
                             </tr>
                             <tr>
                                 <td><a >Description</a></td>
-                                <td>Majeur: Ocres, Mineur: Ingiénérie d'affaire</td>    
-                                
+                                <td><?php echo($form->description); ?></td>    
                             </tr>
-                        </tbody>
-                            <thead>
-                            <tr>
-                                <th> <br><br>SJH</th>
-                                <th>Lycée</th>
-                                <th>2009 - 2015</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td><a >Domaine</a></td>
-                                <td>Bac scientifique</td>    
-                                
-                            </tr>
-                            <tr>
-                                <td><a>Associations</a></td>
-                                <td> Soeurs de la miséricorde</td>    
-                                
-                            </tr>
-                            <tr>
-                                <td><a >Description</a></td>
-                                <td> Bac mention bien </td>    
-                                
-                            </tr>
-                            
-                        </tbody>
+                        </tbody><?php
+                        endforeach; endif;
+                        ?>
                     </table>
-                    <div class="bouton">
-                          <br>
-                          
-
-                         <center> <a href="modification_formation.php"> Modifier </a></center>
-                        <br>
-                          <br>
-                        </div>
-
-
                   </div>
               </section>
           </div>

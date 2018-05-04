@@ -53,6 +53,11 @@ function reconnect_from_cookie(){
             if($expected == $remember_token){
                 session_start();
                 $_SESSION['auth'] = $user;
+                $username= $_SESSION['auth']->username;
+                $req=$pdo->prepare('SELECT * FROM formation WHERE username = ?');
+                $req->execute([$username]);
+                $formation = $req->fetch();
+                $_SESSION['formation']=array($formation);
                 setcookie('remember', $remember_token, time() + 60 * 60 * 24 * 7);
             } else{
                 setcookie('remember', null, -1);
