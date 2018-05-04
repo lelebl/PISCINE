@@ -52,7 +52,7 @@ $nb_comp=count($_SESSION['auth']->competences);
                     <div class="panel-body profile-information">
                        <div class="col-lg-4">
                            <div class="profile-pic text-center">
-                               <img src="images/emmanuelle.jpg" alt=""/>
+                               <img src=<?php echo("images/".$_SESSION['auth']->photo)?> alt=""/>
                            </div>
                        </div>
                        <div class="col-lg-4">
