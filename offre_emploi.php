@@ -28,10 +28,7 @@ include("include/menu_gauche.inc.php");
         <header class="panel-heading">VOTRE OFFRE D'EMPLOI</header> 
         <div class="panel-body">
             <div class="position-center">
-      
-
-
-        <form class="form-signin" method="post" action="cbon.php">
+              <form class="form-signin" method="post" action="cbon.php">
 
             <input type="text" class="form-control" name="intitule" placeholder="Intitulé de l'offre" autofocus><br><br>
             <input type="text" class="form-control" name="type" placeholder="Type de contrat"><br><br>

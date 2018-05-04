@@ -32,12 +32,11 @@ $db_handle=mysqli_connect(DB_SERVER,DB_USER,DB_PASS);
 $db_found = mysqli_select_db($db_handle, $database);
 
 if ($db_found) {
-    $sql = 'SELECT * FROM emploi';
-    $result = mysqli_query($db_handle, $sql);
-
+    
 ?>
 
-	<body>
+	<header>
+       
 	
 	<section id="main-content">
 			<!--entete-->
@@ -64,14 +63,16 @@ if ($db_found) {
             <!--head-->
 
         </section>
-    
+</header>
+		<?php $sql = 'SELECT * FROM emploi';
+    $result = mysqli_query($db_handle, $sql);
 
-<?php
     while ($db_field = mysqli_fetch_assoc($result)) {
-
 ?>
-			 
+
+        <body>
     <section id="main-content">
+        <section class="wrapper">
         
             <div class="row">
 				<div class="col-lg-12"> 
@@ -86,32 +87,86 @@ if ($db_found) {
 
                      <div class="panel-body">
                      	<div class="bouton">
-                     	<p> Description de l'offre <br>
-                            Type : <?php echo $db_field['type'];?><br>
-                            Secteur : <?php echo $db_field['secteur'];?>  <br>
-                            Lieu : <?php echo $db_field['lieu'];?>  <br><br></p>
-                     	<center><a href="jepostule.php">JE POSTULE MAINTENANT !</a></center><br>
+                     	<h4>Descripion de l'offre </h4><br><br>
+                            Type de contrat : <?php echo $db_field['type'];?><br>
+                            Avantages : <?php echo $db_field['avantages'];?><br>
+                            Salaire : <?php echo $db_field['salaire'];?><br>
+                            Secteur : <?php echo $db_field['secteur'];?><br>
+                            Langues exigées : <?php echo $db_field['langues'];?> <br>
+                            Lieu : <?php echo $db_field['lieu'];?><br>
+                            <br><br>
+                            <h4>Profil recherché</h4><br>
+                            Diplomes : <?php echo $db_field['diplome'];?><br>
+                            Qualités : <?php echo $db_field['qualites'];?><br>
+                            Exigences (lettre de motivation, permis etc.) : <?php echo $db_field['exigences'];?><br>
+                            <br><br><br>
+                     	<center><a href="#Postuler" type="button" class="btn btn-primary" data-toggle="modal">JE POSTULE MAINTENANT !</i></a></center><br>
                      	</div>
 
                      </div>
-                 </div>
+
+
+        <!--fenetre CV-->
+        <div class="modal fade" id="Postuler" tabindex="-1" role="dialog" aria-labelledby="Video" aria-hidden="true"> 
+            <div class="modal-dialog modal-md">
+                <div class="modal-content"> 
+                    <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title text-center">Pièces nécessaires pour postuler</h4>
+                </div>
+
+                <div class="modal-body text-center">
+                
+                    <form>
+                        <br>
+                        <div class="form-group">
+                            <label class="sr-only">CV</label>
+                           <div class="text-left"> <h5>CV : </h5></div>
+                            <div class="input-group">
+                               <form id="upload" method="post" action="upload.php" enctype="multipart/form-data">
+                                <center><h5><input type="file" name="upl" multiple=""></h5>
+                                   <ul>
+                                <!-- The file uploads will be shown here -->
+                                   </ul></center>  
+                               </form>
+                            </div>
+                        </div><br>
+
+                        <div class="form-group">
+                            <label class="sr-only">Lettre de motivation</label>
+                            <div class="text-left"> <h5>Lettre de motivation : </h5></div>
+                            <div class="input-group">
+                               <form id="upload" method="post" action="upload.php" enctype="multipart/form-data">
+                                <center><h5><input type="file" name="upl" multiple=""></h5>
+                                   <ul>
+                                <!-- The file uploads will be shown here -->
+                                   </ul></center>  
+                               </form>
+                            </div>
+                        </div>
+                        
+                    <div class="bouton">
+                        <br><a href="tableau_de_bord.php">POSTULER</a><br><br><br>
+                        </div>
+                    </form>
+                </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
 				</div>
 			</div>
         </section>
 
+</section>
 
-
-
-
-
-	  <!-- Placed js at the end of the document so the pages load faster -->
+<!-- Placed js at the end of the document so the pages load faster -->
 
 	 <?php 
-
-}
-}
+}}
 mysqli_close($db_handle);
-     include('include/right_side_bar.php');
+ include('include/right_side_bar.php');
  include('include/js.inc.php'); 
  ?>
 
