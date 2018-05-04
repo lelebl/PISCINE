@@ -5,6 +5,12 @@ require 'include/functions.php';
 include("include/header.inc.php"); 
 include("include/menu_haut.inc.php"); 
 include("include/menu_gauche.inc.php"); 
+require_once 'include/db.php';
+
+$req=$pdo->prepare('SELECT * FROM formation WHERE username = ?');
+$req->execute([$_SESSION['auth']->username]);
+$formation=$req->fetchAll();
+
 ?>
 
 <body>
@@ -29,163 +35,131 @@ include("include/menu_gauche.inc.php");
                 <section class="panel">
                   <header class="panel-heading">
                     Formation 
+                    
                   </header>
                   <div class="panel-body">
                   	<table class="table">
+                          <?php 
+                        if(count($formation)>0):
+                            $b=0;
+                        foreach ($formation as $form) :?>
                             <thead>
                             <tr>
-                                <th> ECE PARIS</th>
-                                <th>Ecole d'ingénieur</th>
-                                <th>2015 - 2017</th>
-                                <th><span class="tools pull-right">
-                                    <a href="#modifier" type="button" data-toggle="modal" class="fa fa-pencil"></a>
-                                    <a href="javascript:;" class="fa fa-times"></a>
-                                  </span></th>
+                                <th> <?php echo($form->ecole); ?></th>
+                                <th> <?php echo($form->diplome); ?></th>
+                                <th> <?php echo($form->date_debut." - ".$form->date_fin); ?>
+                              </th>
                             </tr>
                             </thead>
                             <tbody>
                             <tr>
-                                <td><a >Domaine</a></td>
-                                <td>Ingienerie</td>    
+                                <td><a >Domaine </a></td>
+                                <td><?php echo($form->domaine); ?></td>    
                                 
                             </tr>
                             <tr>
                                 <td><a >Associations</a></td>
-                                <td>SDI, Les Caves, UPA</td>    
+                                <td><?php echo($form->associations); ?></td>    
                                 
                             </tr>
                             <tr>
                                 <td><a >Description</a></td>
-                                <td>Majeur: Ocres, Mineur: Ingiénérie d'affaire</td>    
-                                
+                                <td><?php echo($form->description); ?></td>    
                             </tr>
-                        </tbody>
-                            <thead>
-                            <tr>
-                                <th> <br><br>SJH</th>
-                                <th>Lycée</th>
-                                <th>2009 - 2015</th>
-                                <th><span class="tools pull-right">
-                                   <a href="#modifier" type="button" data-toggle="modal" class="fa fa-pencil"></a>
-                                    <a href="javascript:;" class="fa fa-times"></a>
-                                  </span></th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td><a >Domaine</a></td>
-                                <td>Bac scientifique</td>    
-                                
-                            </tr>
-                            <tr>
-                                <td><a >Associations</a></td>
-                                <td> Soeurs de la miséricorde</td>    
-                                
-                            </tr>
-                            <tr>
-                                <td><a >Description</a></td>
-                                <td> Bac mention bien </td>    
-                                
-                            </tr>
-                            
-                        </tbody>
+                        </tbody><?php $b++;
+                        endforeach; endif;
+                        ?>
 
                     </table>
 
-<div class="bouton">
+                    <div class="bouton">
                           <br>
-                          
-
-                         <center> <a href="formation.php"> Enregistrer</a></center>
-                        <br>
+                          <center> <a href="modif_form.php" type="button" data-toggle="modal" > Enregistrer</a></center>
                           <br>
-                        </div>
+                          <br>
+                    
+                    </div>
                   </div>
               </section>
           </div>
           
       </div>
 
+      
        <div class="modal fade" id="modifier" tabindex="-1" role="dialog" aria-labelledby="modifier" aria-hidden="true"> 
             <div class="modal-dialog modal-md">
                 <div class="modal-content"> 
+
                     <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                     <h4 class="modal-title text-center">Modifier la formation</h4>
-                </div>
+                    </div>
 
-                <div class="modal-body text-center">
-                    <h4 class="m-t-0">Edition</h4>
-                    <form>
-                        <div class="form-group">
-                            <p>Date de début : </p>
-                            <label class="sr-only">Date de debut</label>
-                            <div class="input-group">
-                                <div class="input-group-addon"><span class="fa fa-calendar"></span></div>
-                                <input type="date" class="form-control" placeholder="jj/mm/aaaa">
+                    <div class="modal-body text-center">
+                        <h4 class="m-t-0">Edition</h4>
+                        <form>
+                            <?php  foreach ($formation as $form) :?>
+                            <div class="form-group">
+                                <p>Date de début : </p>
+                                <label class="sr-only"><?php echo($form->date_debut); ?></label>
+                                <div class="input-group">
+                                    <div class="input-group-addon"><span class="fa fa-calendar"></span></div>
+                                    <input type="date" class="form-control" placeholder="jj/mm/aaaa">
+                                </div>
                             </div>
-                        </div>
-
-                        <div class="form-group">
-                            <p>Date de fin : </p>
-                            <label class="sr-only">Date de fin</label>
-                            <div class="input-group">
-                                <div class="input-group-addon"><span class="fa fa-calendar"></span></div>
-                                <input type="date" class="form-control" placeholder="jj/mm/aaaa">
+                            <div class="form-group">
+                                <p>Date de fin : </p>
+                                <label class="sr-only"><?php echo($$form->date_fin); ?></label>
+                                <div class="input-group">
+                                    <div class="input-group-addon"><span class="fa fa-calendar"></span></div>
+                                    <input type="date" class="form-control" placeholder="jj/mm/aaaa">
+                                </div>
                             </div>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label class="sr-only">Ecole</label>
-                            <div class="input-group">
-                                <div class="input-group-addon"><span class="fa fa-suitcase"></span></div>
-                                <input type="text" class="form-control" placeholder="Ecole">
+                            <div class="form-group">
+                                <label class="sr-only">Ecole</label>
+                                <div class="input-group">
+                                    <div class="input-group-addon"><span class="fa fa-suitcase"></span></div>
+                                    <input type="text" class="form-control" placeholder=<?php echo($form->ecole); ?>>
+                                </div>
                             </div>
-                        </div>
-
-
-                        <div class="form-group">
-                            <label class="sr-only">Domaine</label>
-                            <div class="input-group">
-                                <div class="input-group-addon"><span class="fa fa-flask"></span></div>
-                                <input type="text" class="form-control" placeholder="Domaine">
+                            <div class="form-group">
+                                <label class="sr-only">Domaine</label>
+                                <div class="input-group">
+                                    <div class="input-group-addon"><span class="fa fa-flask"></span></div>
+                                    <input type="text" class="form-control" placeholder="Domaine">
+                                </div>
                             </div>
-                        </div>
-
-
-                        <div class="form-group">
-                            <label class="sr-only">Assos</label>
-                            <div class="input-group">
-                                <div class="input-group-addon"><span class="fa fa-users"></span></div>
-                                <input type="text" class="form-control" placeholder="Associations">
+                            <div class="form-group">
+                                <label class="sr-only">Assos</label>
+                                <div class="input-group">
+                                    <div class="input-group-addon"><span class="fa fa-users"></span></div>
+                                    <input type="text" class="form-control" placeholder="Associations">
+                                </div>
                             </div>
-                        </div>
-                        
-                        
-
-                        <div class="form-group">
-                            <label class="sr-only">Diplome</label>
-                            <div class="input-group">
-                                <div class="input-group-addon"><span class="fa fa-trophy"></span></div>
-                                <input type="text" class="form-control" placeholder="Diplome">
+                            <div class="form-group">
+                                <label class="sr-only">Diplome</label>
+                                <div class="input-group">
+                                    <div class="input-group-addon"><span class="fa fa-trophy"></span></div>
+                                    <input type="text" class="form-control" placeholder="Diplome">
+                                </div>
                             </div>
-                        </div>
-
-                                                <div class="form-group">
-                            <label class="sr-only">Description</label>
-                            <div class="input-group">
-                                <div class="input-group-addon"><span class="fa fa-pencil-square-o"></span></div>
-                                <textarea class="form-control" id="exampleTextarea" rows="4" placeholder="Description"></textarea>
+                            <div class="form-group">
+                                <label class="sr-only">Description</label>
+                                <div class="input-group">
+                                    <div class="input-group-addon"><span class="fa fa-pencil-square-o"></span></div>
+                                    <textarea class="form-control" id="exampleTextarea" rows="4" placeholder="Description"></textarea>
+                                </div>
                             </div>
-                        </div>
-                    <div class="bouton">
-                        <br><a href="formation.php">POSTER</a><br><br><br>
-                        </div>
-                    </form>
-                </div>
+                            <div class="bouton">
+                                <br><a href="formation.php">POSTER</a><br><br><br>
+                                </div>
+                            <?php endforeach;  ?>
+                        </form>
+                    </div>
+                    </div>
                 </div>
             </div>
-        </div>
+       
   </section>
 </section>
 

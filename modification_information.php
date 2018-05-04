@@ -33,7 +33,7 @@ $nb_comp=count($_SESSION['auth']->competences);
             
                                     
                                         <a href="modification_information_modifs.php" class="btn btn-compose">
-                                            Informations personelles
+                                            Informations personnelles
                                         </a><br><br>
 
                                         <a href="modification_information_competences.php" class="btn btn-compose">
