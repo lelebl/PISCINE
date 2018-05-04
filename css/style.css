@@ -5811,11 +5811,10 @@ right: -1px;
 
 
 #actu{
-margin-left: 10px; 
+
+float: left; 
 
 }
-
-
 
 
 
