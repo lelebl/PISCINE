@@ -110,6 +110,7 @@ if ($db_found) {
                                                         <div class="input-group">
                                                         <div class="input-group-addon"><span class="fa fa-map-marker"></span></div>
                                                         <input type="text" class="form-control" name="lieu" placeholder="Lieu"><br><br>
+                                                    
                                                         </div><br><br>
 
                               
@@ -139,8 +140,9 @@ if ($db_found) {
                             </div>
                         </div>
                 </header>
-
 </section>
+</section>
+
 
 
                 <?php $sql = 'SELECT * FROM posts';
@@ -148,11 +150,13 @@ if ($db_found) {
 
                     while ($db_field = mysqli_fetch_assoc($result)) {
                 ?>
+                <section id="main-content">
+    <div class="col-lg-12">
 
             <!--entete-->
+
   
-        <div class="col-lg-12">-
-                                            <div id="actu"> 
+        
                                                 <div class="alert alert-info">
                                                     <span class="alert-icon"><i class="fa fa-align-justify"></i></span>
                                                     <div class="notification-info">
@@ -161,7 +165,7 @@ if ($db_found) {
                                                             <li class="pull-left notification-sender">
                                                                 <span><a href="#"><br> Léa Blanchard </a></span> <br><br><br><br>
                                                                 <?php echo $db_field['texte'];?> </li><br><br><br><br><br><br><br>
-                                                                <center><img src="images/<?php echo $db_field['fichier'];?>" width="600" height="350"> <br> <br><br></center><span class="alert-icon"><i class="fa fa-map-marker"></i></span>&nbsp;&nbsp;&nbsp;<?php echo $db_field['lieu'];?>
+                                                                <center><img src="images/<?php echo $db_field['fichier'];?>" width="300" height="180"> <br> <br><br></center><span class="alert-icon"><i class="fa fa-map-marker"></i></span>&nbsp;&nbsp;&nbsp;<?php echo $db_field['lieu'];?>
                                                                 <br>
                                                                 <br><span class="alert-icon"><i class="fa fa-smile-o"></i></span>&nbsp;&nbsp;&nbsp;<?php echo $db_field['sentiment'];?>
                                                            
@@ -169,7 +173,7 @@ if ($db_found) {
                                                         </ul>
                                                     </div>
                                                 </div>
-                                            </div>
+                                            
                                             <!--fenetre photo-->
                                             <div class="modal fade" id="Photo" tabindex="-1" role="dialog" aria-labelledby="Photo" aria-hidden="true"> 
                                                 <div class="modal-dialog modal-md">
