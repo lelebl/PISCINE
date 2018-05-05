@@ -4,7 +4,13 @@ $title="Profil";
 require 'include/functions.php';
 include("include/header.inc.php"); 
 include("include/menu_haut.inc.php"); 
-include("include/menu_gauche.inc.php"); 
+include("include/menu_gauche.inc.php");
+
+$id=$_GET['id'];
+require_once 'include/db.php';
+$req=$pdo->prepare('SELECT * FROM informations WHERE id = ?');
+      $req->execute([$id]);
+      $mec=$req->fetch(); 
 ?>
 
   <body>
@@ -17,7 +23,7 @@ include("include/menu_gauche.inc.php");
                     <!--breadcrumbs start -->
                     <ul class="breadcrumb">
                         <li><a href="tableau_de_bord.php"><i class="fa fa-home"></i> Tableau de bord</a></li>
-                        <li class="active">Profil</li>
+                        <li class="active"></li>
                     </ul>
                     <!--breadcrumbs end -->
                 </div>
@@ -35,20 +41,17 @@ include("include/menu_gauche.inc.php");
                         
                         <table class="table">
                             <tr>
-                                  <img src="images/logo.png" alt="">
+                                  <img src=<?php echo("images/".$mec->photo)?> alt="">
+                                  <br>
+                                  <br>
                             </tr>
                             <tr>
 
                                 <td><a href="#">RESUME</a></td>
-                                <td>résumé</td>
+                                <td><?php echo($mec->resume)?></td>
                                 
                             </tr>
-                            <tr>
-                                <td><a href="#">CV</a></td>
-                                <td>cv
-                                </td>
-                                
-                            </tr>
+                            
                         </table>
 
                     </div>
@@ -60,67 +63,55 @@ include("include/menu_gauche.inc.php");
                             <tr>
                                 <td><a href="#">NOM</a></td>
                                 <td>
-                                    nom
+                                    <?php echo($mec->nom)?>
                                 </td>
                                 
                             </tr>
                             <tr>
                                 <td><a href="#">PRENOM</a></td>
                                 <td>
-                                    prenom
+                                    <?php echo($mec->prenom)?>
                                 </td>
                                 
                             </tr>
                             <tr>
                                 <td><a href="#">PSEUDO</a></td>
-                                <td>pseudo
+                                <td><?php echo($mec->username)?>
                                 </td>
                                 
                             </tr>
                              <tr>
                                 <td><a href="#">EMAIL</a></td>
-                                <td>email
+                                <td><?php echo($mec->email)?>
                                 </td>
                                 
                             </tr>
                              <tr>
                                 <td><a href="#">DATE DE NAISSANCE</a></td>
-                                <td>date de naissance
+                                <td><?php echo($mec->date_naissance)?>
                                 </td>
                                 
                             </tr>
                             <tr>
                                 <td><a href="#">ADRESSE</a></td>
-                                <td>adresse
-                                </td>
-                                
-                            </tr>
-                            <tr>
-                                <td><a href="#">VILLE</a></td>
-                                <td>ville
+                                <td><?php echo($mec->adresse)?>
                                 </td>
                                 
                             </tr>
                             <tr>
                                 <td><a href="#">CODE POSTAL</a></td>
-                                <td>code postal
+                                <td><?php echo($mec->cp)?>
                                 </td>
                                 
                             </tr><tr>
                                 <td><a href="#">PAYS</a></td>
-                                <td>pays
+                                <td><?php echo($mec->pays)?>
                                 </td>
                                 
                             </tr>
                             <tr>
                                 <td><a href="#">TELEPHONE</a></td>
-                                <td>telephone
-                                </td>
-                                
-                            </tr>
-                            <tr>
-                                <td><a href="#">DATE DE NAISSANCE</a></td>
-                                <td>date de naissance
+                                <td><?php echo($mec->telephone)?>
                                 </td>
                                 
                             </tr>
@@ -146,236 +137,25 @@ include("include/menu_gauche.inc.php");
                         <table class="table  table-hover general-table">
                             <thead>
                             <tr>
-                                <th> Nom</th>
-                                <th>Niveau</th>
-                                <th></th>
+                                <th> Nom</th>                                <th></th>
                             </tr>
                             </thead>
                             <tbody>
-                            <tr>
-                                <td><a href="#">Pack Office</a></td>
-                                <td>
-                                    <div class="progress progress-striped progress-xs">
-                                        <div style="width: 20%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" role="progressbar" class="progress-bar progress-bar-danger">
-                                            <span class="sr-only">20% Complete (success)</span>
-                                        </div>
-                                    </div>
-                                </td>
-                                
-                            </tr>
-                            <tr>
-                                <td><a href="#">C</a></td>
-                                <td>
-                                    <div class="progress progress-striped progress-xs">
-                                        <div style="width: 20%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" role="progressbar" class="progress-bar progress-bar-danger">
-                                            <span class="sr-only">20% Complete (success)</span>
-                                        </div>
-                                    </div>
-                                </td>
-
-                            </tr>
-                            <tr>
-                                <td><a href="#">C++</a></td>
-                                <td>
-                                    <div class="progress progress-striped progress-xs">
-                                        <div style="width: 20%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" role="progressbar" class="progress-bar progress-bar-danger">
-                                            <span class="sr-only">20% Complete (success)</span>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><a href="#">Java</a></td>
-                                <td>
-                                    <div class="progress progress-striped progress-xs">
-                                        <div style="width: 20%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" role="progressbar" class="progress-bar progress-bar-danger">
-                                            <span class="sr-only">20% Complete (success)</span>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><a href="#">HTML/CSS</a></td>
-                                <td>
-                                    <div class="progress progress-striped progress-xs">
-                                        <div style="width: 20%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" role="progressbar" class="progress-bar progress-bar-danger">
-                                            <span class="sr-only">20% Complete (success)</span>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><a href="#">Espagnol</a></td>
-                                <td>
-                                    <div class="progress progress-striped progress-xs">
-                                        <div style="width: 20%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" role="progressbar" class="progress-bar progress-bar-danger">
-                                            <span class="sr-only">20% Complete (success)</span>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><a href="#">Anglais</a></td>
-                                <td>
-                                    <div class="progress progress-striped progress-xs">
-                                        <div style="width: 20%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" role="progressbar" class="progress-bar progress-bar-danger">
-                                            <span class="sr-only">20% Complete (success)</span>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><a href="#">Allemand</a></td>
-                                <td>
-                                    <div class="progress progress-striped progress-xs">
-                                        <div style="width: 20%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" role="progressbar" class="progress-bar progress-bar-danger">
-                                            <span class="sr-only">20% Complete (success)</span>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><a href="#">Matlab</a></td>
-                                <td>
-                                    <div class="progress progress-striped progress-xs">
-                                        <div style="width: 20%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" role="progressbar" class="progress-bar progress-bar-danger">
-                                            <span class="sr-only">20% Complete (success)</span>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><a href="#">Gestion de projet</a></td>
-                                <td>
-                                    <div class="progress progress-striped progress-xs">
-                                        <div style="width: 20%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" role="progressbar" class="progress-bar progress-bar-danger">
-                                            <span class="sr-only">20% Complete (success)</span>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><a href="#">Analyse financière</a></td>
-                                <td>
-                                    <div class="progress progress-striped progress-xs">
-                                        <div style="width: 20%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" role="progressbar" class="progress-bar progress-bar-danger">
-                                            <span class="sr-only">20% Complete (success)</span>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><a href="#">Design Thinking</a></td>
-                                <td>
-                                    <div class="progress progress-striped progress-xs">
-                                        <div style="width: 20%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" role="progressbar" class="progress-bar progress-bar-danger">
-                                            <span class="sr-only">20% Complete (success)</span>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><a href="#">Prototypage</a></td>
-                                <td>
-                                    <div class="progress progress-striped progress-xs">
-                                        <div style="width: 20%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" role="progressbar" class="progress-bar progress-bar-danger">
-                                            <span class="sr-only">20% Complete (success)</span>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><a href="#">BigData</a></td>
-                                <td>
-                                    <div class="progress progress-striped progress-xs">
-                                        <div style="width: 20%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" role="progressbar" class="progress-bar progress-bar-danger">
-                                            <span class="sr-only">20% Complete (success)</span>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><a href="#">BlockChain</a></td>
-                                <td>
-                                    <div class="progress progress-striped progress-xs">
-                                        <div style="width: 20%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" role="progressbar" class="progress-bar progress-bar-danger">
-                                            <span class="sr-only">20% Complete (success)</span>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><a href="#">Entreprenariat</a></td>
-                                <td>
-                                    <div class="progress progress-striped progress-xs">
-                                        <div style="width: 20%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" role="progressbar" class="progress-bar progress-bar-danger">
-                                            <span class="sr-only">20% Complete (success)</span>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><a href="#">SQL</a></td>
-                                <td>
-                                    <div class="progress progress-striped progress-xs">
-                                        <div style="width: 20%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" role="progressbar" class="progress-bar progress-bar-danger">
-                                            <span class="sr-only">20% Complete (success)</span>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><a href="#">Leadership</a></td>
-                                <td>
-                                    <div class="progress progress-striped progress-xs">
-                                        <div style="width: 20%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" role="progressbar" class="progress-bar progress-bar-danger">
-                                            <span class="sr-only">20% Complete (success)</span>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><a href="#">Linux</a></td>
-                                <td>
-                                    <div class="progress progress-striped progress-xs">
-                                        <div style="width: 20%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" role="progressbar" class="progress-bar progress-bar-danger">
-                                            <span class="sr-only">20% Complete (success)</span>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><a href="#">Web Design</a></td>
-                                <td>
-                                    <div class="progress progress-striped progress-xs">
-                                        <div style="width: 20%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" role="progressbar" class="progress-bar progress-bar-danger">
-                                            <span class="sr-only">20% Complete (success)</span>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><a href="#">WordPress</a></td>
-                                <td>
-                                    <div class="progress progress-striped progress-xs">
-                                        <div style="width: 20%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" role="progressbar" class="progress-bar progress-bar-danger">
-                                            <span class="sr-only">20% Complete (success)</span>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><a href="#">Application mobiles</a></td>
-                                <td>
-                                    <div class="progress progress-striped progress-xs">
-                                        <div style="width: 20%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" role="progressbar" class="progress-bar progress-bar-danger">
-                                            <span class="sr-only">20% Complete (success)</span>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                           
-                            </tbody>
+                                    <?php $competences=$mec->competences;
+                                    $comp=explode(",", $competences);
+                                     if(!empty($competences)){
+                                     foreach($comp as $c): ?>
+                                       <tr>
+                                       <td><a ><?php echo $c; ?></a></td>
+                                        </tr>
+                                    <?php endforeach; 
+                                    }
+                                    else{?>
+                                    <tr>
+                                       <td><a >Pas de compétences</a></td>
+                                        </tr>
+                                    <?php }?>
+                                </tbody>
                         </table>
                     </div>
                 </section>
@@ -390,35 +170,21 @@ include("include/menu_gauche.inc.php");
                     <div class="panel-body">
                         <table class="table  table-hover general-table">
                            <tbody>
-                            <tr>
-                                 <td><a href="#">Sport</a></td>
-                            </tr>
-                            <tr>
-                                <td><a href="#">Musique</a></td>
-                                <td>
-                                  <span class="tools pull-right">
-                                    <a href="javascript:;" class="fa fa-times"></a>
-                                  </span>
-                                </td>
-
-                            </tr>
-                            <tr>
-                                <td><a href="#">Voyage</a></td>
-                                <td>
-                                  <span class="tools pull-right">
-                                    <a href="javascript:;" class="fa fa-times"></a>
-                                  </span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><a href="#">Cuisine</a></td>
-                                <td>
-                                  <span class="tools pull-right">
-                                    <a href="javascript:;" class="fa fa-times"></a>
-                                  </span>
-                                </td>
-                            </tr>
-                            </tbody> 
+                                    <?php $interets=$mec->interets;
+                                    $int=explode(",", $interets);
+                                     if(!empty($interets)){
+                                     foreach($int as $c): ?>
+                                       <tr>
+                                       <td><a ><?php echo $c; ?></a></td>
+                                        </tr>
+                                    <?php endforeach; 
+                                    }
+                                    else{?>
+                                    <tr>
+                                       <td><a >Pas de centre d'intérêt</a></td>
+                                        </tr>
+                                    <?php }?>
+                                </tbody> 
                           
                         </table>
                     </div>

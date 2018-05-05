@@ -151,13 +151,13 @@ if(!empty($_POST)){
                                 
                                    <div class="col-lg-4">
                                        <div class="profile-pic text-center">
-                                           <img src=<?php echo("images/".$rech->photo)?> alt=""/>
+                                           <a href=<?php echo("profil_info.php?id=".$rech->id)?>><img src=<?php echo("images/".$rech->photo)?> alt=""/></a>
                                        </div>
                                    </div>
                                     <div class="col-lg-6">     
                                        <div class="profile-desk">
                                         <div class="com-lg-1">
-                                           <h1><?php echo($rech->nom." ".$rech->prenom)?></h1>
+                                           <a href=<?php echo("profil_info.php?id=".$rech->id)?>><h1><?php echo($rech->nom." ".$rech->prenom)?></h1></a>
 
                                            <br>
                                            <p>
@@ -194,13 +194,13 @@ if(!empty($_POST)){
                                 
                                    <div class="col-lg-4">
                                        <div class="profile-pic text-center">
-                                           <img src=<?php echo("images/".$rech->photo)?> alt=""/>
+                                           <a href=<?php echo("profil_info.php?id=".$rech->id)?>><img src=<?php echo("images/".$rech->photo)?> alt=""/></a>
                                        </div>
                                    </div>
                                     <div class="col-lg-6">     
                                        <div class="profile-desk">
                                         <div class="com-lg-1">
-                                           <h1><?php echo($rech->nom." ".$rech->prenom)?></h1>
+                                           <a href=<?php echo("profil_info.php?id=".$rech->id)?>><h1><?php echo($rech->nom." ".$rech->prenom)?></h1></a>
 
                                            <br>
                                            <p>

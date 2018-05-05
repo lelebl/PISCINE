@@ -249,19 +249,6 @@ if(!empty($_POST)){
                                     
                                         
                                     </tr>
-                                    <tr>
-                                        <td><a >CV</a></td>
-                                        <td>
-
-
-                                            <div class="boutontab">
-
-                                              <a ><i class="fa fa-paperclip"></i></a>
-                                            </div>
-
-                                        </td>
-                                        
-                                    </tr>
                                 </table>
                               </div>
 
@@ -326,12 +313,6 @@ if(!empty($_POST)){
                                       
                                     <p>RESUME</p>
                                     <textarea class="wysihtml5 form-control" name="resume" rows="4" placeholder="Entrez votre résumé"></textarea>
-                                    <br>
-                                    <p>CV</p>
-                                     <div class="form-group">
-                                     <center><input type="file" class="default" name="cv" />
-                                        </center>  
-                                    </div>
                                     <br>
                                     <p>Photo</p>
                                     <div class="form-group">
