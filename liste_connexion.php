@@ -5,6 +5,29 @@ require 'include/functions.php';
 include("include/header.inc.php"); 
 include("include/menu_haut.inc.php"); 
 include("include/menu_gauche.inc.php"); 
+
+$demandes=array();
+require_once 'include/db.php';
+$req=$pdo->prepare('SELECT * FROM relations WHERE (id_1= ? OR id_2= ?) ');
+$req->execute([$_SESSION['auth']->id,$_SESSION['auth']->id]);
+$id_envoie=$req->fetchAll();
+$i=0;
+foreach ($id_envoie as $mec) {
+  if($mec->id_1 != $_SESSION['auth']->id)
+  {
+    $req=$pdo->prepare('SELECT * FROM informations WHERE id= ? ');
+    $req->execute([$mec->id_1]);
+    $demandes[$i]=$req->fetch();
+    $i++;
+  }
+  else{
+    $req=$pdo->prepare('SELECT * FROM informations WHERE id= ? ');
+    $req->execute([$mec->id_2]);
+    $demandes[$i]=$req->fetch();
+    $i++;
+  }
+}
+
 ?>
 
 <body>
@@ -40,21 +63,14 @@ include("include/menu_gauche.inc.php");
                                 </tr>
                                 </thead>
                                 <tbody>
+                                <?php  if($demandes!=""):
+                                foreach ($demandes as $rech) :?>
                                 <tr>
-                                    <th><a href="profil_info.php" >Mark</a></th>
-                                    <td>Otto</td>
-                                    <td>@mdo</td>
+                                    <th><?php echo($rech->prenom)?></th>
+                                    <td><?php echo($rech->nom)?></td>
+                                    <td><?php echo($rech->username)?></td>
                                 </tr>
-                                <tr>
-                                    <th><a href="profil_info.php" >Smoothie</a></th>
-                                    <td>Thornton</td>
-                                    <td>@fat</td>
-                                </tr>
-                                <tr>
-                                    <th><a href="profil_info.php" >Larry</a></th>
-                                    <td>the Bird</td>
-                                    <td>@twitter</td>
-                                </tr>
+                                <?php endforeach; endif; ?>
                                 </tbody>
                             </table>
                         </div>
