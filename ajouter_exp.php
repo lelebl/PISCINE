@@ -10,14 +10,11 @@ require_once 'include/db.php';
 $req=$pdo->prepare('SELECT * FROM experience WHERE username = ?');
 $experience=$req->fetchAll();
 
-
 if(!empty($_POST)){
     require_once 'include/db.php';
     $username = $_SESSION['auth']->username;
-    
     $a=0;
-    
-   $req = $pdo->prepare("INSERT INTO experience SET username = ?, poste = ?, date_debut = ?, date_fin = ?, lieu = ?, diplome = ?, description = ?")->execute([$username,$_POST['poste'], $_POST['date_debut'], $_POST['date_fin'], $_POST['lieu'],$_POST['description']]);
+   $req = $pdo->prepare("INSERT INTO experience SET username = ?, poste = ?, date_debut = ?, date_fin = ?, entreprise = ?, lieu = ?, description = ?")->execute([$username,$_POST['ecole'], $_POST['date_debut'], $_POST['date_fin'], $_POST['entreprise'], $_POST['lieu'], $_POST['description']]);
 }
 ?>
 
@@ -33,7 +30,7 @@ if(!empty($_POST)){
                     <ul class="breadcrumb">
                         <li><a href="tableau_de_bord.php"><i class="fa fa-home"></i> Profil</a></li>
                         <li><a href="experience.php">Experience</a></li>
-                        <li class="active"><a href="modif_form.php">Ajouter experience</a></li>
+                        <li class="active"><a href="modification_experience.php">Ajouter experience</a></li>
 
                     </ul>
                     <!--breadcrumbs end -->
@@ -73,25 +70,22 @@ if(!empty($_POST)){
                                     <input type="text" name="poste" class="form-control" placeholder="Poste">
                                 </div>
                             </div>
-
                             <div class="form-group">
                                 <p>Entreprise : </p>
                                 <label class="sr-only"></label>
                                 <div class="input-group">
-                                    <div class="input-group-addon"><span class="fa fa-flask"></span></div>
+                                    <div class="input-group-addon"><span class="fa fa-building-o"></span></div>
                                     <input type="text" name="entreprise" class="form-control" placeholder="Entreprise">
                                 </div>
                             </div>
-
                             <div class="form-group">
                                 <p>Lieu : </p>
                                 <label class="sr-only"></label>
                                 <div class="input-group">
-                                    <div class="input-group-addon"><span class="fa fa-flask"></span></div>
+                                    <div class="input-group-addon"><span class="fa fa-map-marker"></span></div>
                                     <input type="text" name="lieu" class="form-control" placeholder="Lieu">
                                 </div>
                             </div>
-                            
                             <div class="form-group">
                                 <p>Description : </p>
                                 <label class="sr-only">Description</label>

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost
--- Généré le :  sam. 05 mai 2018 à 17:20
+-- Généré le :  sam. 05 mai 2018 à 18:19
 -- Version du serveur :  5.6.38
 -- Version de PHP :  7.2.1
 
@@ -57,7 +57,8 @@ INSERT INTO `emploi` (`intitule`, `type`, `avantages`, `salaire`, `secteur`, `la
 ('Freelance content researcher', 'Stage', 'Club de sport', '80 a 100 euros par mois', 'Formation', 'Anglais, Espagnol, Francais', 'Paris', 'Grandes Ecoles', 'Passioné de culture, maitrise des langues', 'Non', 3),
 ('Recruteur de donateur', 'CDI', 'remboursement titre de transport', '13euros de lheure', 'Prospection', 'Francais', 'Paris', 'Pas de diplome requis', 'Esprit equipe', 'Non', 4),
 ('Office manager', 'CDD Temps plein', 'Tickets restaurant', '15000 a 20000 par an', 'Administration', 'Anglais, Francais', 'Paris', 'BTS', 'Expérience office manager', 'Bilingue', 5),
-('Startup objets connectés', 'Stage', 'Remboursement titre de transport', 'Pas payé', 'Ingénierie', 'Anglais, Francais', 'Paris', 'Grandes ecoles ingénieurs', 'Expérience', 'Motivé', 6);
+('Startup objets connectés', 'Stage', 'Remboursement titre de transport', 'Pas payé', 'Ingénierie', 'Anglais, Francais', 'Paris', 'Grandes ecoles ingénieurs', 'Expérience', 'Motivé', 6),
+('', '', '', '', '', '', '', '', '', '', 7);
 
 -- --------------------------------------------------------
 
@@ -113,7 +114,7 @@ CREATE TABLE `formation` (
 INSERT INTO `formation` (`id`, `ecole`, `diplome`, `domaine`, `associations`, `date_debut`, `date_fin`, `description`, `username`) VALUES
 (2, 'Ieseg', 'Master-1', 'Commerce', 'AEIP,FEDE,MUSIQUE', '2018-05-10', '2018-05-15', 'Yolo', 'chachou'),
 (3, 'DCU', 'Bac+3', 'Ingenerie', 'BDS,Caves', '2017-09-01', '2018-02-01', 'Super ecole en irlande', 'manouel'),
-(4, 'DCU', 'Bac+3', 'Ingenerie', 'BDE,Caves,Yacht', '2018-05-18', '2018-05-24', 'Super cool', 'lele'),
+(4, 'DCU', 'Master-1', 'Ingenerie', 'BDE,Caves,Yacht,BDA,FEDE', '2018-05-18', '2018-05-24', 'salut ca va', 'lele'),
 (5, 'ECE', 'Master-2', 'Ingenerie', 'BDE', '2018-05-12', '2018-05-23', '', 'manouel'),
 (6, 'sqde', 'Bac+2', 'da', 'BDS', '2233-03-23', '2233-03-23', 'sefezf', 'chachou');
 
@@ -156,9 +157,17 @@ CREATE TABLE `informations` (
 --
 
 INSERT INTO `informations` (`nom`, `prenom`, `date_naissance`, `telephone`, `sexe`, `promo`, `pays`, `cp`, `adresse`, `profession`, `type`, `photo`, `image_fond`, `competences`, `interets`, `resume`, `email`, `password`, `username`, `id`, `reset_token`, `reset_at`, `remember_token`, `admin`, `ville`) VALUES
-('Thiroloix', 'Emmanuelle', '1996-11-07', '0676916066', 'F', 'ING1', 'France', 92300, '12 rue Edouard Vaillant', 'Etudiant(e) Licence', 'auteur', 'emmanuelle.jpg', '', 'C,C++,HTML/CSS,SQL,Leadership,Linux', '', 'bonjour je suis emmanuelle j\'aime smoothie plusque tout et ca me saoule ce projet', 'emmanuelle.thiroloix@gmail.com', '10012012', 'manouel', 7, NULL, NULL, 'IUONr0poT9vbpTkzeqMW9i5gbHd4ZYHZTfQ9v6TSKFIzKXXaZ0NjwvQAvISIZgnkVBAuuPXZKeDEDTGxAuEyChfkgiGtZFSlVNGxthtqgNzFF46h3cH69Jbf0yQov8RYQE1MGVbmV3AyDnbcLp1ev23mfkQo1WHa98FgYni6jjJWxfnp2fWIURtWMitkfoZ1cF1zsfRUsnV6zpviK9w86WrZGENmZ4rahAvKHN6MxY63x1CHBxB9al0DjV', NULL, 'Levallois'),
-('Blanchard', 'Lea', '1995-05-29', '06 89 76 87 66', 'F', 'ING3', 'France', 75008, '18 place de la Madeleine', 'Etudiant(e) Licence', 'auteur', 'user.png', '', 'Pack Office,C,C++,Java', 'Ingénérie,Animaux,Sport', '', 'lea.blanchard@edu.ece.fr', 'lele', 'lele', 9, NULL, NULL, NULL, NULL, 'Paris'),
-('Decary ', 'Charlotte', '1997-05-02', '07 88 98 77 66', 'F', 'ING5', 'France', 75116, '11 rue de sontay', 'Etudiant(e) Master', 'administrateur', 'charlotte_decary.jpeg', '', 'Analyse financière,Design Thinking,Prototypage,Big Data', 'Voyage,Mode,Dessin', '', 'charlotte.decary@edu.ece.fr', 'charlotte', 'chacha', 10, NULL, NULL, NULL, NULL, 'Paris');
+('Thiroloix', 'Emmanuelle', '1996-11-07', '0676916066', 'F', 'ING1', 'France', 92300, '12 rue Edouard Vaillant', 'Etudiant(e) Licence', 'administrateur', 'emmanuelle.jpg', '', 'C,C++,HTML/CSS,SQL,Leadership,Linux', '', 'bonjour je suis emmanuelle j\'aime smoothie plusque tout et ca me saoule ce projet', 'emmanuelle.thiroloix@gmail.com', '10012012', 'manouel', 7, NULL, NULL, 'IUONr0poT9vbpTkzeqMW9i5gbHd4ZYHZTfQ9v6TSKFIzKXXaZ0NjwvQAvISIZgnkVBAuuPXZKeDEDTGxAuEyChfkgiGtZFSlVNGxthtqgNzFF46h3cH69Jbf0yQov8RYQE1MGVbmV3AyDnbcLp1ev23mfkQo1WHa98FgYni6jjJWxfnp2fWIURtWMitkfoZ1cF1zsfRUsnV6zpviK9w86WrZGENmZ4rahAvKHN6MxY63x1CHBxB9al0DjV', NULL, 'Levallois'),
+('Blanchard', 'Léa', '1997-05-10', '0672219012', 'F', 'ING3', 'France', 75015, '26 rue desnouettes', 'Etudiant(e) Licence', 'administrateur', 'lea_blanchard.jpg', '', 'C,C++,Java,HTML/CSS,Espagnol,Anglais,Matlab,SQL,WordPress', 'Ingénérie,Sport,Voyage,Astrologie', '', 'lea10.blanchard@gmail.com', 'lele', 'lele', 9, NULL, NULL, NULL, NULL, 'PARIS'),
+('Decary ', 'Charlotte', '1997-05-02', '07 88 98 77 66', 'F', 'ING5', 'France', 75116, '11 rue de sontay', 'Etudiant(e) Master', 'administrateur', 'charlotte_decary.jpeg', '', 'Analyse financière,Design Thinking,Prototypage,Big Data', 'Voyage,Mode,Dessin', '', 'charlotte.decary@edu.ece.fr', 'charlotte', 'chacha', 10, NULL, NULL, NULL, NULL, 'Paris'),
+('Belland', 'Eugenie', '1996-12-07', '', 'F', 'ING3', 'France', 75015, '24 avenue de Suffren', 'Etudiant(e) Master', 'auteur', 'user.png', '', 'C++,Java,HTML/CSS,Espagnol,Anglais', 'Ingénérie,Animaux,Sport,Musique', '', 'eugenie.belland@edu.ece.fr', 'eugenie', 'gege', 11, NULL, NULL, NULL, NULL, 'Paris'),
+('Halbeher', 'Clement', '1996-01-13', '', 'M', 'ING3', 'France', 78000, '98 avenue de la foret', 'Etudiant(e) Master', 'auteur', 'user.png', '', 'Web Design,Applications mobiles', 'Musique,Jardinage,Médecine', '', 'clement.halbeher@edu.ece.fr', 'clement', '', 12, NULL, NULL, NULL, NULL, 'Paris'),
+('Fremez', 'Clarisse', '1997-11-07', '', 'F', 'ING3', 'France', 92000, 'Avenue jean bouin', 'Etudiant(e) Master', 'auteur', 'user.png', '', 'Linux,Web Design', 'Jeux vidéo,Cinéma,Réseaux sociaux', '', 'clarisse.fremez@edu.ece.fr', 'clarisse', 'clarisse', 13, NULL, NULL, NULL, NULL, 'Paris'),
+('Bazin', 'Diego', '1997-05-01', '', 'M', 'ING3', 'France', 92000, 'rue de la mouette', 'Etudiant(e) Master', 'auteur', 'user.png', '', 'Design Thinking,Big Data,Web Design', 'Ingénérie,Animaux,Musique', '', 'diego.bazin@edu.ece.fr', 'diego', 'diego', 14, NULL, NULL, NULL, NULL, 'Paris'),
+('Rouaix', 'Alienor', '1997-02-19', '', 'F', 'ING3', 'France', 75016, 'avenue wagram', 'Etudiant(e) Master', 'auteur', 'user.png', '', 'Pack Office,C,C++,Java,HTML/CSS,Espagnol,Anglais,Allemand,Matlab,Gestion de projet,Analyse financière,Design Thinking,Prototypage,Big Data,BlockChain,Entreprenariat,SQL,Leadership,Linux', 'Animaux', '', 'alienor.rouaix@edu.ece.fr', 'alienor', 'alienor', 15, NULL, NULL, NULL, NULL, 'Paris'),
+('Dubesset', 'Hugo', '1997-08-03', '', 'M', 'ING3', 'France', 92000, 'rue rue', 'Etudiant(e) Master', 'auteur', 'user.png', '', 'Web Design', 'Animaux', '', 'hugo.dubesset@edu.ece.fr', 'hugo', 'hugo', 16, NULL, NULL, NULL, NULL, 'Paris'),
+('Balle Lebert', 'Pichot ', '2000-10-01', '', 'M', 'ING1', 'France', 92000, 'avenue des coteaux', 'Etudiant(e) Licence', 'auteur', 'user.png', '', 'Java', 'Cinéma', '', 'pichot.balle-lebert@edu.ece.fr', 'pichot', 'pichot', 17, NULL, NULL, NULL, NULL, 'Rueil'),
+('Stadler', 'Raphael', '1997-06-23', '', 'M', 'ING3', 'France', 75015, '13 rue de lourmel', 'Etudiant(e) Master', 'auteur', 'user.png', '', 'C++,Java', 'Ingénérie,Animaux,Sport,Musique', '', 'raphael.stadler@edu.ece.fr', 'raphael', 'raphael', 18, NULL, NULL, NULL, NULL, 'Paris');
 
 -- --------------------------------------------------------
 
@@ -360,7 +369,7 @@ ALTER TABLE `commentaires`
 -- AUTO_INCREMENT pour la table `emploi`
 --
 ALTER TABLE `emploi`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT pour la table `experience`
@@ -378,7 +387,7 @@ ALTER TABLE `formation`
 -- AUTO_INCREMENT pour la table `informations`
 --
 ALTER TABLE `informations`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT pour la table `likes`

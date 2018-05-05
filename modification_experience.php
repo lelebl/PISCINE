@@ -1,3 +1,5 @@
+
+
 <?php
 
 $title="Modification experience";
@@ -10,7 +12,6 @@ require_once 'include/db.php';
 $req=$pdo->prepare('SELECT * FROM experience WHERE username = ?');
 $req->execute([$_SESSION['auth']->username]);
 $experience=$req->fetchAll();
-
 if(!empty($_POST)){
     require_once 'include/db.php';
     $b=0;
@@ -20,10 +21,6 @@ if(!empty($_POST)){
         if (isset($_POST[$poste])&& $_POST[$poste]!=""){
             $pdo->prepare('UPDATE experience SET poste = ? WHERE id = ?')->execute([$_POST[$poste], $id]);
         } 
-        $entreprise="entreprise".$b;
-        if (isset($_POST[$entreprise])&& $_POST[$entreprise]!=""){
-            $pdo->prepare('UPDATE experience SET entreprise = ? WHERE id = ?')->execute([$_POST[$entreprise], $id]);
-        } 
         $date_debut="date_debut".$b;
         if (isset($_POST[$date_debut])&& $_POST[$date_debut]!=""){
             $pdo->prepare('UPDATE experience SET date_debut = ? WHERE id = ?')->execute([$_POST[$date_debut], $id]);
@@ -32,34 +29,19 @@ if(!empty($_POST)){
         if (isset($_POST[$date_fin])&& $_POST[$date_fin]!=""){
             $pdo->prepare('UPDATE experience SET date_fin = ? WHERE id = ?')->execute([$_POST[$date_fin], $id]);
         } 
+        $entreprise="entreprise".$b;
+        if (isset($_POST[$entreprise])&& $_POST[$entreprise]!=""){
+            $pdo->prepare('UPDATE experience SET entreprise = ? WHERE id = ?')->execute([$_POST[$entreprise], $id]);
+        } 
         $lieu="lieu".$b;
         if (isset($_POST[$lieu])&& $_POST[$lieu]!=""){
             $pdo->prepare('UPDATE experience SET lieu = ? WHERE id = ?')->execute([$_POST[$lieu], $id]);
         } 
-        
-        /*$a=0;
-        $saisie=0;
-        foreach ($assos as $modif) {
-            $entree=$modif.$b;
-            if (isset($_POST[$entree])){
-                if($a==0){
-                     $ok=$modif;
-                }
-                else{
-                    $ok=$ok.",".$modif;
-                } 
-                $a++;
-                $saisie=1;
-            }    
-        }
-        if($saisie=1){
-            $pdo->prepare('UPDATE formation SET associations = ? WHERE id = ?')->execute([$ok, $id]);
-        }*/
         $description="description".$b;
         if (isset($_POST[$description])&& $_POST[$description]!=""){
-            $pdo->prepare('UPDATE experience SET description = ? WHERE id = ?')->execute([$_POST[ $description], $id]);
+            $pdo->prepare('UPDATE formation SET description = ? WHERE id = ?')->execute([$_POST[ $description], $id]);
         } 
-        
+
         $b++;   
     }
 }
@@ -77,7 +59,7 @@ if(!empty($_POST)){
                     <ul class="breadcrumb">
                         <li><a href="tableau_de_bord.php"><i class="fa fa-home"></i> Profil</a></li>
                         <li><a href="experience.php">Experience</a></li>
-                        <li class="active"><a href="modif_form.php">Modifier exerience</a></li>
+                        <li class="active"><a href="modification_experience.php">Modifier experience</a></li>
 
                     </ul>
                     <!--breadcrumbs end -->
@@ -123,16 +105,15 @@ if(!empty($_POST)){
                                 <p>Entreprise : </p>
                                 <label class="sr-only"></label>
                                 <div class="input-group">
-                                    <div class="input-group-addon"><span class="fa fa-flask"></span></div>
+                                    <div class="input-group-addon"><span class="fa fa-building-o"></span></div>
                                     <input type="text" name=<?php echo ("entreprise".$b); ?> class="form-control" placeholder=<?php echo($form->entreprise); ?>>
                                 </div>
                             </div>
-                            
                             <div class="form-group">
                                 <p>Lieu : </p>
                                 <label class="sr-only"></label>
                                 <div class="input-group">
-                                    <div class="input-group-addon"><span class="fa fa-flask"></span></div>
+                                    <div class="input-group-addon"><span class="fa fa-map-marker"></span></div>
                                     <input type="text" name=<?php echo ("lieu".$b); ?> class="form-control" placeholder=<?php echo($form->lieu); ?>>
                                 </div>
                             </div>
@@ -144,7 +125,6 @@ if(!empty($_POST)){
                                     <textarea class="form-control"name=<?php echo ("description".$b); ?> id="exampleTextarea" rows="4" placeholder=<?php echo($form->description); ?>></textarea>
                                 </div>
                             </div>
-                            
                             <br>
                             <br><br>
                             <?php endforeach;  ?>
