@@ -94,6 +94,7 @@ if(!empty($_POST)){
                 </div>
             </div>
 
+
             <div class="row">
                 <div class="col-lg-4">  
                   <?php if($_SESSION['interraction']['success']!=""): ?>
@@ -115,7 +116,7 @@ if(!empty($_POST)){
                                     <table class="table">
                             
                                         <form action="" method="post">
-                                            <p><a >Prenom</p>
+                                            <p><a >Prenom</p></a>
                                                 <input type="text" name='prenom' class="form-control" placeholder="Prénom" autofocus>
                                             <br><p>Nom</p>
                                                 <input type="text" name='nom' class="form-control" placeholder="Nom" autofocus>
@@ -225,9 +226,8 @@ if(!empty($_POST)){
 
                         </section>
                 </div>
-            </div>
-
-            </div>
+                </
+            
 
         </section>
     </section>
