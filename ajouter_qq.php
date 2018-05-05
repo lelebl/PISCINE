@@ -96,7 +96,14 @@ if(!empty($_POST)){
 
 
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-lg-4">  
+                  <?php if($_SESSION['interraction']['success']!=""): ?>
+                  <div class="alert alert-success alert-dismissible" role="alert">
+                      <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <strong></strong><?php echo($_SESSION['interraction']['success'])?>
+                  </div>
+                  <?php $_SESSION['interraction']['success']="";
+                  endif;?>
                         <section class="panel">
                             <div class="panel-heading">
                                 Retrouver un ami
@@ -162,7 +169,7 @@ if(!empty($_POST)){
                                     </div>
                                     <div class="col-lg-2">
                                           <span class="tools pull-right">
-                                              <a href=<?php echo("ajouter.php?id=".$rech->id."&amp;username_ajout=".$rech->username)?> class="fa fa-plus"> </a>
+                                              <a href=<?php echo("ajouter.php?id=".$rech->id."&amp;nom=".$rech->nom."&amp;prenom=".$rech->prenom)?> class="fa fa-plus"> </a>
                                           </span>
                                     </div>
                               
@@ -205,7 +212,7 @@ if(!empty($_POST)){
                                     </div>
                                     <div class="col-lg-2">
                                           <span class="tools pull-right">
-                                                    <a href=<?php echo("delete_rel.php?id=".$rech->id."&amp;username_ajout=".$rech->username)?> class="fa fa-times" ></a>
+                                                    <a href=<?php echo("delete_rel.php?id=".$rech->id."&amp;nom=".$rech->nom."&amp;prenom=".$rech->prenom)?> class="fa fa-times" ></a>
                                             </span>
                                     </div>
                               
