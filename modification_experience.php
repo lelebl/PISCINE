@@ -39,7 +39,7 @@ if(!empty($_POST)){
         } 
         $description="description".$b;
         if (isset($_POST[$description])&& $_POST[$description]!=""){
-            $pdo->prepare('UPDATE formation SET description = ? WHERE id = ?')->execute([$_POST[ $description], $id]);
+            $pdo->prepare('UPDATE experience SET description = ? WHERE id = ?')->execute([$_POST[ $description], $id]);
         } 
 
         $b++;   
