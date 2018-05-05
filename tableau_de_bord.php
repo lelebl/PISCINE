@@ -51,7 +51,6 @@ if ($db_found) {
 
         <!--horloge / partage  --> 
             <div class="row">
-
                 <!--heure-->
                 <div class="col-lg-4">
                     <div class="profile-nav alt">
@@ -123,8 +122,8 @@ if ($db_found) {
                         </div>
                 </header>
 
-                </section>
-    <section id="main-content">
+</section>
+
 
                 <?php $sql = 'SELECT * FROM posts';
                     $result = mysqli_query($db_handle, $sql);
@@ -132,199 +131,189 @@ if ($db_found) {
                     while ($db_field = mysqli_fetch_assoc($result)) {
                 ?>
 
-
-
-    
-        
             <!--entete-->
-
-
-           
-<div class="col-lg-12">
-               
-                    
-                                
-                                    <div id="actu"> 
-                                        <div class="alert alert-info">
-                                            <span class="alert-icon"><i class="fa fa-align-justify"></i></span>
-                                            <div class="notification-info">
-                                                <ul class="clearfix notification-meta">
-                                                     <li class="pull-right notification-time"><br><?php echo $db_field['heure'];?> </li>
-                                                    <li class="pull-left notification-sender">
-                                                        <span><a href="#"><br> Léa Blanchard </a></span> <br><br><br><br>
-                                                        <?php echo $db_field['texte'];?> </li><br><br><br><br><br><br><br>
-                                                        <center><img src="images/<?php echo $db_field['fichier'];?>" width="600" height="350"> <br> <br><br></center><span class="alert-icon"><i class="fa fa-map-marker"></i></span>&nbsp;&nbsp;&nbsp;<?php echo $db_field['lieu'];?>
-                                                        <br>
-                                                        <br><span class="alert-icon"><i class="fa fa-smile-o"></i></span>&nbsp;&nbsp;&nbsp;<?php echo $db_field['sentiment'];?>
-                                                   
-                                                            <br><br><br> <center><button class="btn btn-primary">J'aime</button> &nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-primary">Commenter</button></center>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!--fenetre photo-->
-                                    <div class="modal fade" id="Photo" tabindex="-1" role="dialog" aria-labelledby="Photo" aria-hidden="true"> 
-                                        <div class="modal-dialog modal-md">
-                                            <div class="modal-content"> 
-                                                <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                                                <h4 class="modal-title text-center">Partager une photo</h4>
-                                            </div>
-
-                                            <div class="modal-body text-center">
-                                                <h4 class="m-t-0">Edition</h4>
-                                                <form method="post" action="posts.php">
-                                                    <div class="input-group">
-                                                   <div class="input-group-addon"><span class="fa fa-pencil-square-o"></span></div> 
-                                                   <textarea type="text" class="form-control" name="texte" placeholder="Veuillez entrer votre texte" autofocus></textarea><br><br>
-                                                </div><br><br>
-
-                                                <div class="input-group">
-                                                   <div class="input-group-addon"><span class="fa fa-calendar"></span></div>
-                                                <input type="date" class="form-control" name="heure" placeholder="Date"><br><br>
-                                                      </div><br><br>
-
-                                                <div class="input-group">
-                                                <div class="input-group-addon"><span class="fa fa-smile-o"></span></div>
-                                                <select class="form-control custom-select" name="sentiment">
-                                                                <option selected="">Humeur</option>
-                                                                <option>Content(e)</option>
-                                                                <option>Fier(e)</option>
-                                                                <option>Enervé(e)</option>
-                                                                <option>Fatigué(e)</option>
-                                                                <option>Motivé(e)</option>
-                                                                 <option>Déçu(e)</option>
-                                                                 </select><br><br>
-                                                </div><br><br>
-                                                <div class="input-group">
-                                                <div class="input-group-addon"><span class="fa fa-map-marker"></span></div>
-                                                <input type="text" class="form-control" name="lieu" placeholder="Lieu"><br><br>
-                                                </div><br><br>
-                                                <div class="input-group">
-                                                <input type="file" name="fichier" class="default" />
-                                                </div><br><br>
-                                                            
-                                                          <center><button  class="btn btn-primary" type="submit">POSTER </button></center>
-                                               
-
-                                                </form>
-
-
-
-                                            </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!--fenetre video-->
-                                    <div class="modal fade" id="Video" tabindex="-1" role="dialog" aria-labelledby="Photo" aria-hidden="true"> 
-                                        <div class="modal-dialog modal-md">
-                                            <div class="modal-content"> 
-                                                <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                                                <h4 class="modal-title text-center">Partager une vidéo</h4>
-                                            </div>
-
-                                            <div class="modal-body text-center">
-                                                <h4 class="m-t-0">Edition</h4>
-                                                <form method="post" action="posts.php">
-                                                    <div class="input-group">
-                                                   <div class="input-group-addon"><span class="fa fa-pencil-square-o"></span></div> 
-                                                   <textarea type="text" class="form-control" name="texte" placeholder="Veuillez entrer votre texte" autofocus></textarea><br><br>
-                                                </div><br><br>
-
-                                                <div class="input-group">
-                                                   <div class="input-group-addon"><span class="fa fa-calendar"></span></div>
-                                                <input type="date" class="form-control" name="heure" placeholder="Date"><br><br>
-                                                      </div><br><br>
-
-                                                <div class="input-group">
-                                                <div class="input-group-addon"><span class="fa fa-smile-o"></span></div>
-                                                <select class="form-control custom-select" name="sentiment">
-                                                                <option selected="">Humeur</option>
-                                                                <option>Content(e)</option>
-                                                                <option>Fier(e)</option>
-                                                                <option>Enervé(e)</option>
-                                                                <option>Fatigué(e)</option>
-                                                                <option>Motivé(e)</option>
-                                                                 <option>Déçu(e)</option>
-                                                                 </select><br><br>
-                                                </div><br><br>
-                                                <div class="input-group">
-                                                <div class="input-group-addon"><span class="fa fa-map-marker"></span></div>
-                                                <input type="text" class="form-control" name="lieu" placeholder="Lieu"><br><br>
-                                                </div><br><br>
-                                                <div class="input-group">
-                                               <input type="file" class="default" />
-                                                </div><br><br>
-                                                            
-                                                          <center><button  class="btn btn-primary" type="submit">POSTER </button></center>
-                                               
-
-                                                </form>
-
-
-
-                                            </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!--fenetre lien-->
-                                    <div class="modal fade" id="Lien" tabindex="-1" role="dialog" aria-labelledby="Lien" aria-hidden="true"> 
-                                        <div class="modal-dialog modal-md">
-                                            <div class="modal-content"> 
-                                                <div class="modal-header">
-                                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                                                    <h4 class="modal-title text-center">Partager un lien </h4>
+  
+        <div class="col-lg-12">-
+                                            <div id="actu"> 
+                                                <div class="alert alert-info">
+                                                    <span class="alert-icon"><i class="fa fa-align-justify"></i></span>
+                                                    <div class="notification-info">
+                                                        <ul class="clearfix notification-meta">
+                                                             <li class="pull-right notification-time"><br><?php echo $db_field['heure'];?> </li>
+                                                            <li class="pull-left notification-sender">
+                                                                <span><a href="#"><br> Léa Blanchard </a></span> <br><br><br><br>
+                                                                <?php echo $db_field['texte'];?> </li><br><br><br><br><br><br><br>
+                                                                <center><img src="images/<?php echo $db_field['fichier'];?>" width="600" height="350"> <br> <br><br></center><span class="alert-icon"><i class="fa fa-map-marker"></i></span>&nbsp;&nbsp;&nbsp;<?php echo $db_field['lieu'];?>
+                                                                <br>
+                                                                <br><span class="alert-icon"><i class="fa fa-smile-o"></i></span>&nbsp;&nbsp;&nbsp;<?php echo $db_field['sentiment'];?>
+                                                           
+                                                                    <br><br><br> <center><button class="btn btn-primary">J'aime</button> &nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-primary">Commenter</button></center>
+                                                        </ul>
+                                                    </div>
                                                 </div>
+                                            </div>
+                                            <!--fenetre photo-->
+                                            <div class="modal fade" id="Photo" tabindex="-1" role="dialog" aria-labelledby="Photo" aria-hidden="true"> 
+                                                <div class="modal-dialog modal-md">
+                                                    <div class="modal-content"> 
+                                                        <div class="modal-header">
+                                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                                        <h4 class="modal-title text-center">Partager une photo</h4>
+                                                    </div>
 
-                                                <div class="modal-body text-center">
-                                                    <h4 class="m-t-0">Edition</h4>
-                                                    <form method="post" action="posts.php">
-                                                    <div class="input-group">
-                                                        <div class="input-group-addon"><span class="fa fa-pencil-square-o"></span></div> 
-                                                        <textarea type="text" class="form-control" name="texte" placeholder="Veuillez entrer votre texte" autofocus></textarea><br><br>
-                                                    </div><br><br>
+                                                    <div class="modal-body text-center">
+                                                        <h4 class="m-t-0">Edition</h4>
+                                                        <form method="post" action="posts.php">
+                                                            <div class="input-group">
+                                                           <div class="input-group-addon"><span class="fa fa-pencil-square-o"></span></div> 
+                                                           <textarea type="text" class="form-control" name="texte" placeholder="Veuillez entrer votre texte" autofocus></textarea><br><br>
+                                                        </div><br><br>
 
-                                                    <div class="input-group">
-                                                        <div class="input-group-addon"><span class="fa fa-calendar"></span></div>
+                                                        <div class="input-group">
+                                                           <div class="input-group-addon"><span class="fa fa-calendar"></span></div>
                                                         <input type="date" class="form-control" name="heure" placeholder="Date"><br><br>
-                                                    </div><br><br>
+                                                              </div><br><br>
 
-                                                    <div class="input-group">
+                                                        <div class="input-group">
                                                         <div class="input-group-addon"><span class="fa fa-smile-o"></span></div>
-                                                            <select class="form-control custom-select" name="sentiment">
-                                                                <option selected="">Humeur</option>
-                                                                <option>Content(e)</option>
-                                                                <option>Fier(e)</option>
-                                                                <option>Enervé(e)</option>
-                                                                <option>Fatigué(e)</option>
-                                                                <option>Motivé(e)</option>
-                                                                 <option>Déçu(e)</option>
-                                                                 </select><br><br>
-                                                    </div><br><br>
-                                                    <div class="input-group">
+                                                        <select class="form-control custom-select" name="sentiment">
+                                                                        <option selected="">Humeur</option>
+                                                                        <option>Content(e)</option>
+                                                                        <option>Fier(e)</option>
+                                                                        <option>Enervé(e)</option>
+                                                                        <option>Fatigué(e)</option>
+                                                                        <option>Motivé(e)</option>
+                                                                         <option>Déçu(e)</option>
+                                                                         </select><br><br>
+                                                        </div><br><br>
+                                                        <div class="input-group">
                                                         <div class="input-group-addon"><span class="fa fa-map-marker"></span></div>
                                                         <input type="text" class="form-control" name="lieu" placeholder="Lieu"><br><br>
-                                                    </div><br><br>
-                                                    <label class="sr-only">Lien</label>
-                                                        <p>Copier le lien URL : </p>
+                                                        </div><br><br>
                                                         <div class="input-group">
-                                                            <div class="input-group-addon"><span class="fa fa-code"></span> </div>
-                                                            
-                                                           <input class="form-control" type="url" name="fichier">
-                                                       </div><br><br>
-                                                    <center><button  class="btn btn-primary" type="submit">POSTER </button></center>
-                                               
+                                                        <input type="file" name="fichier" class="default" />
+                                                        </div><br><br>
+                                                                    
+                                                                  <center><button  class="btn btn-primary" type="submit">POSTER </button></center>
+                                                       
 
-                                                    </form>
-                                                 </div>
-                                   
+                                                        </form>
+
+
+
+                                                    </div>
+                                                    </div>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </div>
-</div>
-            
+                                            <!--fenetre video-->
+                                            <div class="modal fade" id="Video" tabindex="-1" role="dialog" aria-labelledby="Photo" aria-hidden="true"> 
+                                                <div class="modal-dialog modal-md">
+                                                    <div class="modal-content"> 
+                                                        <div class="modal-header">
+                                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                                        <h4 class="modal-title text-center">Partager une vidéo</h4>
+                                                    </div>
 
+                                                    <div class="modal-body text-center">
+                                                        <h4 class="m-t-0">Edition</h4>
+                                                        <form method="post" action="posts.php">
+                                                            <div class="input-group">
+                                                           <div class="input-group-addon"><span class="fa fa-pencil-square-o"></span></div> 
+                                                           <textarea type="text" class="form-control" name="texte" placeholder="Veuillez entrer votre texte" autofocus></textarea><br><br>
+                                                        </div><br><br>
+
+                                                        <div class="input-group">
+                                                           <div class="input-group-addon"><span class="fa fa-calendar"></span></div>
+                                                        <input type="date" class="form-control" name="heure" placeholder="Date"><br><br>
+                                                              </div><br><br>
+
+                                                        <div class="input-group">
+                                                        <div class="input-group-addon"><span class="fa fa-smile-o"></span></div>
+                                                        <select class="form-control custom-select" name="sentiment">
+                                                                        <option selected="">Humeur</option>
+                                                                        <option>Content(e)</option>
+                                                                        <option>Fier(e)</option>
+                                                                        <option>Enervé(e)</option>
+                                                                        <option>Fatigué(e)</option>
+                                                                        <option>Motivé(e)</option>
+                                                                         <option>Déçu(e)</option>
+                                                                         </select><br><br>
+                                                        </div><br><br>
+                                                        <div class="input-group">
+                                                        <div class="input-group-addon"><span class="fa fa-map-marker"></span></div>
+                                                        <input type="text" class="form-control" name="lieu" placeholder="Lieu"><br><br>
+                                                        </div><br><br>
+                                                        <div class="input-group">
+                                                       <input type="file" class="default" />
+                                                        </div><br><br>
+                                                                    
+                                                                  <center><button  class="btn btn-primary" type="submit">POSTER </button></center>
+                                                       
+
+                                                        </form>
+
+
+
+                                                    </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--fenetre lien-->
+                                            <div class="modal fade" id="Lien" tabindex="-1" role="dialog" aria-labelledby="Lien" aria-hidden="true"> 
+                                                <div class="modal-dialog modal-md">
+                                                    <div class="modal-content"> 
+                                                        <div class="modal-header">
+                                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                                            <h4 class="modal-title text-center">Partager un lien </h4>
+                                                        </div>
+
+                                                        <div class="modal-body text-center">
+                                                            <h4 class="m-t-0">Edition</h4>
+                                                            <form method="post" action="posts.php">
+                                                            <div class="input-group">
+                                                                <div class="input-group-addon"><span class="fa fa-pencil-square-o"></span></div> 
+                                                                <textarea type="text" class="form-control" name="texte" placeholder="Veuillez entrer votre texte" autofocus></textarea><br><br>
+                                                            </div><br><br>
+
+                                                            <div class="input-group">
+                                                                <div class="input-group-addon"><span class="fa fa-calendar"></span></div>
+                                                                <input type="date" class="form-control" name="heure" placeholder="Date"><br><br>
+                                                            </div><br><br>
+
+                                                            <div class="input-group">
+                                                                <div class="input-group-addon"><span class="fa fa-smile-o"></span></div>
+                                                                    <select class="form-control custom-select" name="sentiment">
+                                                                        <option selected="">Humeur</option>
+                                                                        <option>Content(e)</option>
+                                                                        <option>Fier(e)</option>
+                                                                        <option>Enervé(e)</option>
+                                                                        <option>Fatigué(e)</option>
+                                                                        <option>Motivé(e)</option>
+                                                                         <option>Déçu(e)</option>
+                                                                         </select><br><br>
+                                                            </div><br><br>
+                                                            <div class="input-group">
+                                                                <div class="input-group-addon"><span class="fa fa-map-marker"></span></div>
+                                                                <input type="text" class="form-control" name="lieu" placeholder="Lieu"><br><br>
+                                                            </div><br><br>
+                                                            <label class="sr-only">Lien</label>
+                                                                <p>Copier le lien URL : </p>
+                                                                <div class="input-group">
+                                                                    <div class="input-group-addon"><span class="fa fa-code"></span> </div>
+                                                                    
+                                                                   <input class="form-control" type="url" name="fichier">
+                                                               </div><br><br>
+                                                            <center><button  class="btn btn-primary" type="submit">POSTER </button></center>
+                                                       
+
+                                                            </form>
+                                                         </div>
+                                           
+                                                    </div>
+                                                </div>
+                                            </div>
+        </div>
+            
 
 </section>
 
@@ -346,8 +335,6 @@ if ($db_found) {
             </script>
 
 
-
-
             <?php 
                         }
                         }
@@ -357,6 +344,8 @@ if ($db_found) {
                         include('include/js.inc.php'); 
 
             ?>
+
+
 </body>
 
 
