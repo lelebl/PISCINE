@@ -88,18 +88,36 @@ if ($db_found) {
                                 <a href="#Video" type="button" data-toggle="modal"><i class="fa fa-film"></i></a>
                                 <a href="#Lien" type="button" data-toggle="modal"><i class="fa fa-paperclip"></i></a>
                                 </div>
-                                <br> <textarea class="form-control" rows="9" placeholder="Exprimez-vous..." ></textarea><br>
-                                <div class="boutontab">
-                                        <center><a href="#"><i class="fa fa-smile-o"></i></a>
-                                        <a href="#"><i class="fa fa-thumbs-up"></i></a>
-                                        <a href="#"><i class="fa fa-heart-o"></i></a>
-                                        <a href="#"><i class="fa fa-thumbs-down"></i></a>
-                                        <a href="#"><i class="fa fa-frown-o"></i></a></center>
+                                <form method="post" action="posts.php">
+                                    <br> <textarea class="form-control" rows="9" name="texte" placeholder="Exprimez-vous..." ></textarea><br>
+                                    <div class="input-group">
+                                                           <div class="input-group-addon"><span class="fa fa-calendar"></span></div>
+                                                        <input type="date" class="form-control" name="heure" placeholder="Date"><br><br>
+                                                              </div><br><br>
 
-                                 </div>
-                                 <div class="bouton"><br><br><br>
-                                    <center><a href="tableau_de_bord.php">POSTER</a></center><br><br>
-                                </div>
+                                                        <div class="input-group">
+                                                        <div class="input-group-addon"><span class="fa fa-smile-o"></span></div>
+                                                        <select class="form-control custom-select" name="sentiment">
+                                                                        <option selected="">Humeur</option>
+                                                                        <option>Content(e)</option>
+                                                                        <option>Fier(e)</option>
+                                                                        <option>Enervé(e)</option>
+                                                                        <option>Fatigué(e)</option>
+                                                                        <option>Motivé(e)</option>
+                                                                         <option>Déçu(e)</option>
+                                                                         </select><br><br>
+                                                        </div><br><br>
+                                                        <div class="input-group">
+                                                        <div class="input-group-addon"><span class="fa fa-map-marker"></span></div>
+                                                        <input type="text" class="form-control" name="lieu" placeholder="Lieu"><br><br>
+                                                        </div><br><br>
+
+                              
+         
+                                 <br><br>
+                                                                    
+                                                                  <center><button  class="btn btn-primary" type="submit">POSTER </button></center>
+                                </form>
                              </div>
                      </div>
                 </div>
