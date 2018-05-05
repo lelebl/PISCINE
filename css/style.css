@@ -5808,3 +5808,13 @@ right: -1px;
     padding: 10px; 
     color: #d9edf7;
 }
+
+
+#clock{
+    border-width: 0;
+    border-radius: 20px; 
+    color: #767676;
+    font-size: 20px; 
+    display:inline;
+
+}

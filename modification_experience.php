@@ -39,7 +39,7 @@ if(!empty($_POST)){
         } 
         $description="description".$b;
         if (isset($_POST[$description])&& $_POST[$description]!=""){
-            $pdo->prepare('UPDATE formation SET description = ? WHERE id = ?')->execute([$_POST[ $description], $id]);
+            $pdo->prepare('UPDATE experience SET description = ? WHERE id = ?')->execute([$_POST[ $description], $id]);
         } 
 
         $b++;   
@@ -64,16 +64,16 @@ if(!empty($_POST)){
                     </ul>
                     <!--breadcrumbs end -->
                 </div>
-            </div>
+        </div>
 
 
             <div class="row">
 
               <div class="col-lg-12">
-                <section class="panel">
-                  <header class="panel-heading">
-                    Experience 
-                  </header>
+                    <section class="panel">
+                              <header class="panel-heading">
+                                Experience 
+                              </header>
                   <div class="panel-body">
                     <table class="table">
                          <form  action="" method="post">
@@ -84,7 +84,7 @@ if(!empty($_POST)){
                                 <label class="sr-only"></label>
                                 <div class="input-group">
                                     <div class="input-group-addon"><span class="fa fa-calendar"></span></div>
-                                    <input type="date" name=<?php echo ("date_debut".$b); ?> class="form-control" placeholder=<?php echo($form->date_debut); ?> >
+                                    <input type="date" name=<?php echo ("date_debut".$b); ?> class="form-control" placeholder=<?php echo($form->date_debut); ?>>
                                 </div>
                             </div>
                             <div class="form-group">

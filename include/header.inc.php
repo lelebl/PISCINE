@@ -46,22 +46,6 @@
             </script>
 
 
-<STYLE TYPE="text/css">
-form{
-    display:inline;
-}
-.style {
-    border-width: 0;
-    border-radius: 20px; 
-    color: #767676;
-    font-size: 20px; 
-
-
-
-}
-</STYLE>
-
-
     <!--Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap-reset.css" rel="stylesheet">
