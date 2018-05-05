@@ -11,6 +11,13 @@ include("include/menu_gauche.inc.php");
 
 
 
+$texte = $_GET['texte'];
+$lieu = $_GET['lieu'];
+$fichier = $_GET['fichier'];
+$sentiment = $_GET['sentiment'];
+$heure = $_GET['heure'];
+
+
 define('DB_SERVER','localhost');
 define('DB_USER','root');
 define('DB_PASS','');
