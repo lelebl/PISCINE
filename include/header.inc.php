@@ -54,7 +54,7 @@ form{
     border-width: 0;
     border-radius: 20px; 
     color: #767676;
-    font-size: 26px; 
+    font-size: 20px; 
 
 
 

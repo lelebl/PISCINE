@@ -60,7 +60,7 @@ if ($db_found) {
                                 <br>
                                 <p class="text-left">
                                     <form name="clock" onSubmit="0">
-                                    <input type="text" name="date" size="24" readonly="true" height="70" class="style">
+                                    <input type="text" name="date" size="25" readonly="true" height="70" class="style">
                                     </form><br><br><br>
                                 </p>
                             </div><br>

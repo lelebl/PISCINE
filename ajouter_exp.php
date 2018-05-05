@@ -14,7 +14,7 @@ if(!empty($_POST)){
     require_once 'include/db.php';
     $username = $_SESSION['auth']->username;
     $a=0;
-   $req = $pdo->prepare("INSERT INTO experience SET username = ?, poste = ?, date_debut = ?, date_fin = ?, entreprise = ?, lieu = ?, description = ?")->execute([$username,$_POST['ecole'], $_POST['date_debut'], $_POST['date_fin'], $_POST['entreprise'], $_POST['lieu'], $_POST['description']]);
+   $req = $pdo->prepare("INSERT INTO experience SET username = ?, poste = ?, date_debut = ?, date_fin = ?, entreprise = ?, lieu = ?, description = ?")->execute([$username,$_POST['poste'], $_POST['date_debut'], $_POST['date_fin'], $_POST['entreprise'], $_POST['lieu'], $_POST['description']]);
 }
 ?>
 

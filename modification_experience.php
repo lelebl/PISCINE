@@ -65,6 +65,8 @@ if(!empty($_POST)){
                     <!--breadcrumbs end -->
                 </div>
             </div>
+
+
             <div class="row">
 
               <div class="col-lg-12">
@@ -82,7 +84,7 @@ if(!empty($_POST)){
                                 <label class="sr-only"></label>
                                 <div class="input-group">
                                     <div class="input-group-addon"><span class="fa fa-calendar"></span></div>
-                                    <input type="date" name=<?php echo ("date_debut".$b); ?> class="form-control" placeholder=<?php echo($form->date_debut); ?>>
+                                    <input type="date" name=<?php echo ("date_debut".$b); ?> class="form-control" placeholder=<?php echo($form->date_debut); ?> >
                                 </div>
                             </div>
                             <div class="form-group">
@@ -122,7 +124,7 @@ if(!empty($_POST)){
                                 <label class="sr-only">Description</label>
                                 <div class="input-group">
                                     <div class="input-group-addon"><span class="fa fa-pencil-square-o"></span></div>
-                                    <textarea class="form-control"name=<?php echo ("description".$b); ?> id="exampleTextarea" rows="4" placeholder=<?php echo($form->description); ?>></textarea>
+                                    <textarea class="form-control" name=<?php echo ("description".$b); ?> id="exampleTextarea" rows="4" placeholder=<?php echo($form->description); ?>></textarea>
                                 </div>
                             </div>
                             <br>
