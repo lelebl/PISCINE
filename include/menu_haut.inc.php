@@ -89,59 +89,7 @@ logged_only();
                 </li>
 
             </ul>
-        </li>
-        <!-- notification dropdown end -->
-        <li id="header_user_bar" class="dropdown">
-            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-
-                <i class="fa fa-user"></i>
-                <span class="badge bg-success">3</span>
-            </a>
-            <ul class="dropdown-menu extended notification">
-                <li>
-                    <p>Ajout de relation</p>
-                </li>
-                <li>
-                    <div class="alert alert-success clearfix">
-                        <span class="photo"><img alt="avatar" src="images/léa_blanchard.jpg"></span>
-                        <span class="tools pull-right">
-                                <a href="javascript:;" class="fa fa-check" ></a>
-                                <a href="javascript:;" class="fa fa-times" ></a>
-                        </span>
-                        <div class="noti-info">
-                            <p> Léa Blanchard</p>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="alert alert-success clearfix">
-                        <span class="photo"><img alt="avatar" src="images/smoothie.jpg"></span>
-                        <span class="tools pull-right">
-                                <a href="javascript:;" class="fa fa-check" ></a>
-                                <a href="javascript:;" class="fa fa-times" ></a>
-                        </span>
-                        <div class="noti-info">
-                            <p> Smoothie Leloroux</p>
-                        </div>
-                        
-                    </div>
-                </li>
-                <li>
-                    <div class="alert alert-success clearfix">
-                        <span class="photo"><img alt="avatar" src="images/marine.jpg"></span>
-                        <span class="tools pull-right">
-                                <a href="javascript:;" class="fa fa-check" ></a>
-                                <a href="javascript:;" class="fa fa-times" ></a>
-                        </span>
-                        <div class="noti-info">
-                            <p> Marine Thiroloix</p>
-                        </div>
-                    </div>
-                </li>
-
-            </ul>
-        </li>
-    </ul>
+        </li>    </ul>
     <!--  notification end -->
 </div>
 <div class="top-nav clearfix">

@@ -8,16 +8,24 @@ include("include/menu_gauche.inc.php");
 
 $demandes=array();
 require_once 'include/db.php';
-$req=$pdo->prepare('SELECT * FROM relations WHERE (id_recoit= ?) ');
-$req->execute([$_SESSION['auth']->id);
+$req=$pdo->prepare('SELECT * FROM relations WHERE (id_1= ? OR id_2= ?) ');
+$req->execute([$_SESSION['auth']->id,$_SESSION['auth']->id]);
 $id_envoie=$req->fetchAll();
 $i=0;
 foreach ($id_envoie as $mec) {
-
-  $req=$pdo->prepare('SELECT * FROM informations WHERE id= ? ');
-  $req->execute([$mec->id_envoie]);
-  $demandes[$i]=$req->fetchAll();
-  $i++;
+  if($mec->id_1 != $_SESSION['auth']->id)
+  {
+    $req=$pdo->prepare('SELECT * FROM informations WHERE id= ? ');
+    $req->execute([$mec->id_1]);
+    $demandes[$i]=$req->fetch();
+    $i++;
+  }
+  else{
+    $req=$pdo->prepare('SELECT * FROM informations WHERE id= ? ');
+    $req->execute([$mec->id_2]);
+    $demandes[$i]=$req->fetch();
+    $i++;
+  }
 }
 
 $recherche=array();
@@ -105,7 +113,7 @@ if(!empty($_POST)){
                                             <br><p>Nom</p>
                                                 <input type="text" name='nom' class="form-control" placeholder="Nom" autofocus>
                                             <br><p>Pays</p>
-                                                <input type="text" name='ville' class="form-control" placeholder="Ville" autofocus>
+                                                <input type="text" name='ville' class="form-control" placeholder="Pays" autofocus>
                                             <div class="bouton">
                                               <br>
                                                  <center> <button class="btn btn-primary" href="">Rechercher</button></center>
@@ -129,7 +137,8 @@ if(!empty($_POST)){
                                             </span>
                           </div>
                           <div class="panel-body">
-                            <?php  foreach ($recherche as $rech) :?>
+                            <?php  foreach ($recherche as $rech) :
+                              if($rech->id != $_SESSION['auth']->id):?>
                               <div class="panel-body profile-information">
                                 
                                    <div class="col-lg-4">
@@ -152,13 +161,12 @@ if(!empty($_POST)){
                                     </div>
                                     <div class="col-lg-2">
                                           <span class="tools pull-right">
-                                                    <a href="javascript:;" class="fa fa-check" ></a>
-                                                    <a href="javascript:;" class="fa fa-times" ></a>
-                                            </span>
+                                              <a href=<?php echo("ajouter.php?id=".$rech->id."&amp;username_ajout=".$rech->username)?> class="fa fa-plus"> </a>
+                                          </span>
                                     </div>
                               
                               </div>
-                              <?php endforeach; ?>
+                              <?php endif; endforeach; ?>
                           </div>
                         </section>
                 </div>
@@ -166,7 +174,7 @@ if(!empty($_POST)){
                 <div class="col-lg-8">
                         <section class="panel">
                           <div class="panel-heading">
-                            Gerer les demandes
+                            Mes relations
                             <span class="tools pull-right">
                                                     <a href="javascript:;" class="fa fa-chevron-down" ></a>
                                             </span>
@@ -196,8 +204,7 @@ if(!empty($_POST)){
                                     </div>
                                     <div class="col-lg-2">
                                           <span class="tools pull-right">
-                                                    <a href="javascript:;" class="fa fa-check" ></a>
-                                                    <a href="javascript:;" class="fa fa-times" ></a>
+                                                    <a href=<?php echo("delete_rel.php?id=".$rech->id."&amp;username_ajout=".$rech->username)?> class="fa fa-times" ></a>
                                             </span>
                                     </div>
                               
@@ -208,11 +215,13 @@ if(!empty($_POST)){
                               }
                                 ?>
                           </div>
+
                         </section>
                 </div>
             </div>
 
             </div>
+
         </section>
     </section>
 
