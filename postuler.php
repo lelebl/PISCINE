@@ -19,9 +19,7 @@ if ($db_found) {
     
 ?>
 
-	<header>
-       
-	
+<header>
 	<section id="main-content">
 			<!--entete-->
             <div class="row">
@@ -46,9 +44,11 @@ if ($db_found) {
                         </div>
             <!--head-->
 
-        </section>
+    </section>
 </header>
-		<?php $sql = 'SELECT * FROM emploi';
+
+
+<?php $sql = 'SELECT * FROM emploi';
     $result = mysqli_query($db_handle, $sql);
 
     while ($db_field = mysqli_fetch_assoc($result)) {
