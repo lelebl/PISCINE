@@ -8,7 +8,7 @@ include("include/menu_gauche.inc.php");
 
 define('DB_SERVER','localhost');
 define('DB_USER','root');
-define('DB_PASS','root');
+define('DB_PASS','');
 
 $database = "piscine";
 
@@ -89,7 +89,7 @@ if ($db_found) {
                                                 Diplomes : <?php echo $db_field['diplome'];?><br>
                                                 Qualités : <?php echo $db_field['qualites'];?><br>
                                                 Exigences (lettre de motivation, permis etc.) : <?php echo $db_field['exigences'];?><br>
-                                                br><br><br>
+                                                <br><br><br>
 
                                             <div class="bouton">
                                                 <center><a href="#Postuler" type="button" class="btn btn-primary" data-toggle="modal">JE POSTULE MAINTENANT !</i></a></center><br>

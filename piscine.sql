@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost
--- Généré le :  sam. 05 mai 2018 à 18:19
+-- Généré le :  sam. 05 mai 2018 à 18:51
 -- Version du serveur :  5.6.38
 -- Version de PHP :  7.2.1
 
@@ -87,7 +87,8 @@ INSERT INTO `experience` (`poste`, `entreprise`, `lieu`, `date_debut`, `date_fin
 ('Secrétaire generale', 'BDE Lutece', 'Paris', '2018-04-01', '2019-04-01', 'Gestion du bde ECE paris', 3, 'manouel'),
 ('Développeur web', 'Crystal Société Avocats', 'Paris 16', '2017-03-05', '2017-06-16', 'Developpement d\'un site web', 4, 'manouel'),
 ('Stage', 'GreenFlex', 'Paris', '2017-10-01', '2017-12-28', 'Stage', 5, 'chachou'),
-('Stage', 'Unilever Food Solutions', 'Londres', '2017-12-05', '2018-02-06', 'Stage a l\'etranger', 6, 'chachou');
+('Stage', 'Unilever Food Solutions', 'Londres', '2017-12-05', '2018-02-06', 'Stage a l\'etranger', 6, 'chachou'),
+('', '', '', '0000-00-00', '0000-00-00', '', 7, 'chachou');
 
 -- --------------------------------------------------------
 
@@ -261,9 +262,9 @@ CREATE TABLE `posts` (
 --
 
 INSERT INTO `posts` (`id`, `membre_id`, `texte`, `heure`, `sentiment`, `fichier`, `lieu`, `username`) VALUES
-(1, 0, 'zoeijqsdjqmdkfjqsmdlkf,sdlmkf,ds', '0000-00-00 00:00:00.000000', 'Humeur', '', '', 'chachou'),
-(2, 0, 'qsfqsdf', '0000-00-00 00:00:00.000000', 'Fatigué(e)', '', '', 'manouel'),
-(3, 0, 'CHARLOTTE DECARY LEA BLANCHARD EMMANUELLE THIROLOIX', '0000-00-00 00:00:00.000000', 'Humeur', '', '', 'lele');
+(1, 9, 'Je recherche actuellement un poste dans le domaine du numérique', '0000-00-00 00:00:00.000000', 'Humeur', '', 'Paris', 'chachou'),
+(2, 11, 'J\'ai décroche un job!!!', '0000-00-00 00:00:00.000000', 'Fatigué(e)', '', 'Versailles', 'manouel'),
+(3, 14, 'Je suis en recherche d\'un stage de 6 mois dans le domaine de l\'intelligence artificielle', '0000-00-00 00:00:00.000000', 'Humeur', '', 'Paris', 'diego');
 
 -- --------------------------------------------------------
 
@@ -375,7 +376,7 @@ ALTER TABLE `emploi`
 -- AUTO_INCREMENT pour la table `experience`
 --
 ALTER TABLE `experience`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT pour la table `formation`

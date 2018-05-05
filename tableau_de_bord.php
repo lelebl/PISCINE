@@ -11,9 +11,15 @@ include("include/menu_gauche.inc.php");
 
 
 
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> 5f2eaa01bb4648bb76be7765548c205db6a9bde2
 define('DB_SERVER','localhost');
 define('DB_USER','root');
-define('DB_PASS','root');
+define('DB_PASS','');
 
 $database = "piscine";
 
