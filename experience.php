@@ -39,8 +39,8 @@ $experience=$req->fetchAll();
                     Experience 
                     <span class="tools pull-right">
                     <a href="javascript:;" class="fa fa-chevron-down"></a>
-                    <a href="page_modif_experience.php" class="fa fa-pencil"> </a>
-                    <a href="ajouter_experience.php" class="fa fa-plus"> </a>
+                    <a href="modification_experience.php" class="fa fa-pencil"> </a>
+                    <a href="ajouter_exp.php" class="fa fa-plus"> </a>
                      </span>
                   </header>
                   <div class="panel-body">
