@@ -109,7 +109,7 @@ $formation=$req->fetchAll();
                             </div>
                             <div class="form-group">
                                 <p>Date de fin : </p>
-                                <label class="sr-only"><?php echo($$form->date_fin); ?></label>
+                                <label class="sr-only"><?php echo($form->date_fin); ?></label>
                                 <div class="input-group">
                                     <div class="input-group-addon"><span class="fa fa-calendar"></span></div>
                                     <input type="date" class="form-control" placeholder="jj/mm/aaaa">

@@ -327,10 +327,10 @@ if(!empty($_POST)){
                                     <textarea class="wysihtml5 form-control" name="resume" rows="4" placeholder="Entrez votre résumé"></textarea>
                                     <br>
                                     <p>CV</p>
-                                     <center><h5><input type="file" name="cv" multiple=""/></h5>
-                                        <ul>
-                                        <!-- The file uploads will be shown here -->
-                                        </ul></center>  
+                                     <div class="form-group">
+                                     <center><input type="file" class="default" name="cv" />
+                                        </center>  
+                                    </div>
                                     <br>
                                     <p>Photo</p>
                                     <div class="form-group">
