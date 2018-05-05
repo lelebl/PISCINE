@@ -32,7 +32,7 @@ if ($db_found) {
 ?>
 
 
-<body>
+<body onLoad="clock()">
 
     <section id="main-content">
         <section class="wrapper">
@@ -56,9 +56,13 @@ if ($db_found) {
                     <div class="profile-nav alt">
                         <section class="panel">
                             <div class="panel-heading">
-                                <h1> MARDI 3 MAI 2018</h1><br><br>
-                                <p class="text-left">03/05/2018</p><br>
-                                <p class="text-left">heure</p>
+                                <h1> DATE</h1><br><br>
+                                <br>
+                                <p class="text-left">
+                                    <form name="clock" onSubmit="0">
+                                    <input type="text" name="date" size="24" readonly="true" height="70" class="style">
+                                    </form><br><br><br>
+                                </p>
                             </div><br>
                             <ul id="clock">
                               <center><br>
@@ -163,7 +167,7 @@ if ($db_found) {
                                                         <ul class="clearfix notification-meta">
                                                              <li class="pull-right notification-time"><br><?php echo $db_field['heure'];?> </li>
                                                             <li class="pull-left notification-sender">
-                                                                <span><a href="#"><br> Léa Blanchard </a></span> <br><br><br><br>
+                                                                <span><a href="#"><br> <?php echo $db_field['username'];?> </a></span> <br><br><br><br>
                                                                 <?php echo $db_field['texte'];?> </li><br><br><br><br><br><br><br>
                                                                 <center><img src="images/<?php echo $db_field['fichier'];?>" width="300" height="180"> <br> <br><br></center><span class="alert-icon"><i class="fa fa-map-marker"></i></span>&nbsp;&nbsp;&nbsp;<?php echo $db_field['lieu'];?>
                                                                 <br>
@@ -355,6 +359,11 @@ if ($db_found) {
                     }
                 })
             </script>
+           
+
+
+
+
 
 
             <?php 
