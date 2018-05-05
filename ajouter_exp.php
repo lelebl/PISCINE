@@ -1,6 +1,6 @@
 <?php
 
-$title="Modification experience";
+$title="Ajouterexperience";
 require 'include/functions.php';
 include("include/header.inc.php"); 
 include("include/menu_haut.inc.php"); 
@@ -8,60 +8,16 @@ include("include/menu_gauche.inc.php");
 require_once 'include/db.php';
 
 $req=$pdo->prepare('SELECT * FROM experience WHERE username = ?');
-$req->execute([$_SESSION['auth']->username]);
 $experience=$req->fetchAll();
+
 
 if(!empty($_POST)){
     require_once 'include/db.php';
-    $b=0;
-    foreach ($experience as $form) {
-        $id= $form->id;
-        $poste="poste".$b;
-        if (isset($_POST[$poste])&& $_POST[$poste]!=""){
-            $pdo->prepare('UPDATE experience SET poste = ? WHERE id = ?')->execute([$_POST[$poste], $id]);
-        } 
-        $entreprise="entreprise".$b;
-        if (isset($_POST[$entreprise])&& $_POST[$entreprise]!=""){
-            $pdo->prepare('UPDATE experience SET entreprise = ? WHERE id = ?')->execute([$_POST[$entreprise], $id]);
-        } 
-        $date_debut="date_debut".$b;
-        if (isset($_POST[$date_debut])&& $_POST[$date_debut]!=""){
-            $pdo->prepare('UPDATE experience SET date_debut = ? WHERE id = ?')->execute([$_POST[$date_debut], $id]);
-        } 
-        $date_fin="date_fin".$b;
-        if (isset($_POST[$date_fin])&& $_POST[$date_fin]!=""){
-            $pdo->prepare('UPDATE experience SET date_fin = ? WHERE id = ?')->execute([$_POST[$date_fin], $id]);
-        } 
-        $lieu="lieu".$b;
-        if (isset($_POST[$lieu])&& $_POST[$lieu]!=""){
-            $pdo->prepare('UPDATE experience SET lieu = ? WHERE id = ?')->execute([$_POST[$lieu], $id]);
-        } 
-        
-        /*$a=0;
-        $saisie=0;
-        foreach ($assos as $modif) {
-            $entree=$modif.$b;
-            if (isset($_POST[$entree])){
-                if($a==0){
-                     $ok=$modif;
-                }
-                else{
-                    $ok=$ok.",".$modif;
-                } 
-                $a++;
-                $saisie=1;
-            }    
-        }
-        if($saisie=1){
-            $pdo->prepare('UPDATE formation SET associations = ? WHERE id = ?')->execute([$ok, $id]);
-        }*/
-        $description="description".$b;
-        if (isset($_POST[$description])&& $_POST[$description]!=""){
-            $pdo->prepare('UPDATE experience SET description = ? WHERE id = ?')->execute([$_POST[ $description], $id]);
-        } 
-        
-        $b++;   
-    }
+    $username = $_SESSION['auth']->username;
+    
+    $a=0;
+    
+   $req = $pdo->prepare("INSERT INTO experience SET username = ?, poste = ?, date_debut = ?, date_fin = ?, lieu = ?, diplome = ?, description = ?")->execute([$username,$_POST['poste'], $_POST['date_debut'], $_POST['date_fin'], $_POST['lieu'],$_POST['description']]);
 }
 ?>
 
@@ -77,7 +33,7 @@ if(!empty($_POST)){
                     <ul class="breadcrumb">
                         <li><a href="tableau_de_bord.php"><i class="fa fa-home"></i> Profil</a></li>
                         <li><a href="experience.php">Experience</a></li>
-                        <li class="active"><a href="modif_form.php">Modifier exerience</a></li>
+                        <li class="active"><a href="modif_form.php">Ajouter experience</a></li>
 
                     </ul>
                     <!--breadcrumbs end -->
@@ -93,14 +49,12 @@ if(!empty($_POST)){
                   <div class="panel-body">
                     <table class="table">
                          <form  action="" method="post">
-                            <?php  $b=0; foreach ($experience as $form) : ?>
-
                             <div class="form-group">
                                 <p>Date de début : </p>
                                 <label class="sr-only"></label>
                                 <div class="input-group">
                                     <div class="input-group-addon"><span class="fa fa-calendar"></span></div>
-                                    <input type="date" name=<?php echo ("date_debut".$b); ?> class="form-control" placeholder=<?php echo($form->date_debut); ?>>
+                                    <input type="date" name="date_debut" class="form-control" placeholder="Date de debut">
                                 </div>
                             </div>
                             <div class="form-group">
@@ -108,7 +62,7 @@ if(!empty($_POST)){
                                 <label class="sr-only"></label>
                                 <div class="input-group">
                                     <div class="input-group-addon"><span class="fa fa-calendar"></span></div>
-                                    <input type="date" name=<?php echo ("date_fin".$b); ?> class="form-control" placeholder=<?php echo($form->date_fin); ?>>
+                                    <input type="date" name="date_fin" class="form-control" placeholder="Date de fin">
                                 </div>
                             </div>
                             <div class="form-group">
@@ -116,38 +70,38 @@ if(!empty($_POST)){
                                 <label class="sr-only">Poste</label>
                                 <div class="input-group">
                                     <div class="input-group-addon"><span class="fa fa-suitcase"></span></div>
-                                    <input type="text" name=<?php echo ("poste".$b); ?> class="form-control" placeholder=<?php echo($form->poste); ?>>
+                                    <input type="text" name="poste" class="form-control" placeholder="Poste">
                                 </div>
                             </div>
+
                             <div class="form-group">
                                 <p>Entreprise : </p>
                                 <label class="sr-only"></label>
                                 <div class="input-group">
                                     <div class="input-group-addon"><span class="fa fa-flask"></span></div>
-                                    <input type="text" name=<?php echo ("entreprise".$b); ?> class="form-control" placeholder=<?php echo($form->entreprise); ?>>
+                                    <input type="text" name="entreprise" class="form-control" placeholder="Entreprise">
                                 </div>
                             </div>
-                            
+
                             <div class="form-group">
                                 <p>Lieu : </p>
                                 <label class="sr-only"></label>
                                 <div class="input-group">
                                     <div class="input-group-addon"><span class="fa fa-flask"></span></div>
-                                    <input type="text" name=<?php echo ("lieu".$b); ?> class="form-control" placeholder=<?php echo($form->lieu); ?>>
+                                    <input type="text" name="lieu" class="form-control" placeholder="Lieu">
                                 </div>
                             </div>
+                            
                             <div class="form-group">
                                 <p>Description : </p>
                                 <label class="sr-only">Description</label>
                                 <div class="input-group">
                                     <div class="input-group-addon"><span class="fa fa-pencil-square-o"></span></div>
-                                    <textarea class="form-control"name=<?php echo ("description".$b); ?> id="exampleTextarea" rows="4" placeholder=<?php echo($form->description); ?>></textarea>
+                                    <textarea class="form-control" name="description" id="exampleTextarea" rows="4" placeholder="Description"></textarea>
                                 </div>
                             </div>
-                            
                             <br>
                             <br><br>
-                            <?php endforeach;  ?>
                             <br> <br>
                             <button class="btn btn-primary">Enregistrer</button>
                         </form>
@@ -158,7 +112,7 @@ if(!empty($_POST)){
           
       </div>
 
-      
+    
   </section>
 </section>
 
@@ -169,6 +123,14 @@ if(!empty($_POST)){
 <script src="../assets/js/chart.js"></script>
 <script src="../assets/js/toolkit.js"></script>
 <script src="../assets/js/application.js"></script>
+<script>
+// execute/clear BS loaders for docs
+    $(function(){
+        if (window.BS&&window.BS.loader&&window.BS.loader.length) {
+            while(BS.loader.length){(BS.loader.pop())()}
+        }
+    })
+</script>
 
 <?php include('include/right_side_bar.php');
  include('include/js.inc.php'); ?>
