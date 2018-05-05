@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  127.0.0.1
--- Généré le :  Mer 02 Mai 2018 à 23:20
+-- Généré le :  Sam 05 Mai 2018 à 17:52
 -- Version du serveur :  5.6.17
 -- Version de PHP :  5.5.12
 
@@ -81,14 +81,25 @@ CREATE TABLE IF NOT EXISTS `experience` (
 CREATE TABLE IF NOT EXISTS `formation` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `ecole` varchar(20) NOT NULL,
-  `diplome` varchar(20) NOT NULL,
-  `domaine` varchar(20) NOT NULL,
-  `associations` varchar(100) NOT NULL,
+  `diplome` enum('Master-1','Master-2','Licence','Bac','Bac+1','Bac+2','Bac+3','Bac+4','Bac+5') NOT NULL,
+  `domaine` varchar(255) NOT NULL,
+  `associations` set('BDE','BDS','Caves','Yacht','BDA','AEIP','FEDE','SDI','NOISE','JOBSERVICE','ENTREPRINE','MUSIQUE') NOT NULL,
   `date_debut` date NOT NULL,
   `date_fin` date NOT NULL,
-  `description` int(100) NOT NULL,
+  `description` text NOT NULL,
+  `username` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=6 ;
+
+--
+-- Contenu de la table `formation`
+--
+
+INSERT INTO `formation` (`id`, `ecole`, `diplome`, `domaine`, `associations`, `date_debut`, `date_fin`, `description`, `username`) VALUES
+(2, 'Ieseg', 'Master-1', 'Commerce', 'AEIP,FEDE,MUSIQUE', '2018-05-10', '2018-05-15', 'Yolo', 'chachou'),
+(3, 'DCU', 'Bac+3', 'Ingenerie', 'BDS,Caves', '2017-09-01', '2018-02-01', 'Super ecole en irlande', 'manouel'),
+(4, 'DCU', 'Bac+3', 'Ingenerie', 'BDE,Caves,Yacht', '2018-05-18', '2018-05-24', 'Super cool', 'lele'),
+(5, 'ECE', 'Master-2', 'Ingenerie', 'BDE', '2018-05-12', '2018-05-23', '', 'manouel');
 
 -- --------------------------------------------------------
 
@@ -108,10 +119,10 @@ CREATE TABLE IF NOT EXISTS `informations` (
   `adresse` varchar(50) NOT NULL,
   `profession` enum('Etudiant(e) Licence','Etudiant(e) Master','Etudiant(e) Apprenti','Etudiant(e) en cherche d''un Stage','Enseignant','Employé de l''école') NOT NULL,
   `type` enum('auteur','administrateur') NOT NULL,
-  `photo` varchar(100) NOT NULL,
+  `photo` varchar(100) NOT NULL DEFAULT 'user.png',
   `image_fond` varchar(100) NOT NULL,
   `competences` set('Pack Office','C','C++','Java','HTML/CSS','Espagnol','Anglais','Allemand','Matlab','Gestion de projet','Analyse financière','Design Thinking','Prototypage','Big Data','BlockChain','Entreprenariat','SQL','Leadership','Linux','Web Design','WordPress','Applications mobiles') NOT NULL,
-  `interets` set('Sport','Musique','Voyage','Cuisine') NOT NULL,
+  `interets` set('Ingénérie','Animaux','Sport','Musique','Voyage','Cuisine','Jardinage','Médecine','Astro-physique','Mode','Voyage','Dessin','Peinture','Sculpture','Astrologie','Jeux vidéo','Cinéma','Réseaux sociaux','Architechture') NOT NULL,
   `resume` longtext NOT NULL,
   `email` varchar(30) NOT NULL,
   `password` varchar(30) NOT NULL,
@@ -123,14 +134,16 @@ CREATE TABLE IF NOT EXISTS `informations` (
   `admin` int(11) DEFAULT NULL,
   `ville` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=9 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=11 ;
 
 --
 -- Contenu de la table `informations`
 --
 
 INSERT INTO `informations` (`nom`, `prenom`, `date_naissance`, `telephone`, `sexe`, `promo`, `pays`, `cp`, `adresse`, `profession`, `type`, `photo`, `image_fond`, `competences`, `interets`, `resume`, `email`, `password`, `username`, `id`, `reset_token`, `reset_at`, `remember_token`, `admin`, `ville`) VALUES
-('Thiroloix', 'Emmanuelle', NULL, '', 'F', 'ING1', 'France', 92300, '12 rue Edouard Vaillant', 'Etudiant(e) Licence', 'auteur', '', '', '', '', '', 'emmanuelle.thiroloix@gmail.com', 'Almarem01', 'manouel', 7, NULL, NULL, NULL, NULL, 'Levallois');
+('Thiroloix', 'Emmanuelle', '1996-11-07', '0676916066', 'F', 'ING1', 'France', 92300, '12 rue Edouard Vaillant', 'Etudiant(e) Licence', 'auteur', 'emmanuelle.jpg', '', 'C,C++,HTML/CSS,SQL,Leadership,Linux', '', 'bonjour je suis emmanuelle j''aime smoothie plusque tout et ca me saoule ce projet', 'emmanuelle.thiroloix@gmail.com', '10012012', 'manouel', 7, NULL, NULL, 'IUONr0poT9vbpTkzeqMW9i5gbHd4ZYHZTfQ9v6TSKFIzKXXaZ0NjwvQAvISIZgnkVBAuuPXZKeDEDTGxAuEyChfkgiGtZFSlVNGxthtqgNzFF46h3cH69Jbf0yQov8RYQE1MGVbmV3AyDnbcLp1ev23mfkQo1WHa98FgYni6jjJWxfnp2fWIURtWMitkfoZ1cF1zsfRUsnV6zpviK9w86WrZGENmZ4rahAvKHN6MxY63x1CHBxB9al0DjV', NULL, 'Levallois'),
+('Blanchard', 'Lea', '1995-05-29', '06 89 76 87 66', 'F', 'ING3', 'France', 75008, '18 place de la Madeleine', 'Etudiant(e) Licence', 'auteur', 'user.png', '', 'Pack Office,C,C++,Java', 'Ingénérie,Animaux,Sport', '', 'lea.blanchard@edu.ece.fr', 'lele', 'lele', 9, NULL, NULL, NULL, NULL, 'Paris'),
+('Decary ', 'Charlotte', '1997-05-02', '07 88 98 77 66', 'F', 'ING5', 'France', 75116, '11 rue de sontay', 'Etudiant(e) Master', 'administrateur', 'charlotte_decary.jpeg', '', 'Analyse financière,Design Thinking,Prototypage,Big Data', 'Voyage,Mode,Dessin', '', 'charlotte.decary@edu.ece.fr', 'charlotte', 'chacha', 10, NULL, NULL, NULL, NULL, 'Paris');
 
 -- --------------------------------------------------------
 
@@ -235,7 +248,7 @@ CREATE TABLE IF NOT EXISTS `relations` (
   `id` int(10) NOT NULL,
   `id_recoit` int(10) NOT NULL,
   `id_envoie` int(10) NOT NULL,
-  `état` enum('accepté','refusé') NOT NULL,
+  `état` enum('accepté','refusé','en_cour') NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 

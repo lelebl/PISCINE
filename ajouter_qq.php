@@ -8,8 +8,8 @@ include("include/menu_gauche.inc.php");
 
 $demandes=array();
 require_once 'include/db.php';
-$req=$pdo->prepare('SELECT * FROM relations WHERE (id_recoit= ? AND état= ?) ');
-$req->execute([$_SESSION['auth']->id, "en_cour"]);
+$req=$pdo->prepare('SELECT * FROM relations WHERE (id_recoit= ?) ');
+$req->execute([$_SESSION['auth']->id);
 $id_envoie=$req->fetchAll();
 $i=0;
 foreach ($id_envoie as $mec) {

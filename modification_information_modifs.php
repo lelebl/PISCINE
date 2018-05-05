@@ -12,6 +12,7 @@ if(!empty($_POST)){
     require_once 'include/db.php';
     $user_id = $_SESSION['auth']->id;
     if(!empty($_POST['username'])){
+        $pdo->prepare('UPDATE formation SET username = ? WHERE username = ?')->execute([$_POST['username'], $_SESSION['auth']->username]);
         $pdo->prepare('UPDATE informations SET username = ? WHERE id = ?')->execute([$_POST['username'], $user_id]);
         $_SESSION['flash']['success'] = "Votre pseudo a bien été mis à jour";
         $error['username']="Votre pseudo à bien été mis à jour!";

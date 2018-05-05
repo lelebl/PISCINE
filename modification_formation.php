@@ -5,8 +5,8 @@ require 'include/functions.php';
 include("include/header.inc.php"); 
 include("include/menu_haut.inc.php"); 
 include("include/menu_gauche.inc.php"); 
-require_once 'include/db.php';
 
+require_once 'include/db.php';
 $req=$pdo->prepare('SELECT * FROM formation WHERE username = ?');
 $req->execute([$_SESSION['auth']->username]);
 $formation=$req->fetchAll();
