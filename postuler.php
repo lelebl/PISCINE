@@ -6,25 +6,9 @@ include("include/header.inc.php");
 include("include/menu_haut.inc.php"); 
 include("include/menu_gauche.inc.php"); 
 
-
-$intitule = $_GET['intitule'];
-$type = $_GET['type'];
-$avantages = $_GET['avantages'];
-$salaire = $_GET['salaire'];
-$secteur = $_GET['secteur'];
-$langues= $_GET['langues'];
-$lieu = $_GET['lieu'];
-$diplome = $_GET['diplome'];
-$qualites= $_GET['qualites'];
-$exigences = $_GET['exigences'];
-$id = $_GET['id'];
-
-
-
-
 define('DB_SERVER','localhost');
 define('DB_USER','root');
-define('DB_PASS','root');
+define('DB_PASS','');
 
 $database = "piscine";
 

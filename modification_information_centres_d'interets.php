@@ -116,6 +116,7 @@ if(!empty($_POST)){
                             <table class="table  table-hover general-table">
                                     <tbody>
                                         <form action="" method="post">
+                                            
                                             <div class="radios">
                                                 <?php
                                                     if(!empty($interets)): 
