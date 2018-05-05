@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost
--- Généré le :  sam. 05 mai 2018 à 17:04
+-- Généré le :  sam. 05 mai 2018 à 17:20
 -- Version du serveur :  5.6.38
 -- Version de PHP :  7.2.1
 
@@ -264,9 +264,8 @@ INSERT INTO `posts` (`id`, `membre_id`, `texte`, `heure`, `sentiment`, `fichier`
 
 CREATE TABLE `relations` (
   `id` int(10) NOT NULL,
-  `id_recoit` int(10) NOT NULL,
-  `id_envoie` int(10) NOT NULL,
-  `état` enum('accepté','refusé','en_cour') NOT NULL
+  `id_1` int(10) NOT NULL,
+  `id_2` int(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
