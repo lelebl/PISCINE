@@ -52,14 +52,15 @@ if ($db_found) {
 
             <!--head-->
 			<div class="mini-stat clearfix"><br><br>
+                <div class="col-lg-12">
                             <span class="mini-stat-icon green"><i class="fa fa-suitcase"></i></span>
                             <div class="mini-stat-info">
                                 <br>VOS OFFRES D'EMPLOI
                            
                             </div>
                         </div>
+            </div>
             <!--head-->
-
     </section>
 </header>
 
@@ -72,94 +73,97 @@ if ($db_found) {
 
         <body>
     <section id="main-content">
-        <section class="wrapper">
-        
-            <div class="row">
-				<div class="col-lg-12"> 
-					<div class="panel panel-default">
+        <div class="col-lg-12">
+            
+                <div class="col-lg-12"> 
+                    <div class="panel panel-default">
                    
-					<div class="panel-heading"><?php echo $db_field['intitule'];?>
-					 <span class="tools pull-right">
+                            <div class="panel-heading">
+
+                        <?php echo $db_field['intitule'];?>
+                    
+                        <span class="tools pull-right">
                                 <a href="javascript:;" class="fa fa-chevron-down" ></a>
                                 <a href="" class="fa fa-times"></a>
-                     </span>
+                        </span>
                      </div>
 
-                     <div class="panel-body">
-                     	<div class="bouton">
-                     	<h4>Descripion de l'offre </h4><br><br>
-                            Type de contrat : <?php echo $db_field['type'];?><br>
-                            Avantages : <?php echo $db_field['avantages'];?><br>
-                            Salaire : <?php echo $db_field['salaire'];?><br>
-                            Secteur : <?php echo $db_field['secteur'];?><br>
-                            Langues exigées : <?php echo $db_field['langues'];?> <br>
-                            Lieu : <?php echo $db_field['lieu'];?><br>
-                            <br><br>
-                            <h4>Profil recherché</h4><br>
-                            Diplomes : <?php echo $db_field['diplome'];?><br>
-                            Qualités : <?php echo $db_field['qualites'];?><br>
-                            Exigences (lettre de motivation, permis etc.) : <?php echo $db_field['exigences'];?><br>
-                            <br><br><br>
-                     	<center><a href="#Postuler" type="button" class="btn btn-primary" data-toggle="modal">JE POSTULE MAINTENANT !</i></a></center><br>
-                     	</div>
+                            <div class="panel-body">
+                                            
+                                            <h4>Descripion de l'offre </h4><br><br>
 
-                     </div>
+                                                Type de contrat : <?php echo $db_field['type'];?><br>
+                                                Avantages : <?php echo $db_field['avantages'];?><br>
+                                                Salaire : <?php echo $db_field['salaire'];?><br>
+                                                Secteur : <?php echo $db_field['secteur'];?><br>
+                                                Langues exigées : <?php echo $db_field['langues'];?> <br>
+                                                Lieu : <?php echo $db_field['lieu'];?><br>
+                                                <br><br>
 
+                                            <h4>Profil recherché</h4><br>
 
-        <!--fenetre CV-->
-        <div class="modal fade" id="Postuler" tabindex="-1" role="dialog" aria-labelledby="Video" aria-hidden="true"> 
-            <div class="modal-dialog modal-md">
-                <div class="modal-content"> 
-                    <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                    <h4 class="modal-title text-center">Pièces nécessaires pour postuler</h4>
-                </div>
+                                                Diplomes : <?php echo $db_field['diplome'];?><br>
+                                                Qualités : <?php echo $db_field['qualites'];?><br>
+                                                Exigences (lettre de motivation, permis etc.) : <?php echo $db_field['exigences'];?><br>
+                                                br><br><br>
 
-                <div class="modal-body text-center">
-                
-                    <form>
-                        <br>
-                        <div class="form-group">
-                            <label class="sr-only">CV</label>
-                           <div class="text-left"> <h5>CV : </h5></div>
-                            <div class="input-group">
-                               <form id="upload" method="post" action="upload.php" enctype="multipart/form-data">
-                                <center><h5><input type="file" name="upl" multiple=""></h5>
-                                   <ul>
-                                <!-- The file uploads will be shown here -->
-                                   </ul></center>  
-                               </form>
+                                            <div class="bouton">
+                                                <center><a href="#Postuler" type="button" class="btn btn-primary" data-toggle="modal">JE POSTULE MAINTENANT !</i></a></center><br>
+                                            </div>
                             </div>
-                        </div><br>
-
-                        <div class="form-group">
-                            <label class="sr-only">Lettre de motivation</label>
-                            <div class="text-left"> <h5>Lettre de motivation : </h5></div>
-                            <div class="input-group">
-                               <form id="upload" method="post" action="upload.php" enctype="multipart/form-data">
-                                <center><h5><input type="file" name="upl" multiple=""></h5>
-                                   <ul>
-                                <!-- The file uploads will be shown here -->
-                                   </ul></center>  
-                               </form>
-                            </div>
-                        </div>
-                        
-                    <div class="bouton">
-                        <br><a href="tableau_de_bord.php">POSTULER</a><br><br><br>
-                        </div>
-                    </form>
+                    </div>
                 </div>
-                </div>
-            </div>
         </div>
 
-    </div>
-				</div>
-			</div>
-        </section>
+                                            <!--fenetre CV-->
+                                            <div class="modal fade" id="Postuler" tabindex="-1" role="dialog" aria-labelledby="Video" aria-hidden="true"> 
+                                                <div class="modal-dialog modal-md">
+                                                    <div class="modal-content"> 
+                                                        <div class="modal-header">
+                                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                                        <h4 class="modal-title text-center">Pièces nécessaires pour postuler</h4>
+                                                    </div>
 
-</section>
+                                                    <div class="modal-body text-center">
+                                                    
+                                                        <form>
+                                                            <br>
+                                                            <div class="form-group">
+                                                                <label class="sr-only">CV</label>
+                                                               <div class="text-left"> <h5>CV : </h5></div>
+                                                                <div class="input-group">
+                                                                   <form id="upload" method="post" action="upload.php" enctype="multipart/form-data">
+                                                                    <center><h5><input type="file" name="upl" multiple=""></h5>
+                                                                       <ul>
+                                                                    <!-- The file uploads will be shown here -->
+                                                                       </ul></center>  
+                                                                   </form>
+                                                                </div>
+                                                            </div><br>
+
+                                                            <div class="form-group">
+                                                                <label class="sr-only">Lettre de motivation</label>
+                                                                <div class="text-left"> <h5>Lettre de motivation : </h5></div>
+                                                                <div class="input-group">
+                                                                   <form id="upload" method="post" action="upload.php" enctype="multipart/form-data">
+                                                                    <center><h5><input type="file" name="upl" multiple=""></h5>
+                                                                       <ul>
+                                                                    <!-- The file uploads will be shown here -->
+                                                                       </ul></center>  
+                                                                   </form>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                        <div class="bouton">
+                                                            <br><a href="tableau_de_bord.php">POSTULER</a><br><br><br>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+    </section>
+
 
 <!-- Placed js at the end of the document so the pages load faster -->
 
