@@ -66,7 +66,7 @@ foreach ($id_envoie as $mec) {
                                 <?php  if($demandes!=""):
                                 foreach ($demandes as $rech) :?>
                                 <tr>
-                                    <th><?php echo($rech->prenom)?></th>
+                                    <th><a href=<?php echo("profil_info.php?id=".$rech->id)?> ><?php echo($rech->prenom)?></a></th>
                                     <td><?php echo($rech->nom)?></td>
                                     <td><?php echo($rech->username)?></td>
                                 </tr>
