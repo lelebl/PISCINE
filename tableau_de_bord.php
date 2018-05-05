@@ -168,7 +168,8 @@ if ($db_found) {
                                                             <li class="pull-left notification-sender">
                                                                 <span><a href="#"><br> <?php echo $db_field['username'];?> </a></span> <br><br><br><br>
                                                                 <?php echo $db_field['texte'];?> </li><br><br><br><br><br><br><br>
-                                                                <center><img src="images/<?php echo $db_field['fichier'];?>" width="300" height="180"> <br> <br><br></center><span class="alert-icon"><i class="fa fa-map-marker"></i></span>&nbsp;&nbsp;&nbsp;<?php echo $db_field['lieu'];?>
+                                                                <?php if($db_field['fichier']!=""): ?>
+                                                                <center><img src=<?php echo ("images/".$db_field['fichier']);?> width="300" height="180"> <br> <br><br></center><?php endif; ?><span class="alert-icon"><i class="fa fa-map-marker"></i></span>&nbsp;&nbsp;&nbsp;<?php echo $db_field['lieu'];?>
                                                                 <br>
                                                                 <br><span class="alert-icon"><i class="fa fa-smile-o"></i></span>&nbsp;&nbsp;&nbsp;<?php echo $db_field['sentiment'];?>
                                                            
